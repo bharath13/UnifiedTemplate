@@ -9,4 +9,4 @@ From project root folder run:
 From root folder:
 `npm run local-dev`
 
-You should now be able to open http://localhost:8080 to see your generated site. Any changes you make in ./source/ will automatically rebuild your site and reload your browser.
+You should now be able to open http://localhost:3000 to see your generated site. Any changes you make in ./source/ will automatically rebuild your site and reload your browser.
