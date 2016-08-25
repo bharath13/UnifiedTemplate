@@ -1,0 +1,48 @@
+{
+  "name": "ckl-pattern-lab",
+  "version": "1.0.0",
+  "description": "Pattern lab for Cooking Light redesign",
+  "main": "Gruntfile.js",
+  "author": "ETR",
+  "license": "MIT",
+  "scripts": {
+    "local-dev": "grunt",
+    "build-assets": "grunt prod"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.4",
+    "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "~0.8.0",
+    "grunt-sass": "^1.0.0",
+    "grunt-shell": "^1.2.1",
+    "grunt-svg-sprite": "^1.2.19",
+    "grunt-webpack": "^1.0.0",
+    "inquirer": "~0.8.5",
+    "jquery": "^2.2.1",
+    "knockout": "^3.4.0",
+    "load-grunt-config": "~0.19.0",
+    "lodash": "^4.8.1",
+    "sass-loader": "^3.1.2",
+    "susy": "^2.2.12",
+    "webpack": "^1.12.14"
+  },
+  "dependencies": {
+    "event-emitter": "^0.3.4",
+    "hammerjs": "^2.0.8",
+    "headroom.js": "^0.9.3",
+    "imagesloaded": "^4.1.0",
+    "jquery": "^2.2.2",
+    "historyjs": "^1.8.0-b2",
+    "jquery-lazyload": "^1.9.7",
+    "knockout": "^3.4.0",
+    "slick-carousel": "^1.5.9",
+    "striptags": "^2.1.1",
+    "svg4everybody": "^2.0.3",
+    "underscore": "^1.8.3",
+    "waypoints": "^4.0.0"
+  }
+}
