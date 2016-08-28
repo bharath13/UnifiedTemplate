@@ -1,0 +1,44 @@
+blockquote,
+.blockquote {
+  @include serif-bold-italic;
+  padding: 29px 0 30px 20px;
+  border-left: 2px solid color(primary, lite);
+  color:  color(tertiary, extra-dark);
+  margin-left: 0;
+  margin-right: 0;
+  clear: both;
+
+  p {
+    @include serif-bold-italic;
+    font-size: rem(32);
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  cite,
+  .citation {
+    @include sans-serif-lite;
+    display: inline-block;
+    margin-top: .75em;
+    font-style: normal;
+    font-size: rem(14);
+    text-transform: uppercase;
+
+    &:before {
+      content: "— ";
+    }
+  }
+
+  @include respond-to('sm and up') {
+    padding-left: 25px;
+
+    p {
+      font-size: rem(34);
+    }
+
+    cite,
+    .citation {
+      font-size: rem(16);
+    }
+  }
+}

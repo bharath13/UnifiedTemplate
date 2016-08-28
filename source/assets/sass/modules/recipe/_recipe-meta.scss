@@ -1,0 +1,68 @@
+/**
+ * Block: recipe-meta
+ * Element: recipe-meta__element
+ * Modifier: recipe-meta--modifier
+ */
+
+.recipe-meta {
+  text-align: left;
+  padding: 12px 0 10px 0;
+  border-bottom: 1px solid color(tertiary, extra-lite);
+  border-top: 1px solid color(tertiary, extra-lite);
+  line-height: 1.4;
+  &__label {
+    @include sans-serif-medium;
+    display: inline-block;
+    font-size: rem(17);
+    font-weight: 900;
+    text-transform: uppercase;
+    color: color(primary, dark);
+    letter-spacing: 0.05em;
+  }
+
+  &__section {
+    @include sans-serif-lite;
+    font-size: rem(18);
+    color: color(tertiary, dark);
+  }
+
+  &-footer {
+    margin-top: 15px;
+
+    .tag-set__item {
+      color: color(tertiary,  dark);
+    }
+  }
+
+  @include respond-to('up to md') {
+
+    &__label {
+      margin-right: 5px;
+    }
+
+    &__section {
+      margin-bottom: 5px;
+    }
+  }
+
+
+  @include respond-to('sm and up') {
+    padding: 16px 0 10px 0;
+    &__section {
+      display: inline-block;
+      min-width: 140px;
+      margin-right: 50px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    &__label {
+      display: block;
+      font-size: rem(14);
+    }
+  }
+  @include respond-to('md and up') {
+    padding: 16px 0;
+  }
+}

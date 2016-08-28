@@ -1,0 +1,27 @@
+/**
+ * Block: recipe-utility-links
+ * Element: recipe-utility-links__element
+ * Modifier: recipe-utility-links--modifier
+ */
+
+.recipe-utility-links {
+  display: flex;
+
+  &__link {
+    @include clearfix;
+    display: flex;
+    align-items: center;
+
+    & + & {
+      margin-left: 25px;
+    }
+  }
+
+  &__link-label {
+    @include sans-serif;
+    margin-left: 10px;
+    font-size: rem(14);
+    color: color(tertiary, dark);
+    text-transform: uppercase;
+  }
+}

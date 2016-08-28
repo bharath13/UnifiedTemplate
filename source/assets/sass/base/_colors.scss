@@ -1,0 +1,67 @@
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * COLORS
+ *
+ * Define any global color variables below. Ideally color variables should be
+ * referenced by the theme variables that follow.
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+
+
+ /*-------------------------------------------- */
+ /** Color Variables */
+ /*-------------------------------------------- */
+
+
+$colors: (
+	white: #fff,
+	black: #000,
+	body-text-color: #333333,
+	ad-background: #F2F2F2,
+	social: (
+		facebook: #3b5998,
+		twitter: #55acee,
+		pinterest: #bd081c,
+		email: #f26457,
+	    instagram: #3f729b,
+	    youtube: #cd201f,
+		print: #52CCAD,
+	    snapchat: #FFFC00
+	),
+	primary: (
+		dark: #F26457,
+		med: #F28379,
+		lite: #F7AB9C,
+		extra-lite: #FFECE6
+	),
+	secondary: (
+		dark: #3D9982,
+		med: #52CCAD,
+		lite: #ADEFDE
+	),
+	tertiary: (
+		extra-dark: #171A1A,
+		dark: #4C5454,
+		med: #7E8C8C,
+		lite: #C0D1D1,
+		extra-lite: #DAE6E6, //subscribe background
+		ultra-lite: #F0F2F2 //footer and media background
+	)
+);
+
+
+ /*-------------------------------------------- */
+ /** Theme Variables */
+ /*-------------------------------------------- */
+
+
+ $gray: color(tertiary, med);
+ $brand-primary: color(primary, dark);
+ $brand-secondary: color(secondary, med);
+ $brand-tertiary: color(tertiary, med);
+
+ $link-color: color(secondary, med);
+ $link-color-hover: color(secondary, dark);
+ $link-color-active:  $link-color-hover;

@@ -1,0 +1,35 @@
+{{#site_menu}}
+<div class="site-menu">
+  <div class="site-menu__header">
+    <a href="{{ home_url }}">
+      <svg class="logo">
+        {{> molecules-svg-use-tag }}
+      </svg>
+    </a>
+    <div class="site-menu__close">
+     <svg class="icon icon-close">
+       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ svg_sprite_path  }}#icon-close"></use>
+     </svg>
+    </div>
+  </div>
+  <div class="site-menu__content">
+    <div class="site-menu__search">
+      {{> organisms-search-bar }}
+    </div>
+
+    {{> molecules-primary-menu }}
+
+    <div class="site-menu__insert">
+      {{> molecules-menu-subscribe }}
+    </div>
+
+    {{> molecules-secondary-menu }}
+
+    <div class="site-menu__footer">
+      <div class="social-list">
+        {{> molecules-brand-social }}
+      </div>
+    </div>
+  </div>
+</div>
+{{/site_menu}}

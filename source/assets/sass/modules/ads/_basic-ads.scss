@@ -1,0 +1,50 @@
+.ad {
+  margin: 0 auto;
+  text-align: center;
+
+  &-leaderboard {
+    background-color: color(ad-background);
+    min-height: 90px;
+  }
+
+  &-wrapper {
+    text-align: right;
+
+    //small padding
+    &--with-padding {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &-text {
+    @include sans-serif-lite;
+    color:  color(tertiary, med);
+    font-size: rem(9);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+
+
+  @include respond-to('md and up') {
+    &-wrapper {
+      text-align: center;
+    }
+  }
+}
+
+.anchored {
+  position: fixed;
+  z-index: $z-7;
+
+  &-sidebar {
+    top: 185px !important;
+  }
+
+  &-mobile {
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+  }
+}

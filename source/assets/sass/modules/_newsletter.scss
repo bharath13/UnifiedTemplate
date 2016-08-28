@@ -1,0 +1,138 @@
+/**
+ * Block: newsletter
+ * Element: newsletter__element
+ * Modifier: newsletter--modifier
+ */
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+
+  &__content {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__cta {
+    @include sans-serif;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: rem(18);
+    text-transform: uppercase;
+    font-weight: 900;
+    color: color(secondary, dark);
+  }
+
+  &__tagline {
+    margin-bottom: 15px;
+    font-size: rem(16);
+    color: color(body-text-color);
+    text-align: center;
+  }
+
+  &__form {
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+
+  &__privacy {
+    float: right;
+    margin-top: 10px;
+    font-size: rem(12);
+  }
+
+  .form-group {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .form-group,
+  .form-control {
+    box-sizing: border-box;
+  }
+
+  .btn {
+    padding: 14px 0;
+  }
+
+  @include respond-to('up to sm') {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .form-control {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @include respond-to('sm and up') {
+    flex: 1;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    
+    &__form {
+      flex-direction: row;
+      max-width: none;
+    }
+
+    .form-group {
+      width: 100%;
+    }
+
+    .form-control {
+      width: 100%;  
+      float: left;
+      height: 44px;
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  @include respond-to('xl and up') { 
+    
+    .form-control {
+      margin-bottom: 0;
+      width: 45%;
+      &__email {
+        margin-right: 5%;
+      }
+    }
+    
+    .form-group {
+      margin-bottom: 0;
+      margin-right: 2.5%;
+      justify-content: flex-end;
+    }
+
+    .btn {
+      min-width: 165px;
+      max-height: 44px;
+      padding: 0;
+
+    }
+
+    &__form {
+      display: flex;
+    }
+
+    &__privacy { 
+      margin-top: -24px;
+    }
+  }
+}

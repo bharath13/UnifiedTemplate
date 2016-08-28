@@ -1,0 +1,35 @@
+/**
+ * Block: search-tags
+ * Element: search-tags__element
+ * Modifier: search-tags--modifier
+ */
+
+.search-tags {
+  &__topic {
+    @include sans-serif-medium;
+    font-size: rem(15);
+    color: color(black);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__title {
+    text-align: right;
+  }
+
+  &--fr {
+    float: right;
+  }
+
+  .tag-set__list-item {
+    text-align: center;
+  }
+
+  .tag-set__item {
+    float: right;
+    clear: right;
+    margin-right: 0;
+    background-color: color(white);
+    color: color(body-text-color);
+  }
+}

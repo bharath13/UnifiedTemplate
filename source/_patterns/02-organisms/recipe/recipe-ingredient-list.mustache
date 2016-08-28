@@ -1,0 +1,12 @@
+{{#recipe_ingredient_list}}
+<ul class="list list--has-divider list--no-style">
+  {{#items}}
+    <li class="list__item" itemprop="recipeIngredient">
+    {{#url}}
+    	<a href="{{url}}">{{text}}</a>
+    {{/url}}
+    {{^url}}{{text}}{{/url}}
+    </li>
+  {{/items}}
+</ul>
+{{/recipe_ingredient_list}}

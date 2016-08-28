@@ -1,0 +1,27 @@
+{{#three_up_media}}
+  <div class="article__media {{#stretch?}}article__media--stretch{{/stretch?}} {{#left?}}article__media--pl{{/left?}}">
+    <figure class="media media--three-up">
+        <div class="media--three-up-wrap">
+          {{#images}}
+            <img class="media__img" src="{{media_src}}" alt="{{media_alt}}">
+          {{/images}}
+
+          {{#social_share}}
+            <div class="show-at-sm">
+              {{>molecules-social-share}}
+            </div>
+          {{/social_share}}
+        </div>
+      <figcaption>
+
+        {{#credit}}
+          <span class="media__text media__credit">{{credit}}</span>
+        {{/credit}}
+        {{#caption}}
+          <div class="media__text media__caption">{{{caption}}}</div>
+        {{/caption}}
+
+      </figcaption>
+    </figure>
+  </div>
+{{/three_up_media}}

@@ -1,0 +1,27 @@
+{{!
+*
+* Brand Social Module
+*
+* @param array items          Array of social share icon data to be included to create the social share icon
+* @param string url           URL for social sharing capabilities on each link
+* @param string icon          Name of icon to display for each link
+*
+* @param boolean is_vertial?   Sets layout of module to be vertical, if not included layout is horizontal, is optional.
+*
+* Included partial
+* svg-use-tag                 Molecule to include <use> tag for each SVG. Takes {icon} variable from items objects.
+*
+}}
+
+{{#brand_social}}
+<div class="brand-social social-share">
+  <h3 class="brand-social__text">Connect With Us:</h3>
+  {{#items}}
+    <a href="{{url}}" class="social-share__item social-share__item--{{icon}} ">
+      <svg class="social-share__icon social-share__icon--{{icon}}">
+         {{>molecules-svg-use-tag}}
+      </svg>
+    </a>
+  {{/items}}
+</div>
+{{/brand_social}}

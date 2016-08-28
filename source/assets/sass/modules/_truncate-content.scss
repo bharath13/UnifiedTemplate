@@ -1,0 +1,38 @@
+/**
+ * Block: truncatecontent
+ * Element: truncatecontent__element
+ * Modifier: truncatecontent--modifier
+ */
+
+.truncateContent {
+
+  &__container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(color(white), .95);
+
+    &:before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 100%;
+      height: 50px;
+      content: "";
+      background-image: linear-gradient(to top, rgba(color(white), .95), rgba(255, 255, 255, 0));
+    }
+  }
+
+  &__btn {
+    font-size: rem(17);
+    color: color(tertiary, med);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+}

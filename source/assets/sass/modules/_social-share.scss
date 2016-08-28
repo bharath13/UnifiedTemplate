@@ -1,0 +1,186 @@
+.social-share {
+  @include clearfix;
+
+  &--vertical {
+    width: 45px;
+
+    & + &__item {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+
+    @include block-mod() {
+      &__item {
+        width: 45px;
+        height: 45px;
+
+        & + .social-share__item {
+          margin-left: 0;
+          margin-top: 13px;
+        }
+      }
+    }
+  }
+
+  &__item {
+    display: block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: color(white);
+    transition: background-color .250s $global-easing;
+
+    &:hover {
+      color: color(white);
+    }
+
+    // if two are next to each other
+    // then provide some basic spacing
+    & + & {
+      margin-left: 5px;
+    }
+
+    &--facebook {
+      background-color: color(social, facebook);
+    }
+
+    &--twitter {
+      background-color: color(social, twitter);
+    }
+
+    &--pinterest {
+      background-color: color(social, pinterest);
+    }
+
+    &--email {
+      background-color: color(social, email);
+    }
+
+    &--print {
+      background-color: color(social, print);
+    }
+
+    &--sms {
+      background-color: color(secondary, med);
+    }
+
+    &--snapchat {
+      background-color: color(social, snapchat);
+    }
+
+    &--youtube {
+      background-color: color(social, youtube);
+    }
+
+    &--instagram {
+      background-color: color(social, instagram);
+    }
+  }
+
+  &__icon {
+    @include vertically-centered;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: color .250s $global-easing;
+
+    &--facebook {
+      width: 9px;
+      height: 18px;
+      padding-right: 1px;
+    }
+
+    &--twitter {
+      width: 18px;
+      height: 15px;
+      padding-left: 1px;
+    }
+
+    &--pinterest {
+      width: 15px;
+      height: 18px;
+    }
+
+    &--instagram {
+      width: 18px;
+      height: 19px;
+    }
+
+    &--email {
+      width: 18px;
+      height: 13px;
+    }
+
+    &--print {
+      // 1px to visually, vertically-center
+      margin-top: 1px;
+      width: 18px;
+      height: 18px;
+    }
+
+    &--sms {
+      width: 26px;
+      height: 22px;
+    }
+
+    &--snapchat {
+      width: 23px;
+      height: 24px;
+      stroke: black;
+    }
+
+    &--youtube {
+      width: 20px;
+      height: 16px;
+    }
+  }
+}
+
+.has-social-share {
+  @include respond-to('md and up') {
+    .social-share,
+    .story-card__media .social-share {
+      opacity: 0;
+      visibility: hidden;
+      transition: visibility .250s linear,opacity .250s linear;
+    }
+
+    &:hover .social-share,
+    .story-card__media:hover .social-share {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+
+.brand-social {
+  padding: 0 0 20px 0;
+  &__text {
+    @include sans-serif-medium;
+    font-size: rem(13);
+    letter-spacing: 0.05em;
+    color: color(tertiary, med);
+    margin-bottom: 10px;
+  }
+  .social-share__item {
+    border: 1px solid color(tertiary, lite);
+    background-color: color(primary, dark);
+    &:hover {
+      background-color: color(primary, med);
+      border-color: color(primary, dark);
+
+      .social-share__icon {
+        color: color(white);
+      }
+    }
+  }
+  .social-share__icon {
+    color: color(white);
+    &--snapchat {
+      stroke: unset;
+    }
+  }
+}

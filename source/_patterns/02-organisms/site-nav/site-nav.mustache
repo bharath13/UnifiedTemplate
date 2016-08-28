@@ -1,0 +1,31 @@
+{{#site_nav}}
+<nav class="site-nav show-at-md">
+
+  <ul class="site-nav__list">
+    {{#items}}
+      <li class="site-nav__item">
+        <a href="{{url}}" class="site-nav__link {{#bold?}}site-nav__link--heavy{{/bold?}}">{{text}}</a>
+
+          {{#sub_menu}}
+            <div class="site-nav__sub-nav">
+              <ul class="site-nav__sub-nav-list">
+                {{#items}}
+                  <li class="site-nav__item">
+                    <a href="{{url}}" class="site-nav__link">{{text}}</a>
+
+                  </li>
+                {{/items}}
+              </ul>
+            </div>
+          {{/sub_menu}}
+
+          {{#subscribe?}}
+            {{> organisms-site-nav-subscribe }}
+          {{/subscribe?}}
+
+      </li>
+    {{/items}}
+  </ul>
+
+</nav>
+{{/site_nav}}

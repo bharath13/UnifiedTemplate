@@ -1,0 +1,30 @@
+.floating-search-bar {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: percentage(378/1380);
+  min-width: 300px;
+  max-width: 378px;
+  background-color: transparent;
+
+  .search-bar__wrap {
+    margin-bottom: 40px;
+  }
+
+  .search-bar__input {
+    background-color: color(white);
+    border-radius: $global-border-radius;
+    border: 1px solid color(tertiary, lite);
+    height: 48px;
+  }
+
+  .form-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    font-size: rem(14);
+    //TODO: Review use of important for
+    // form buttons throughout site.
+    margin-left: 10px !important;
+  }
+}

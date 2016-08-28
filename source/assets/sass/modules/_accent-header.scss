@@ -1,0 +1,65 @@
+.accent-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+
+  &__title {
+    @include serif-bold;
+    position: relative;
+    margin: 0;
+    font-size: rem(30);
+    color: color(primary, dark);
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      top: 50%;
+      left: 0;
+      right: 0;
+      background-color: color(primary, dark);
+      z-index: $z-1;
+    }
+  }
+
+  &__title-text {
+
+    position: relative;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: color(white);
+    z-index: $z-2;
+    letter-spacing: 0.018em;
+  }
+
+  &__subtitle {
+    @include sans-serif-lite;
+    margin: 0;
+    color: $brand-primary;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: rem(13);
+    letter-spacing: 0.10em;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+  
+
+  @include respond-to('xs and up') {
+    &__subtitle {
+      font-size: rem(14);
+    }
+  }
+
+  @include respond-to('sm and up') {
+
+    
+
+    .sidebar & {
+      &__title {
+        font-size: rem(30);
+      }  
+    }
+  }
+}

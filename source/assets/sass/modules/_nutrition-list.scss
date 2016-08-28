@@ -1,0 +1,46 @@
+/**
+ * Block: nutrition-list
+ * Element: nutrition-list__element
+ * Modifier: nutrition-list--modifier
+ */
+
+.nutrition-list {
+  height: auto;
+  border-top: 2px solid color(tertiary, lite);
+  overflow-y: hidden;
+  transition: height .250s $global-easing;
+
+  &.is-open {
+    .nutrition-list__icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__title {
+    @include sans-serif-semibold;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: rem(20);
+    color: color(secondary, med);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__icon {
+    position: relative;
+    display: inline-block;
+    bottom: 3px;
+    color: color(secondary, med);
+    transform: rotate(0);
+    margin-left: 7px;
+    width: 15px;
+    height: 8px;
+  }
+
+  .list {
+    transition: height .250s ease-out;
+  }
+}

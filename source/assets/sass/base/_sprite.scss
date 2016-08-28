@@ -1,0 +1,53 @@
+%svg-common {
+	background: url("svg/sprite.css.svg") no-repeat;
+}
+
+%icon-arrow-back {
+	@extend %svg-common;
+	background-position: 57.89473684210526% 87.5%;
+	width: 10px;
+	height: 8px;
+}
+
+%icon-arrow-fresh {
+	@extend %svg-common;
+	background-position: 100% 0;
+	width: 10px;
+	height: 10px;
+}
+
+%icon-arrow-large-accent {
+	@extend %svg-common;
+	background-position: 0 0;
+	width: 22px;
+	height: 14px;
+}
+
+%icon-arrow-small {
+	@extend %svg-common;
+	background-position: 100% 45.45454545454545%;
+	width: 10px;
+	height: 10px;
+}
+
+%icon-arrow-small-accent {
+	@extend %svg-common;
+	background-position: 68.75% 0;
+	width: 16px;
+	height: 11px;
+}
+
+%icon-arrow-small-transparent {
+	@extend %svg-common;
+	background-position: 68.75% 50%;
+	width: 16px;
+	height: 10px;
+}
+
+%tombstone {
+	@extend %svg-common;
+	background-position: 0 100%;
+	width: 18px;
+	height: 18px;
+}
+

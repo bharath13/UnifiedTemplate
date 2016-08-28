@@ -33,9 +33,9 @@ module.exports = {
 
   html: {
     files: ['source/_patterns/**/*.mustache', 'source/**/*.json'],
-    tasks: ['shell:patternlab_watch'],
+    tasks: ['shell:patternlab_watch', 'sass:dev', 'postcss:dev'],
     options: {
-      spawn: false
+      spawn: true
     }
   }
 };

@@ -1,0 +1,151 @@
+/**
+ * Block: search-bar
+ * Element: search-bar__element
+ * Modifier: search-bar--modifier
+ */
+
+@mixin apply-small-width-form-styles() {
+  .form-btn {
+    width: 110px;
+    height: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: rem(12);
+    border-radius: 0;
+  }
+}
+
+$block: #{'.search-bar'};
+
+#{$block} {
+  background-color: color(white);
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &__text {
+    display: none;
+    font-size: rem(12);
+    color: color(tertiary, med);
+  }
+
+  &__close {
+    cursor: pointer;
+    color: color(tertiary, lite);
+  }
+
+  .form-control {
+    width: calc(100% - 110px);
+    padding-left: 10px;
+  }
+
+  .form-btn {
+    @include sans-serif-lite;
+    background-color: color(primary, dark);
+    color: color(white);
+    letter-spacing: 0.12em;
+    appearance: none;
+    margin-left: 0 !important;
+  }
+
+  @include respond-to('up to md') {
+    @include apply-small-width-form-styles;
+  }
+
+  @include respond-to('md and up') {
+    .form-btn {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &--in-side-nav {
+    @include apply-small-width-form-styles;
+  }
+
+  // ----------- Header Search Bar ----------- //
+
+  &--in-site-header {
+    $search-bar-height: 50px;
+
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: $search-bar-height;
+    transition: transform 250ms $global-easing;
+    box-sizing: border-box;
+    z-index: $z-1;
+    overflow: hidden;
+    transform: translateY(-100%);
+
+    &.is-active {
+      transform: translateY(0%);
+    }
+
+    .search-form {
+      height: 50px;
+    }
+
+    .form-btn {
+      border-top: 1px solid color(primary, lite);
+    }
+
+    @include respond-to('md and up') {
+      $search-bar-height: 50px;
+      display: flex;
+      align-items: center;
+      height: $search-bar-height;
+
+      &.is-active {
+        border-bottom: 1px solid #C0D1D1;
+      }
+
+      #{$block}__wrap {
+        @include page-container;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      #{$block}__search--trigger {
+        &-text,
+        .icon-search {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+
+      .form-control {
+        width: auto;
+      }
+
+      .form-btn {
+        width: unset;
+        height: unset;
+        border-radius: $btn-border-radius;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .form-control {
+        width: 400px;
+        height: 42px;
+        margin-right: 5px;
+        background-color: color(tertiary, ultra-lite);
+      }
+
+      .search-form {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

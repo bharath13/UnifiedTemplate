@@ -1,0 +1,60 @@
+/**
+ * Block: link-with-arrow
+ * Element: link-with-arrow__element
+ * Modifier: link-with-arrow--modifier
+ */
+
+.link-with-arrow,
+.link-with-arrow--fresh,
+.link-with-arrow--accent,
+.link-with-arrow--accent-lg {
+  &:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    left: 5px;
+    background-repeat: no-repeat;
+    transition: left .150s $global-easing;
+  }
+
+  &:hover:after {
+    left: 10px;
+  }
+}
+
+.link-with-arrow {
+  &:after {
+    @extend %icon-arrow-small-transparent;
+  }
+}
+
+.link-with-arrow--fresh {
+  &:after {
+    @extend %icon-arrow-fresh;
+  }
+}
+
+.link-with-arrow--accent {
+  &:after {
+    @extend %icon-arrow-small-accent;
+  }
+}
+
+.link-with-arrow--accent-lg {
+  &:after {
+    @extend %icon-arrow-large-accent;
+  }
+}
+
+.link-with-arrow-back {
+  &:before {
+    @extend %icon-arrow-back;
+    content: "";
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    bottom: 1px;
+  }
+}

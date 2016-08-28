@@ -1,0 +1,24 @@
+
+
+{{#video}}
+<div class="article__media article__media--video">
+  <figure class="media">
+    <div class="media-wrap">
+      <div class='embed-container'>
+          <iframe src='http://www.youtube.com/embed/QILiHiTD3uc' frameborder='0' allowfullscreen></iframe>
+      </div>
+    </div>
+    {{#caption}}
+    <figcaption>
+      {{#credit}}
+        <span class="media__text media__credit">{{credit}}</span>
+      {{/credit}}
+      {{#caption}}
+        <div class="media__text media__caption">{{caption}}</div>
+      {{/caption}}
+    </figcaption>
+    {{/caption}}
+  </figure>
+</div>
+
+{{/video}}

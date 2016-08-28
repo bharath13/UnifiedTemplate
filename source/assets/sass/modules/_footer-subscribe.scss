@@ -1,0 +1,67 @@
+/**
+ * Block: footer-subscribe
+ * Element: footer-subscribe__element
+ * Modifier: footer-subscribe--modifier
+ */
+
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  clear: both;
+  margin-top: 15px;
+  &__section {
+    text-align: center;
+    
+    &--dark {
+      background-color: color(tertiary, extra-lite);
+    }
+  }
+
+  &__content {
+    @include vertically-centered;
+  }
+
+  &__outside-us {
+    font-size: rem(14);
+    display: flex;
+    align-items: center;
+    padding-left: 1px;
+    cursor: pointer;
+    margin: 6px 0;
+    input {
+      font-size: rem(26);
+      outline: 1px solid color(secondary, med);
+      -moz-appearance:none;
+      -webkit-appearance:none;
+      -o-appearance:none;
+      height: 20px;
+      width: 20px;
+      margin-right: 10px;
+      background-color: #fff;
+      position: relative;
+      border-radius: 4px;
+      &:checked:after {
+        position: absolute;
+        content: '\2713';
+        color: color(secondary, med);
+        top: 2px;
+        left: 2px;
+        bottom: 2px;
+        right: 2px;
+        text-align: center;
+        height: 14px;
+        line-height: 14px;
+        font-size: rem(20);
+      }
+    }
+  }
+
+  @include respond-to('sm and up') {
+    flex-direction: row;
+
+    &__section {
+      width: 50%;
+      display: flex;
+    }
+  }
+}

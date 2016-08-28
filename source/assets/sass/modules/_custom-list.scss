@@ -1,0 +1,75 @@
+/**
+ * Block: custom-list
+ * Element: custom-list__element
+ * Modifier: custom-list--modifier
+ */
+
+.custom-list {
+  @include list-reset;
+  list-style: none;
+  counter-reset: custom-counter;
+
+  &--lg {
+    @include block-mod() {
+      &__item:before {
+        font-size: rem(36);
+        font-weight: 900;
+        min-width: 30px;
+        line-height: 1;
+        margin-top: 1px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &--branded {
+    @include block-mod() {
+      &__item:before {
+        color: color(primary, dark);
+      }
+    }
+  }
+
+  &--serif {
+    @include block-mod() {
+      &__item {
+        align-items: inherit;
+        &:before {
+           @include serif;
+           position: relative;
+           font-weight: 900;
+        }
+      }
+    }
+  }
+
+  &__item {
+    $size: 25px;
+    display: flex;
+    &:before {
+      @include sans-serif;
+      content: counter(custom-counter);
+      counter-increment: custom-counter;
+      display: block;
+      float: left;
+      min-width: $size;
+    }
+  }
+
+
+  &--listicle {
+    @include block-mod() {
+      &__item {
+        &:before {
+           @include serif;
+           position: relative;
+
+           font-size: rem(50);
+           color: color(primary, dark);
+
+        }
+      }
+    }
+  }
+
+}

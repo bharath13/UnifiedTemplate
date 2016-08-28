@@ -1,0 +1,108 @@
+/**
+ * Block: related-articles
+ * Element: related-articles__element
+ * Modifier: related-articles--modifier
+ */
+
+.related-articles {
+  margin-top: 25px;
+  margin-bottom: 55px;
+  line-height: 1.2;
+  &__story {
+    @include clearfix;
+    margin-bottom: 15px;
+  }
+
+  &__media,
+  &__body {
+    float: left;
+    width: 50%;
+  }
+
+  &__media {
+    position: relative;
+  }
+
+  &__body {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 10px;
+    // margin-top: -4px;
+    line-height: 1;
+  }
+
+  &__title {
+    @include sans-serif-lite;
+    font-size: rem(19);
+    line-height: 22px;
+    text-transform: capitalize;
+    color: color(tertiary, dark);
+  }
+
+  &__text-sm {
+    @include sans-serif-lite;
+    display: block;
+    font-size: rem(13);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: .25em;
+    color: color(secondary, dark);
+  }
+
+  &__category {
+    margin: 0;
+    letter-spacing: 0.1em;
+  }
+
+  &__cta {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 10px;
+    line-height: 1.15;
+    color: color(secondary, med);
+  }
+
+  @include respond-to('xs and up') {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .accent-header {
+      width: 100%;
+    } 
+    &__story {
+      width: 32%;
+      & + & {
+        padding-top: 0;
+        border-top: none;
+      }
+    }
+    &__body,
+    &__media {
+      width: 100%;
+      padding: 0;
+    }
+    &__body {
+      padding-top: 10px;
+      margin-top: 0;
+    }
+    &__title { 
+      font-size: rem(21);
+      line-height: 24px;
+    }
+    &__text-sm { 
+      font-size: rem(14);
+      margin-bottom: 4px;
+    }
+  }
+
+  @include respond-to('sm and up') {
+    &__text-sm { 
+      margin-bottom: 10px;
+    }
+  }
+
+  @include respond-to('md and up') {
+
+  }
+}

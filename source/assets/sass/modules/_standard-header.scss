@@ -1,0 +1,44 @@
+.standard-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 5px;
+
+  &__title {
+    @include sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0;
+    font-size: rem(28);
+    color: color(primary, dark);
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      top: 50%;
+      left: 0;
+      right: 0;
+      z-index: $z-1;
+    }
+  }
+
+  &__title-text {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: color(white);
+    z-index: $z-2;
+  }
+
+
+  @include respond-to('sm and up') {
+    &__title {
+      font-size: rem(30);
+
+      &:before {
+        height: 2px;
+      }
+    }
+  }
+}

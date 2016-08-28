@@ -1,0 +1,120 @@
+/**
+ * Block: site-menu
+ * Element: site-menu__element
+ * Modifier: site-menu--modifier
+ */
+
+.site-menu {
+  $header-height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-zeus;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 2px 0 2px rgba(#000000, .15);
+  transform: translateX(-102%);
+  transition: .3s $global-easing;
+
+  @include respond-to('sm and up') {
+    width: 320px;
+  }
+
+  &.is-open {
+    transform: translateX(0%);
+  }
+
+  &__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: $z-10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: $header-height;
+    padding: 10px;
+    box-shadow: 0 1px 0 0 color(tertiary, extra-lite);
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+  }
+
+  &__content {
+    position: relative;
+    top: $header-height;
+    left: 0;
+    height: calc(100% - #{$header-height});
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  &__close {
+    display: block;
+    cursor: pointer;
+  }
+
+  &__insert {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    clear: both;
+  }
+
+  &__search {
+
+    .search-form {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .search-bar {
+      border: 0;
+    }
+
+    .search-bar__close {
+      // TODO: Find a better way to
+      // not display this at all
+      display: none !important;
+    }
+  }
+
+  &__footer {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    clear: both;
+  }
+
+  .logo {
+    width: 144px;
+    height: 38px;
+    color: color(primary, dark);
+  }
+
+  .brand-social {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .social-share {
+    &__item:hover {
+      color: color(white);
+      border-color: color(primary, dark);
+      background-color: color(primary, dark);
+    }
+  }
+}
+
+.site-menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(#FFFFFF, .85);
+  z-index: $z-zeus - 1;
+}

@@ -1,0 +1,96 @@
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * MIXINS
+ *
+ * Define any custom site-wide mixins below. These should only be
+ * mixins that are global in scope and that need to be referenced
+ * by multiple SASS files.
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+
+/**
+ * Basic Clearfix - pulled from Bourbon.io
+ */
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+/**
+ * Vertical Centering
+ * $position: variable to set position value, Defaults to relative.
+ *
+ */
+@mixin vertically-centered($position: relative) {
+	position: $position;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/**
+ * Block/Block-Modifier
+ * $mod: name of modification to apply at a element or block level modification
+ *
+ */
+@mixin block-mod($mod: null) {
+  $root: &;
+  $mod-sep: '--';
+  $el-sep: '__';
+  // are we being called within a block modifier? Check for '--' in $root
+  $mod-sep-index: str-index(#{$root}, $mod-sep);
+  $is-in-block-mod: $mod-sep-index != null;
+
+  // if we are in a block mod already and are provided a modifier, throw error
+  @if $is-in-block-mod and $mod {
+    $in-mod: str-slice(#{$root}, $mod-sep-index + 2);
+    @error "You are trying to call @block-mod with modifier '#{$mod}', but are already within block modifier '#{$in-mod}'.";
+  }
+
+  @if $is-in-block-mod == false and $mod == null {
+    @error "You are trying to call @block-mod but haven't provided a modifier and aren't within a block modifier."
+  }
+
+  @if $is-in-block-mod == false and str-index(#{$root}, $el-sep) == null {
+    @error "You can't call @block-mod directly within a block."
+  }
+
+  @if $mod {
+    $sep-index: str-index(#{$root}, $el-sep);
+    $block: str-slice(#{$root}, 0, $sep-index - 1);
+
+    #{$block}#{$mod-sep}#{$mod} & {
+      @content;
+    }
+  } @else {
+    $sep-index: str-index(#{$root}, $mod-sep);
+    $block: str-slice(#{$root}, 0, $sep-index - 1);
+
+    & #{$block} {
+      @content;
+    }
+  }
+}
+
+@mixin list-reset() {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin page-container() {
+  @if $is-responsive {
+      max-width: $container-width;
+  } @else {
+      width: $container-width;
+  }
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: $page-container-padding;
+  padding-left: $page-container-padding;
+  background: $page-container-bg-color;
+}

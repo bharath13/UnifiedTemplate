@@ -1,0 +1,12 @@
+{{#recipe_meta}}
+<div class="recipe-meta">
+  {{#sections}}
+    <div class="recipe-meta__section">
+      <span class="recipe-meta__label">{{label}}</span>
+      <span class="recipe-meta__text"
+        {{#schema}}itemprop="{{schema}}"{{/schema}} {{#ISOformat}}content="{{ISOformat}}"{{/ISOformat}}>{{{text}}}</span>
+    </div>
+  {{/sections}}
+
+</div>
+{{/recipe_meta}}

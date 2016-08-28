@@ -1,0 +1,56 @@
+{{#site_header}}
+<header class="site-header {{#glance_bar}}has-glance-bar{{/glance_bar}}">
+  <div class="site-header__bar site-header__menu-bar {{#basic_nav?}}basic-nav{{/basic_nav?}}" data-js-component="stickyNav" {{#scroll_target}} data-scroll-target="{{scroll_target}}" {{/scroll_target}}>
+
+    {{#leaderboard}}
+    {{> molecules-ads-leaderboard-flex }}
+    {{/leaderboard}}
+
+    {{! <div class="site-header__wrap"> }}
+      <div class="menu-bar">
+        
+        {{> molecules-menu-logo }}
+
+        {{> molecules-menu-trigger }}
+
+        {{^basic_nav?}}
+          <div class="site-header__title show-at-sm">{{title}}</div>
+        {{/basic_nav?}}
+        
+        {{> molecules-menu-search-trigger }}
+
+        {{^basic_nav?}}
+          {{> organisms-social-links }}
+          {{> organisms-next-article }}
+          {{> organisms-subscribe-link }}
+        {{/basic_nav?}}
+        
+        {{! {{^alt_menu?}} 
+          {{! {{> organisms-social-links }} 
+          {{! {{> organisms-next-article }} 
+        {{! {{/alt_menu?}} 
+        
+        {{> organisms-site-nav  }}
+
+      </div>
+    {{! </div> }}
+
+    {{> organisms-search-bar }}
+    
+  </div>
+
+  <!--<div class="site-header__group">
+    <div class="site-header__bar show-at-md">
+      <div class="site-header__wrap">
+          {{> organisms-site-nav  }}
+      </div>
+    </div>
+
+      
+    {{> organisms-glance-bar }}
+  </div> -->
+
+</header>
+{{/site_header}}
+
+{{> organisms-site-menu }}

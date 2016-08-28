@@ -1,0 +1,35 @@
+{{!
+*
+* Related List Module
+*
+* @param array items    Array of related=list content
+* @param string img     String of image url
+* @param string img_alt String of text for image alternate text
+* @param string text    String of text for title of related list item
+* @param string label   String of taext to display ad-content label
+*
+}}
+
+{{#related_list}}
+<div class="related-list">
+  {{#accent_header}}
+    {{> molecules-accent-header }}
+  {{/accent_header}}
+
+  {{#items}}
+    <a class="related-list__item" href="{{url}}">
+      {{#img}}
+        <div class="related-list__img-wrap">
+          <img class="related-list__img" src="{{img}}" alt="{{img_alt}}">
+        </div>
+      {{/img}}
+
+      {{ text }}
+
+      {{#label}}
+        <span class="related-list__label">{{label}}</span>
+      {{/label}}
+    </a>
+  {{/items}}
+</div>
+{{/related_list}}

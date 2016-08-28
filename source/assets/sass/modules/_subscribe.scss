@@ -1,0 +1,113 @@
+/**
+ * Block: subscribe
+ * Element: subscribe__element
+ * Modifier: subscribe--modifier
+ */
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: color(white);
+  background-image: url(#{$img-base-path}/subscribe-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__content {
+    max-width: 315px;
+  }
+
+  &__title {
+    @include serif-bold-italic;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: rem(34);
+    line-height: 1;
+    color: color(white);
+  }
+  
+  &__branding {
+    // width: 100%;
+    margin-bottom: 25px;
+  }
+  &__title-branding-wrapper {
+    width: 100%;
+  }
+  &__sans-title {
+    @include sans-serif-medium;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: rem(18);
+    color: color(white);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+
+  &__tagline {
+    margin-top: 0;
+    margin-bottom: 35px;
+    line-height: 1.2;
+  }
+
+  .icon-logo {
+    width: 190px;
+    height: 50px;
+    margin: 0 auto;
+  }
+
+  @include respond-to('up to sm') {
+    &__wrapper {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  @include respond-to('sm and up') {
+    flex: 1;
+
+    &__wrapper {
+      max-width: 700px;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 40px 0;
+    }
+  }
+
+  @include respond-to('lg and up') {
+
+    &__wrapper {
+      max-width: 700px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  @include respond-to('xl and up') {
+    justify-content: flex-end;
+    &__wrapper {
+      flex-wrap: nowrap;
+      margin: 0;
+    }
+    &__content {
+      max-width: 350px;
+    }
+    &__title-branding-wrapper {
+      max-width: 250px;
+    }
+  }
+
+}

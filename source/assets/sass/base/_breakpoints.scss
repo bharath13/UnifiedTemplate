@@ -1,0 +1,48 @@
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * BREAKPOINTS
+ *
+ * Define all breakpoint variables below. Breakpoint is included as a vendor
+ * library: http://breakpoint-sass.com/. All media queries should make use of
+ * the @include breakpoint() mixin and reference the variables defined in this
+ * file. When coding a responsive site, mobile first CSS should be used.
+ * See http://www.zell-weekeat.com/how-to-write-mobile-first-css/.
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+
+$breakpoints-map: (
+    xs: 600px,
+    sm: 768px,
+    md: 1024px,
+    lg: 1280px,
+    xl: 1400px
+);
+
+$breakpoints: add-breakpoint('xs and up',    map-get($breakpoints-map, xs));
+$breakpoints: add-breakpoint('sm and up',    map-get($breakpoints-map, sm));
+$breakpoints: add-breakpoint('md and up',   map-get($breakpoints-map, md));
+$breakpoints: add-breakpoint('lg and up',    map-get($breakpoints-map, lg));
+$breakpoints: add-breakpoint('xl and up',   map-get($breakpoints-map, xl));
+
+
+$breakpoints: add-breakpoint('up to xs',     max-width map-get($breakpoints-map, xs)  - 1px);
+$breakpoints: add-breakpoint('up to sm',     max-width map-get($breakpoints-map, sm)  - 1px);
+$breakpoints: add-breakpoint('up to md',    max-width map-get($breakpoints-map, md)   - 1px);
+$breakpoints: add-breakpoint('up to lg',     max-width map-get($breakpoints-map, lg)  - 1px);
+$breakpoints: add-breakpoint('up to xl',    max-width map-get($breakpoints-map, xl)   - 1px);
+
+
+$breakpoints: add-breakpoint('between xs and sm',
+                              map-get($breakpoints-map, xs)
+                              map-get($breakpoints-map, sm));
+$breakpoints: add-breakpoint('between sm and md',
+                              map-get($breakpoints-map, sm)
+                              map-get($breakpoints-map, md));
+$breakpoints: add-breakpoint('between md and lg',
+                              map-get($breakpoints-map, md)
+                              map-get($breakpoints-map, lg));
+$breakpoints: add-breakpoint('between lg and xl',
+                              map-get($breakpoints-map, lg)
+                              map-get($breakpoints-map, xl));

@@ -1,0 +1,47 @@
+.byline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+
+  &__media {
+    margin-right: 10px;
+    border-radius: 50%;
+    max-width: 28px;
+  }
+
+  &__text,
+  &__date {
+    @include sans-serif-lite;
+    color: color(body-text-color);
+    font-size: rem(14);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__author {
+    margin-right: 10px;
+    font-weight: 900;
+    &_by {
+      font-weight: 300;
+    }
+  }
+
+  &__date {
+    color: color(tertiary, med);
+  }
+
+  @include respond-to('up to md') {
+    &__date {
+      margin: 0;
+    }
+  }
+
+  @include respond-to('sm and up') {
+      margin-bottom: 0;
+      &__text,
+      &__date {
+        font-size: rem(14);
+      }
+  }
+}
+

@@ -1,0 +1,22 @@
+{{#video}}
+  {{#stretch?}}
+    <div class="video-wrap article__media article__media--stretch">
+  {{/stretch?}}
+
+  <div class="embed-container--with-caption">
+    <div class="embed-container-centered">
+        {{> atoms-brightcove }}
+    </div>
+    <div class="embed-caption">
+      {{caption}}
+    </div>
+  </div>
+
+  {{#stretch?}}
+    </div>
+  {{/stretch?}}
+
+{{/video}}
+
+
+

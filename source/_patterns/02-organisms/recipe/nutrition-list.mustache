@@ -1,0 +1,13 @@
+{{#nutrition_list}}
+  <div class="nutrition-list"
+    data-js-component="nutritionList"
+    data-toggle-target=".list--small"
+    data-toggle-trigger=".nutrition-list__title">
+    <h3 class="nutrition-list__title">{{title}}
+      <svg class="icon icon-{{icon}} nutrition-list__icon">
+        {{> molecules-svg-use-tag }}
+      </svg>
+    </h3>
+    {{> molecules-list-with-divider}}
+  </div>
+{{/nutrition_list}}

@@ -1,0 +1,19 @@
+.media-object {
+  overflow: hidden;
+
+  &__media-wrap {
+    float: left;
+    float: left;
+    margin-right: 10px;
+  }
+
+  &__media {
+    display: block;
+  }
+
+  &__body {
+    overflow: hidden;
+    _overflow: visible;
+    zoom: 1;
+  }
+}

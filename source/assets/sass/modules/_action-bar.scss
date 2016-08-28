@@ -1,0 +1,96 @@
+/**
+ * Block: action-bar
+ * Element: action-bar__element
+ * Modifier: action-bar--modifier
+ */
+
+.action-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  background-color: color(white);
+  z-index: $z-2;
+
+  .site-header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__section {
+    @include sans-serif-lite;
+    font-size: rem(12);
+    text-transform: uppercase;
+  }
+
+  &__social {
+    margin-left: 5px;
+  }
+
+  &__next {
+    background-color: color(primary, dark);
+    color: color(white);
+    width: 85px;
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    letter-spacing: 0.175em;
+    color: color(white);
+
+    &:hover {
+      color: color(white);
+    }
+
+    &--dark {
+      color: color(tertiary, med);
+    }
+  }
+
+  @include respond-to('up to sm') {
+    .social-share__item {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  @include respond-to('up to md') {
+
+    .social-share__icon--sms {
+      width: 23px;
+      height: 22px;
+    }
+
+    .social-share__item--print {
+      display: none;
+    }
+  }
+
+
+  @include respond-to('md and up') {
+    height: 65px;
+    left: auto;
+
+    &__next {
+      height: 65px;
+      line-height: 65px;
+    }
+
+    &__social {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+    .site-header__wrap {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .social-share__item--sms {
+      display: none;
+    }
+  }
+}

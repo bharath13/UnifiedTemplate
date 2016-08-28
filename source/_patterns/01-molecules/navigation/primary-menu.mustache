@@ -1,0 +1,28 @@
+{{#primary_menu}}
+<div class="menu-group menu-group__primary" data-js-component="menuAccordian" data-toggle-target=".menu-group__list-item" data-toggle-trigger=".menu-group__sub-menu-trigger">
+  <ul class="menu-group__list">
+    {{#menu_items}}
+      <li class="menu-group__list-item {{#sub_menu}}menu-group__list-item--with-menu{{/sub_menu}}">
+
+        <a href="{{url}}" class="menu-group__link {{#bold?}}menu__link--heavy{{/bold?}}">{{name}}</a>
+
+        {{#sub_menu}}
+          <span class="menu-group__sub-menu-trigger">
+            <svg class="menu-group__sub-menu-icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ svg_sprite_path  }}#icon-arrow-down"></use>
+            </svg>
+          </span>
+
+          {{#items}}
+            <ul class="menu-group__sub-menu">
+              <li class="menu-group__sub-menu-item"><a href="{{url}}" class="menu-group__link menu-group__sub-menu-link">{{name}}</a></li>
+            </ul>
+          {{/items}}
+
+        {{/sub_menu}}
+
+      </li>
+    {{/menu_items}}
+  </ul>
+</div>
+{{/primary_menu}}

@@ -1,0 +1,54 @@
+$button-vertical-padding: 10px;
+$button-horizontal-padding: 22px;
+
+$button-vertical-padding--sm: 10px;
+$button-horizontal-padding--sm: 15px;
+
+.btn {
+  @include sans-serif-lite;
+  display: inline-block;
+  padding-top: $button-vertical-padding;
+  padding-bottom: $button-vertical-padding;
+  padding-left: $button-horizontal-padding;
+  padding-right: $button-horizontal-padding;
+  border-radius: $btn-border-radius;
+  border: 0;
+  font-size: rem(16);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: color(white);
+  cursor: pointer;
+  background-color: color(primary, dark);
+  transition: background-color .250s ease-out,
+              color .250s ease-out;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: color(white);
+    background-color: darken(color(primary, dark), 8%);
+  }
+
+  &--sm {
+    padding-top: $button-vertical-padding--sm;
+    padding-bottom: $button-vertical-padding--sm;
+    padding-left: $button-horizontal-padding--sm;
+    padding-right: $button-horizontal-padding--sm;
+  }
+}
+
+
+.btn--centered {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include respond-to('sm and up') {
+  .btn {
+    &--sm {
+      padding-left: $button-horizontal-padding--sm;
+      padding-right: $button-horizontal-padding--sm;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+/**
+ * Icons
+ *
+ * Generic sizing for SVG Icons
+ * Not all icons may be defined here
+ * If they are used in a global space,
+ * then the width/height will be defined here
+ *
+ * EX: Site Navigation Menu or Search Icon
+ */
+
+
+.icon {
+  display: block;
+
+  &-menu {
+    width: 22px;
+    height: 15px;
+    color: color(primary, dark);
+  }
+
+  &-search {
+    width: 25px;
+    height: 25px;
+  }
+
+  &-close {
+    width: 26px;
+    height: 25px;
+  }
+
+  &-bug {
+    width: 35px;
+    height: 32px;
+  }
+
+  &-logo {
+    width: 144px;
+    height: 38px;
+  }
+
+  &-arrow-down-thick,
+  &-arrow-down {
+    width: 18px;
+    height: 10px;
+  }
+}

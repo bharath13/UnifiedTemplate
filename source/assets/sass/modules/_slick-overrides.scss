@@ -1,0 +1,21 @@
+/**
+ * Slick Slider Overrides
+ *
+ * Slick has some basic styles which are included
+ * with the plugin.
+ *
+ * While these work fine, we may need to override
+ * some of those base styles for specific use cases.
+ */
+
+
+
+
+// .slick-slide makes all images
+// `display: block`. In the case our
+// image isn't large enough to fill
+// the width of the gallery, we want to
+// center it.
+.slick-slide img {
+  margin: auto;
+}

@@ -1,0 +1,31 @@
+{{!
+*
+* Byline List Module
+*
+* @param string img     String of image url
+* @param string img_alt String of text for image alternate text
+* @param string text    String of text for title of related list item
+*
+* @param string url     String for url source, is optional.
+* @param string date    String of text to display date, is optional.
+*
+}}
+
+{{#byline}}
+  {{#url}}
+      <a class="byline" href="{{url}}" >
+        {{> atoms-byline-media }}
+        
+        {{> atoms-byline-text }}
+      </a>
+  {{/url}}
+
+  {{^url}}
+      <div class="byline">
+        {{> atoms-byline-media }}
+        
+        {{> atoms-byline-text }}
+      </div>
+  {{/url}}
+
+{{/byline}}

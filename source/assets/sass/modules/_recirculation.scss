@@ -1,0 +1,13 @@
+/**
+ * Block: recirculation
+ * Element: recirculation__element
+ * Modifier: recirculation--modifier
+ */
+
+.recirculation {
+    margin-bottom: 30px;
+
+    @include respond-to('sm and up') {
+      margin-bottom: 65px;
+    }
+}

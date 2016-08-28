@@ -1,0 +1,17 @@
+/**
+ * Block: subscribe-callout
+ * Element: subscribe-callout__element
+ * Modifier: subscribe-callout--modifier
+ */
+
+.subscribe-callout {
+  background-color: color(primary, dark);
+  color: color(white);
+  font-size: rem(14);
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+  letter-spacing: 0.05em;
+}

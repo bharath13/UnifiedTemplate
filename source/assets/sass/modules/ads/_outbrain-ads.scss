@@ -1,0 +1,70 @@
+/**
+ * Block: ad-outbrain
+ * Element: ad-outbrain__element
+ * Modifier: ad-outbrain--modifier
+ */
+
+.ad-outbrain {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    &__title {
+      @include sans-serif-lite;
+      margin-bottom: 10px;
+      font-size: rem(18);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: color(tertiary, extra-dark);
+    }
+
+    &__content {
+      margin-bottom: 10px;
+      font-size: rem(15);
+      color: color(body-text-color);
+    }
+
+    &__source {
+      @include sans-serif;
+      display: block;
+      font-size: rem(12);
+      color: color(tertiary, med);
+      text-transform: uppercase;
+    }
+
+    // Need to change this slightly
+    // as it's too tight of a grid gap
+    // for the ads
+
+    .AR_15.ob-widget {
+      .ob-p {
+        max-width: 33%;
+      }
+      .ob-widget-header{
+        width: initial;
+        margin: 0;
+        text-align: left;
+      }
+      .ob_what {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0;
+      }
+    }
+    @include respond-to('sm and up') {
+      &__title {
+        font-size: rem(20);
+      }
+      &__content {
+        margin-bottom: 20px;
+      }
+    }
+
+    // To do - get it fixed by outbrain
+    // .g-wrap {
+    //   text-align: center;
+    // }
+}

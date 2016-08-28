@@ -1,0 +1,42 @@
+/**
+ * Block: chicory
+ * Element: chicory__element
+ * Modifier: chicory--modifier
+ */
+
+.chicory {
+  @include clearfix;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  &__btn {
+    @include sans-serif-semibold;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    max-width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid color(secondary, med);
+    border-radius: 50px;
+    font-size: rem(20);
+    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-left: 32px;
+    padding-right: 32px;
+    color: color(secondary, med);
+    &:hover {
+        border: 2px solid color(secondary, dark);
+    }
+  }
+
+  &__label {
+    @include sans-serif;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1;
+    font-size: rem(14);
+    color: color(tertiary, lite);
+  }
+}

@@ -1,0 +1,112 @@
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * FONT FACE
+ *
+ * Define any @font-face declarations below.
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+
+$font-serif: "kepler-std-display", Georgia, Times, "Times New Roman", serif;
+$font-sans-serif: "sofia-pro", "Helvetica", "Arial", sans-serif;
+
+@mixin sans-serif-extra-lite() {
+    font-family: $font-sans-serif;
+    font-weight: 200;
+}
+
+@mixin sans-serif-extra-lite-italic() {
+    font-family: $font-sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+@mixin sans-serif-lite() {
+    font-family: $font-sans-serif;
+    font-weight: 300;
+}
+
+@mixin sans-serif-lite-italic() {
+    font-family: $font-sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@mixin sans-serif() {
+    font-family: $font-sans-serif;
+    font-weight: 300;
+}
+
+@mixin sans-serif-italic() {
+    font-family: $font-sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+@mixin sans-serif-medium() {
+    font-family: $font-sans-serif;
+    font-weight: 500;
+}
+
+@mixin sans-serif-medium-italic() {
+    font-family: $font-sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+@mixin sans-serif-semibold() {
+    font-family: $font-sans-serif;
+    font-weight: 600;
+}
+
+@mixin serif() {
+    font-family: $font-serif;
+    font-weight: 400;
+}
+
+@mixin serif-bold() {
+    font-family: $font-serif;
+    font-weight: 700;
+}
+
+@mixin serif-bold-italic() {
+    font-family: $font-serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+.body-sans {
+  @include sans-serif;
+  font-size: rem(20);
+
+  @include respond-to('sm and up') {
+    font-size: rem(18);
+  }
+}
+
+.body-sans-lite {
+  @include sans-serif-lite;
+  font-size: rem(20);
+
+  @include respond-to('sm and up') {
+    font-size: rem(18);
+  }
+}
+
+.text-display, .font-secondary {
+  @include serif;
+
+    strong {
+        @include serif-bold-italic;
+    }
+}
+
+.text-display-bold-italic {
+  @include serif-bold-italic;
+
+  strong {
+    font-weight: 700;
+  }
+}

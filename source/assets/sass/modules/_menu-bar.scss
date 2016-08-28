@@ -1,0 +1,170 @@
+/**
+ * Block: brand-header
+ * Element: brand-header__element
+ * Modifier: brand-header--modifier
+ */
+
+.menu-bar {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: color(white);
+  box-sizing: border-box;
+  z-index: $z-2;
+
+  .icon-search {
+    color: color(primary, dark);
+  }
+
+  .icon-menu {
+    color: color(primary, dark);
+  }
+
+  .icon-logo {
+    color: color(primary, dark);
+  }
+
+  &__menu {
+    @include vertically-centered(absolute);
+    width: 22px;
+    height: 15px;
+    cursor: pointer;
+    left: 0;
+
+    &--solid {
+      @include respond-to('md and up') {
+        left: 0;
+        top: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: $global-border-radius;
+        border: 1px solid color(tertiary, lite);
+        background-color: color(white);
+        transform: translateY(0);
+
+        .icon-menu {
+          color: color(primary, dark);
+        }
+      }
+    }
+  }
+
+  &__search--trigger {
+    // @include vertically-centered(absolute);
+    position: absolute;
+    z-index: $z-2;
+    cursor: pointer;
+    right: 10px;
+    bottom: 4px;
+    top: initial;
+    height: 50px;
+    line-height: 50px;
+    &.menu-bar__search--alt {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 250ms $global-easing,
+                  opacity 250ms $global-easing;
+
+      &.is-visible {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s ease-out 0s,
+                    opacity 250ms $global-easing;
+
+      }
+    }
+  }
+
+  &__search-label {
+    display: none;
+    font-size: rem(12);
+    letter-spacing: 0.1em;
+    color: #7C8a8a;
+    text-transform: uppercase;
+  }
+
+
+  @include respond-to('up to md') {
+    &__menu {
+      left: 20px;
+    }
+
+    &__search--trigger {
+      right: 10px;
+    }
+  }
+
+  @include respond-to('md and up'){
+    background-color: color(white);
+    padding-left: 0;
+    padding-right: 0;
+    
+    &__menu {
+
+      left: 10px;
+      bottom: 10px;
+      top: initial;
+    }
+    
+    &__search {
+      height: 65px;
+    }
+
+    &__search-label {
+      display: inline-block;
+    }
+
+    &__search--trigger {
+      &-text,
+      .icon-search {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    
+    .site-nav {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-top: 1px solid #C9D5D5;
+      height: 50px;
+      .site-nav__list {
+        height: 50px;
+      }
+      .site-nav__link {
+        height: 50px;
+        line-height: 50px;
+      }
+    }
+
+    .icon-logo,
+    .icon-menu,
+    .icon-search {
+      color: color(primary, dark);
+    }
+
+    .icon-logo {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  @include respond-to('xl and up'){
+     &__menu {
+      left: 30px;
+    }
+    &__search--trigger {
+      right: 30px;
+    }
+    .icon-logo {
+      width: 145px;
+      height: 38px;        
+    }
+  }
+
+}

@@ -1,0 +1,126 @@
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * HELPERS
+ *
+ * Define any custom site-wide helper classes below. Utility classes such as
+ * .centered or .hidden are good candidates to live in this file.
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+
+
+/**
+ * Responsive Visibility
+ */
+
+// Creates all "hide/show-at-*" sizes based on our
+// breakpoints map.
+@each $bp-size, $bp-value in $breakpoints-map {
+  @media (min-width: #{$bp-value}) {
+    .hide-at-#{$bp-size} {
+      display: none !important;
+    }
+
+  .show-at-#{$bp-size} {
+      display: block !important;
+    }
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+[class*="show-at"] {
+	display: none;
+}
+
+
+/**
+ * Screen Reader Classe
+ */
+ .sr-only {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0,0,0,0);
+   border: 0;
+ }
+
+
+.text-center {
+  text-align: center;
+}
+
+.is-fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-zeus !important;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.is-disabled {
+  cursor: default;
+}
+
+// apply to html when overlay is displayed
+// covering content such as when side nav is open
+.has-fixed-overlay {
+  height: 100%;
+  overflow: hidden;
+}
+
+.text-xs {
+  font-size: rem(12);
+}
+
+.text-sm {
+  font-size: rem(14);
+}
+
+.text-lite {
+  color: color(tertiary, med);
+}
+
+.text-dark {
+  color: color(tertiary, dark);
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+
+
+// Float Hepers
+.floated-right {
+  float: right;
+}
+
+.floated-left {
+  float: left;
+}
+
+
+// Source Link (usually only on printed pages)
+.content-source {
+  @include sans-serif-medium;
+  display: block;
+  margin-top: 25px;
+  font-size: rem(14);
+  color: color(tertiary, dark);
+}

@@ -1,0 +1,40 @@
+/**
+ * Block: lists
+ * Element: lists__element
+ * Modifier: lists--modifier
+ */
+
+.list {
+  &--no-style {
+    @include list-reset;
+  }
+
+  &--has-divider {
+    @include block-mod() {
+      &__item {
+        border-bottom: 1px solid color(tertiary, extra-lite);
+        padding-top:  10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  &--small {
+    @include block-mod {
+      &__item {
+        font-size: rem(16);
+      }
+    }
+  }
+}
+
+.titled-list {
+  .list__title {
+    @include sans-serif-semibold;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: color(tertiary, med);
+    font-size: rem(20);
+  }
+}

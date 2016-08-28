@@ -1,0 +1,32 @@
+/**
+ * Block: tag-set
+ * Element: tag-set__element
+ * Modifier: tag-set--modifier
+ */
+
+.tag-set {
+  @include clearfix;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    @include sans-serif;
+    float: left;
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid color(secondary, dark);
+    border-radius: 4px;
+    font-size: rem(14);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

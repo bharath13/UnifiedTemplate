@@ -1,0 +1,22 @@
+{
+  "tag_set": {
+    "tags": [
+      {
+        "text": "Pasta",
+        "url": "http:\/\/foo.com"
+      },
+      {
+        "text": "Shrimp",
+        "url": "http:\/\/foo.com"
+      },
+      {
+        "text": "Mushrooms",
+        "url": "http:\/\/foo.com"
+      },
+      {
+        "text": "Easy Dinners",
+        "url": "http:\/\/foo.com"
+      }
+    ]
+  }
+}

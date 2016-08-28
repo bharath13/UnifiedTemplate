@@ -4,14 +4,32 @@
     <title>{{ title }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
+    <meta property="og:site_name" content="Cooking Light" />
+    <meta property="og:title" content="{{#title}}{{title}}{{/title}}{{^title}}Healthy Grilled Burgers - Cooking Light{{/title}}" />
+    <meta property="og:url" content="{{#og:url}}{{og:url}}{{/og:url}}{{^og:url}}http://www.cookinglight.com/food/everyday-menus/healthy-grilled-burgers{{/og:url}}" />
+    <meta property="og:description" content="Find juicy, grilled burgers that are also good for you: not only beef, but salmon, lamb, and turkey, too." />
+    <meta property="og:image" content="http://img1.cookinglight.timeinc.net/sites/default/files/image/2012/06/1206p80-cheddar-cheeseburgers-caramelized-shallots-m.jpg" />
+    <link rel="stylesheet" href="../../assets/css/main.css?{{ cacheBuster }}" media="all" />
+    <script src="../../assets/js/lib/modernizr.min.js"></script>
     
-    <link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?{{ cacheBuster }}" media="all" />
     
+    <!-- patternLabHead & Patternlab specific CSS-->
+    <!-- DO NOT REMOVE FROM PATTERLAB -->
+    <!-- REMOVE FOR PRODUCTION -->
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     {{{ patternLabHead }}}
     <!-- End Pattern Lab -->
-  
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?{{ cacheBuster }}" media="all" />
+
+
+    <!-- TYPE KIT INTEGRATION -->
+    <!-- REPLACE IN ATOM -->
+    {{> atoms-typekit-integration }}
+    
   </head>
   <body class="{{ bodyClass }}">
-    
+
+  <!-- Begin Tealium Integration -->
+
+
+  <!-- End Tealium Integration -->

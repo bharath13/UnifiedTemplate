@@ -1,0 +1,133 @@
+
+
+@media print {
+  @import '../base/settings';
+  @import '../grid/base-grid';
+  // Set up grid for print styles
+  @each $bp-size, $bp-value in $breakpoints-map {
+    @for $i from 1 through $column-count {
+       %g-span-#{$bp-size}-#{$i},
+       .g-span-#{$bp-size}-#{$i} {
+         width: span( $i of 12);
+        }
+    }
+  }
+
+  body {
+    background: color(white);
+    margin-top: 25pt;
+    margin-left: 50pt;
+    margin-right: 50pt;
+  }
+
+  .icon-logo {
+    margin-bottom: 5pt;
+    color: color(body-text-color) !important;
+  }
+
+  a:link,
+  a:visited {
+    color: color(tertiary, extra-dark);
+    background: transparent;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .content-source {
+    // margin-top: 25pt;
+    text-decoration: none !important;
+  }
+
+  .recipe-print__header {
+    padding-bottom: 0;
+  }
+
+  .article__body a:link:after,
+  .article__body a:visited:after {
+    content: " (" attr(href) ") ";
+  }
+
+  .ad,
+  .byline__date,
+  .recipe-print__top,
+  .media,
+  .media > img,
+  .article__media {
+    display: none;
+  }
+
+  .article-section-title,
+  .custom-list--lg .custom-list__item:before {
+    font-size: 16.5pt;
+  }
+
+  .article-title,
+  .article-section-title {
+    color: color(tertiary, extra-dark);
+  }
+
+  .article-title {
+    line-height: 1;
+  }
+
+  .list__title {
+    font-size: 12pt;
+  }
+
+  .recipe-meta,
+  .list--has-divider .list__item {
+    border-bottom-color: color(body-text-color);
+  }
+
+  .custom-list--serif .custom-list__item:before {
+    color: color(body-text-color);
+  }
+
+  .recipe-instructions__list-item {
+    margin-bottom: 15pt;
+  }
+
+  .recipe-list .list__item {
+    line-height: 1.3;
+  }
+
+  .article__body,
+  .article__body p,
+  .recipe-list .list__item,
+  .article-copyright,
+  .recipe-instructions__content,
+  .recipe-meta__text,
+  .recipe-meta__label {
+    font-size: 10pt;
+  }
+
+  .recipe-meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 16pt;
+  }
+
+  .recipe-meta__section {
+    min-width: 130pt;
+  }
+
+  .recipe-meta__label,
+  .recipe-meta__text {
+    display: block;
+  }
+
+  .recipe-meta__label {
+    color: color(tertiary, extra-dark);
+  }
+
+  .custom-list__item:before {
+    min-width: 15pt !important;
+  }
+
+  .recipe-instructions__content {
+    width: calc(100% - 15pt) !important;
+    padding-left: 0;
+  }
+
+}

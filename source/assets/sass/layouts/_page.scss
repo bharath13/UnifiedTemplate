@@ -1,0 +1,34 @@
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * LAYOUT
+ *
+ * Major layout container components (i.e. header, main content containers,
+ * footer, sidebar/aside)
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+
+/**
+ * Apply to the element that will be the outmost container of site content to
+ * contain the width to $page-container-width
+ */
+.page-container {
+  @include clearfix;
+  @include page-container;
+
+  &--wide {
+    @include clearfix;
+    @include page-container;
+    max-width: 1400px;
+  }
+
+  &--narrow {
+    max-width: $page-container-width--small;
+  }
+
+  @include respond-to('sm and up') {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

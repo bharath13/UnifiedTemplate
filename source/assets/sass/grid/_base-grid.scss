@@ -1,0 +1,112 @@
+$generate-grid-classes: true;   // Determines whether or not we output a grid in CSS
+$fixed-width-columns: 3, 4, 8, 9;  // Enables generation of static sidebar classes
+
+$container-width: 1260px;
+$column-count: 12;
+$gutter-ratio: .40; // Represented as a percentage of column width.
+
+$custom-grid-settings: (
+  container: $container-width,
+  columns: $column-count,
+  gutters: $gutter-ratio,
+);
+
+$susy: (
+    flow: ltr,
+    math: fluid,
+    output: float,
+    gutter-position: inside,
+    container: auto,
+    container-position: center,
+    columns: 12,
+    gutters: .25,
+    global-box-sizing: content-box,
+    last-flow: to,
+    debug: (
+      image: show,
+      color: rgba(#66f, .25),
+      output: background,
+      toggle: top right,
+    ),
+    use-custom: (
+      background-image: true,
+      background-options: false,
+      box-sizing: true,
+      clearfix: false,
+      rem: true,
+    )
+);
+
+$susy: map-merge($susy, $custom-grid-settings);
+
+@if $generate-grid-classes {
+
+  @for $i from 1 through $column-count {
+    %g-span-xs-#{$i},
+    .g-span-xs-#{$i} {
+      width: span( $i of 12);
+    }
+  }
+
+  @each $bp-size, $bp-value in $breakpoints-map {
+     @media (min-width: #{$bp-value}) {
+       @for $i from 1 through $column-count {
+         %g-span-#{$bp-size}-#{$i},
+         .g-span-#{$bp-size}-#{$i} {
+           width: span( $i of 12);
+          }
+       }
+    }
+  }
+}
+
+@if $fixed-width-columns {
+  [class*="--has-sw-sidebar"],
+  [class*="--is-sw-sidebar"] {
+    width: 100%;
+  }
+
+  @media (min-width: #{map-get($breakpoints-map, sm)}) {
+    @each $column in $fixed-width-columns {
+      .g-span-#{$column}--has-sw-sidebar {
+
+        width: calc(100% - (#{$container-width} / #{$column-count} * (#{$column-count} -  #{$column} ) ) );
+      }
+
+      .g-span-#{$column}--is-sw-sidebar {
+        width: ($container-width / $column-count * $column);
+      }
+    }
+  }
+}
+
+[class*="g-span-"] {
+  @include gutters();
+  float: left;
+  box-sizing: border-box;
+}
+
+.g-wrap {
+  @include clearfix();
+  margin-left: - gutter();
+  margin-right: - gutter();
+  clear: both;
+}
+
+
+// Documentation only classes
+// Should not be used in production
+// Just to show how the grid works
+.g-inner {
+  background-color: salmon;
+}
+
+.g-nested {
+  background-color: blue;
+  color: white;
+}
+
+.g-wrap-space {
+  margin-bottom: 25px;
+  background-color: gold;
+}

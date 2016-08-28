@@ -1,0 +1,225 @@
+/**
+ * Block: article
+ * Element: article__element
+ * Modifier: article--modifier
+ */
+
+// NOTE: All type related styles live in `article-type.scss`
+$article-ad-spacing: 200px;
+
+
+.article {
+  margin-bottom: 25px;
+
+  /*-------------------------------------------- */
+  /** Styles */
+  /*-------------------------------------------- */
+  &__header {
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid color(tertiary, lite);
+
+    &-wrap {
+      position: relative;
+
+      .ad {
+        &,
+        &-text {
+          display: inline-block;
+        }
+
+        &-wrapper {
+          margin-bottom: 10px;
+        }
+
+        &-text {
+          margin-right: 10px;
+        }
+      }
+
+      @include respond-to('md and up') {
+
+        &.has-sponsor {
+          .article-title {
+            max-width: calc(100% - #{$article-ad-spacing});
+          }
+        }
+
+
+        .ad {
+          &-wrapper {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin-bottom: 0;
+          }
+
+          &-text {
+            display: block;
+            margin-bottom: 5px;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__lead {
+    margin-top: 1em;
+    margin-bottom: .5em;
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    overflow: hidden;
+
+    &-share {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  &__category {
+    color: color(tertiary, dark);
+  }
+
+  &__category {
+    color: color(secondary, dark);
+  }
+
+  &__media {
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    &--hero {
+      margin-bottom: 20px;
+      .media__credit {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__media-credit {
+    @include sans-serif-lite;
+    color: color(tertiary, med);
+    font-size: rem(12);
+    letter-spacing: 0.10em;
+  }
+
+  &__body {
+    position: relative;
+
+    &:last-of-type:after {
+      content: "";
+      display: block;
+      background-color: color(tertiary, lite);
+    }
+
+    // Tombstone for article end.
+    > p:last-child:after {
+      @extend %tombstone;
+      content: "";
+      position: relative;
+      display: inline-block;
+      top: 1px; // This is to nudge to fit on text baseline
+      margin-left: 5px;
+    }
+  }
+
+  &__media {
+    &--stretch {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+  }
+
+  &__social-share {
+    position: absolute;
+  }
+
+  /*-------------------------------------------- */
+  /** Media Queries */
+  /*-------------------------------------------- */
+  @include respond-to('up to sm') {
+    $article-spacing: 10px;
+
+    &__media {
+      margin-left: - $article-spacing;
+      margin-right: -  $article-spacing;
+    }
+  }
+
+  @include respond-to('up to md') {
+    $article-spacing: 15px;
+
+    &__media {
+      margin-left: - $article-spacing;
+      margin-right: -  $article-spacing;
+    }
+
+    &__media--hero {
+      margin-left: - $article-spacing;
+      margin-right: - $article-spacing;
+    }
+
+    &__meta {
+      clear: both;
+    }
+  }
+  
+  @include respond-to('sm and up') { 
+    &__meta {
+      justify-content: space-between;
+      border-bottom: 1px solid color(tertiary, extra-lite);
+      border-top: 1px solid color(tertiary, extra-lite);
+      padding: 7px 0;
+      margin-bottom: 15px;
+      &-share {
+        width: initial;
+        margin: 0;
+      }
+    }
+  }
+
+  @include respond-to('md and up') {
+    $article-spacing: 90px;
+
+    // root article margin
+    margin-bottom: 50px;
+
+    &__body {
+      padding-left: $article-spacing;
+      padding-right: 0;
+    }
+
+    &__social-share {
+      left: 0;
+    }
+
+    &__media--pl {
+      float: left;
+      max-width: 300px;
+      margin-right: 30px;
+    }
+
+    &__media--pr {
+      float: right;
+      max-width: 300px;
+      margin-left: 30px;
+    }
+
+    &__media--stretch {
+      margin-left: -$article-spacing;
+      margin-right: 0;
+    }
+    &__meta {
+      margin-bottom: 20px;
+    }
+  }
+}

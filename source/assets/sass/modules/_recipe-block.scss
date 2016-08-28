@@ -1,0 +1,94 @@
+/**
+ * Block: recipe-block
+ * Element: recipe-block__element
+ * Modifier: recipe-block--modifier
+ */
+
+.recipe-section {
+  @include clearfix;
+}
+
+.recipe-block {
+  @include span(12);
+  position: relative;
+  text-align: center;
+
+  &__category,
+  &__cta {
+    @include sans-serif-semibold;
+    font-size: rem(15);
+    text-transform: uppercase;
+  }
+
+  &__category {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    color: color(tertiary, med);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid red;
+  }
+
+  &__cta {
+    display: inline-block;
+    color: color(secondary, dark);
+    line-height: 1.2;
+
+    &:after {
+      content: "";
+    }
+  }
+
+  &__title {
+    @include sans-serif-extra-lite;
+    margin-bottom: 5px;
+    font-size: rem(18);
+    line-height: 1.2;
+  }
+
+  &__media-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: sub;
+  }
+
+  @include respond-to('sm and up') {
+    & {
+      @include span(3 of 12);
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    & + & {
+      &:before {
+        content: "+";
+        position: absolute;
+        left: -10px;
+        top: 75px;
+        font-size: rem(40);
+        color: color(primary, med);
+      }
+    }
+
+    &:last-child {
+      &:before {
+        content: "=";
+      }
+    }
+  }
+
+  @include respond-to('md and up') {
+    &__title {
+      font-size: rem(26);
+      margin-bottom: 5px;
+    }
+
+
+
+  }
+}

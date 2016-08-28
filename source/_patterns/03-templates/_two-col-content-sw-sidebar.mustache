@@ -1,0 +1,46 @@
+{{$ top}}
+   {{> organisms-site-header }} 
+{{/ top}}
+
+<div class="page-container {{#narrow_layout}}page-container--small{{/narrow_layout}}">
+  <main class="main-content main-content--has-sw-sidebar"  role="main">
+    {{$ main_header }}
+      {{{page.main_header}}}
+    {{/ main_header}}
+
+    {{$ main_top }}
+      {{{page.main_top}}}
+    {{/ main_top}}
+
+    <div class="g-wrap">
+      <div class="g-span-xs-12 g-span-md-4">
+        <div class="recipe__body-aside">
+          {{$ main_left }}
+            {{{page.main_left}}}
+          {{/ main_left}}
+        </div>
+      </div>
+
+      <div class="g-span-xs-12 g-span-md-8">
+        {{$ main_right }}
+          {{{page.main_right}}}
+        {{/ main_right}}
+      </div>
+    </div>
+
+    {{$ main_bottom }}
+      {{{page.main_bottom}}}
+    {{/ main_bottom }}
+
+  </main>
+  <aside class="sidebar sidebar--is-sw">
+    {{$ sidebar_content }}
+      <h2>Sidebar Area</h2>
+    {{/ sidebar_content }}
+  </aside>
+</div>
+
+{{#site_footer}}
+  {{> organisms-full-width-subscribe }}
+  {{> organisms-site-footer }}
+{{/site_footer}}

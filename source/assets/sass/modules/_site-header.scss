@@ -1,0 +1,416 @@
+/**
+ * Block: site-header
+ * Element: site-header__element
+ * Modifier: site-header--modifier
+ */
+$leaderboard-spacing: 120px;
+$opacity-animation: opacity 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$menu-bar-height: 66px;
+
+.site-header {
+  position: relative;
+  z-index: $z-8;
+  margin-bottom: 10px;
+  background-color: color(white);
+
+  &--alt {
+    &,
+    .site-header__bar,
+    .site-header__wrap,
+    .menu-bar {
+      background-color: transparent;
+    }
+
+    .menu-bar {
+      .icon-logo,
+      .icon-menu,
+      .icon-search {
+        color: color(primary, dark);
+      }
+    }
+
+    .site-header__logo,
+    .icon-logo {
+      width: 175px;
+      height: 46px;
+
+      @include respond-to('md and up') {
+        width: 358px;
+        height: 83px;
+        transform: translateY(0);
+        top: 0;
+      }
+    }
+
+    .glance-bar {
+       border-bottom: 0;
+    }
+
+    .site-header__bar {
+      border-bottom: 0;
+    }
+
+    .search-bar--in-site-header {
+      border-top: 1px solid color(primary, lite);
+
+      .form-btn {
+        border-top: 0;
+      }
+    }
+  }
+
+  &__bar {
+    position: relative;
+    z-index: $z-1;
+    background-color: color(white);
+    border-bottom: 1px solid #c9d5d5;
+
+    &.is-hidden {
+      height: 0;
+      visibility: visible;
+      transition: height 0s $global-easing $global-animation-timing,
+                  $opacity-animation;
+    }
+
+    &.is-active {
+      height: $menu-bar-height;
+      border: auto;
+      opacity: 1;
+      transition: $opacity-animation;
+
+    }
+  }
+
+  &__menu-bar {
+    z-index: $z-zeus;
+    
+
+    &.headroom--unpinned .action-bar,
+    &.headroom--not-top  {
+      opacity: 1;
+      visibility: visible;
+      transition: visibility 0s ease-out 0s,
+                        $opacity-animation;
+    }
+
+    &.headroom--not-top {
+      transform: translateY(-50px);
+      transition: all 1s ease;
+      .site-header__logo,
+      .glance-bar__section {
+        opacity: 0;
+        visibility: hidden;
+      }
+      &.headroom--pinned {
+        transform: translateY(0px);
+        .site-header__social,
+        .site-header__next {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    
+    @include respond-to('sm and up') {
+        &.headroom--not-top {
+          transform: translateY(0px);
+          .site-header__logo,
+          .glance-bar__section {
+            opacity: 1;
+            visibility: visible;
+          }
+          .site-header__social,
+          .site-header__next,
+          .site-header__title  {
+            opacity: 0;
+            visibility: hidden;
+          }
+          &.headroom--pinned {
+            .site-header__logo,
+            .glance-bar__section {
+              opacity: 0;
+              visibility: hidden;
+            }
+            .site-header__social,
+            .site-header__next,
+            .site-header__title {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+    }
+
+    @include respond-to('md and up') {
+      &.headroom--not-top {
+        .menu-bar {
+          height: 50px;
+        }
+        
+        .site-header__title {
+          opacity: 1;
+          visibility: visible;
+          transition: $opacity-animation;
+        }
+
+        &.headroom--unpinned {
+          .site-nav,
+          .menu-bar__search--trigger {
+            opacity: 0;
+            visibility: hidden;
+          }
+          .site-header__title {
+            left: 240px;
+          }
+
+          .site-header__social,
+          .site-header__next {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+
+        &.headroom--pinned {
+          .site-header__social,
+          .site-header__next,
+          .site-header__title {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+
+      }
+      .site-header__next {
+        height: 50px;
+        line-height: 50px;
+      }
+
+    }
+  
+
+    @include respond-to('lg and up') {
+      &.headroom--not-top {
+        &.headroom--pinned {
+          .site-header__logo {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+
+
+    @include respond-to('xl and up') {
+      &.headroom--not-top {
+        &.headroom--unpinned {
+          .site-header__title {
+            left: 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+
+  &__wrap {
+    @include page-container;
+  }
+  
+  &__social {
+    @include vertically-centered(absolute);
+    left: 42px;
+    right: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+    .social-share {
+      display: flex;
+      justify-content: center;
+      &:after {
+        content: initial;
+      }
+      &__item {
+        width: 32px;
+        height: 32px;
+        &+.social-share__item {
+          margin-left: 5px;
+        }
+      }
+    }
+
+    // HACK TO BREAK PRECEDENCE
+    // FIND SOMETHING LESS QUESTIONABLE
+    &.menu-bar__social{
+      margin-left: 0;
+    }
+  }
+  
+  @include respond-to('sm and up') {
+    margin-bottom: 20px;
+    &__social {
+      @include vertically-centered(absolute);
+      left: initial;
+      right: 125px;
+    }
+  }
+  
+  &__next {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+  }
+
+  &__subscribe {
+    @include vertically-centered(absolute);
+    right: 10px;
+    transition: all .5s ease;
+  } 
+
+  &__logo {
+    @include vertically-centered(absolute);
+    top: 54%;
+    left: 0;
+    right: 0;
+    width: 144px;
+    height: 38px;
+    color: color(white);
+    transition: all .5s ease;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @include vertically-centered(absolute);
+    opacity: 0;
+    left: 60px;
+    // Space is made up from
+    // 115px + 50px for logo
+    // 32 for menu icon
+    // 323 for social share
+    // and a little extra padding to create visual space
+    // between title and social share
+    width: calc(100% - 380px);
+    font-size: rem(16);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    top: 49%;
+  }
+
+  .menu-bar__search--trigger {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+  }
+
+
+  &.has-glance-bar {
+    .menu-bar__search {
+      position: absolute;
+
+      top: 90px;
+
+      @include respond-to('sm and up') {
+        top: 158px;
+      }
+    }
+  }
+
+  .icon-logo {
+    color: color(white);
+  }
+
+  .action-bar {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s ease-out .250s,
+                      $opacity-animation;
+  }
+
+  @include respond-to('up to md') {
+    &--alt {
+      margin-bottom: 0;
+
+      .menu-bar {
+        height: 65px;
+        background-color: color(white);
+      }
+
+      .site-header__menu-bar {
+        border-bottom: 1px solid color(primary, lite);
+      }
+    }
+
+    &__wrap {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @include respond-to('md and up') {
+    & {
+      margin-bottom: 13px;
+    }
+
+    &--alt {
+      padding-top: 25px;
+      padding-bottom: 25px;
+
+      .site-header__logo,
+      .icon-logo {
+        width: 358px;
+        height: 83px;
+        transform: translateY(0);
+        top: 0;
+      }
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
+
+    &__bar {
+      border-bottom: 1px solid color(tertiary, lite);
+    }
+
+    &__logo {
+      width: 145px;
+      height: 38px;
+      left: 48px;
+      right: auto;
+    }
+    
+    &__subscribe { 
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .icon-logo {
+      color: color(primary, dark);
+    }
+
+    .menu-bar__search--trigger {
+      opacity: 1;
+      visibility: visible;
+      transition: all .5s ease;
+      bottom: 0;
+    }
+  }
+
+  @include respond-to('xl and up') { 
+    &__logo {
+      width: 1260px;
+      position: relative;
+      left: auto;
+    }
+  }
+}
