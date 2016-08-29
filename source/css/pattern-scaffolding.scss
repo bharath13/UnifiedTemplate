@@ -1,0 +1,130 @@
+/**
+ * This stylesheet is for styles you want to include only when displaying demo
+ * styles for grids, animations, color swatches, etc.
+ * These styles will not be your production CSS.
+ */
+@import '../../node_modules/susy/sass/susy';
+@import '../assets/sass/vendor/memo/memo';
+@import '../assets/sass/vendor/breakpoint/breakpoint';
+
+
+
+@import '../assets/sass/base/settings';
+@import '../assets/sass/base/z-index';
+@import '../assets/sass/utils/variables';
+@import '../assets/sass/utils/functions';
+@import '../assets/sass/utils/mixins';
+@import '../assets/sass/base/breakpoints';
+// @import '../assets/sass/base/font-face';
+@import '../assets/sass/base/colors';
+@import '../assets/sass/base/sprite';
+
+#sg-patterns {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  max-width: 100%;
+  padding: 0 0.5em;
+}
+
+.demo-animate {
+  background: #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sg-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.sg-colors h3 {
+  width: 100%;
+}
+
+.sg-colors li {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  padding: 0.3em;
+  margin: 0 0.5em 0.5em 0;
+  min-width: 5em;
+  max-width: 14em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.sg-swatch {
+  display: block;
+  height: 10em;
+  margin-bottom: 0.3em;
+  border-radius: 5px;
+  &__primary-dark{
+    background: color(primary, dark);
+  }
+  &__primary-med{
+    background: color(primary, med);
+  }
+  &__primary-lite{
+    background: color(primary, lite);
+  }
+  &__primary-extra-lite{
+    background: color(primary, extra-lite);
+  }
+  &__primary-dark{
+    background: color(primary, dark);
+  }
+  &__primary-med{
+    background: color(primary, med);
+  }
+  &__primary-lite{
+    background: color(primary, lite);
+  }
+  &__primary-extra-lite{
+    background: color(primary, extra-lite);
+  }
+  &__secondary-dark{
+    background: color(secondary, dark);
+  }
+  &__secondary-med{
+    background: color(secondary, med);
+  }
+  &__secondary-lite{
+    background: color(secondary, lite);
+  }
+  &__tertiary-extra-dark {
+    background: color(tertiary, extra-dark);
+  }
+  &__tertiary-dark {
+    background: color(tertiary, dark);
+  }
+  &__tertiary-med {
+    background: color(tertiary, med);
+  }
+  &__tertiary-lite {
+    background: color(tertiary, lite);
+  }
+  &__tertiary-extra-lite {
+    background: color(tertiary, extra-lite);
+  }
+  &__tertiary-ultra-lite {
+    background: color(tertiary, ultra-lite);
+  }
+}
+
+.sg-label {
+  font-size: 90%;
+  line-height: 1;
+}
+
+.sg-pattern-category-title a {
+  color: #333;
+}

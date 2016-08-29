@@ -6,7 +6,8 @@ module.exports = {
             sourceMap: true
         },
         files: [
-            {src: config.paths.sass.main.sass, dest: config.paths.css.main}
+            {src: config.paths.sass.main.sass, dest: config.paths.css.main},
+            {src: config.paths.patternScaffolding.src, dest: config.paths.patternScaffolding.dest}
         ]
     },
 

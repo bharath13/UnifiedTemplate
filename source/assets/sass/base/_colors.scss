@@ -31,21 +31,21 @@ $colors: (
 	    snapchat: #FFFC00
 	),
 	primary: (
-		dark: #F26457,
-		med: #F28379,
-		lite: #F7AB9C,
-		extra-lite: #FFECE6
+		dark: #5C9497, 
+		med: #8EBABD, // MAIN PRIMARY
+		lite: #C1DDDE,
+		extra-lite: #EBF5F5
 	),
 	secondary: (
-		dark: #3D9982,
-		med: #52CCAD,
-		lite: #ADEFDE
+		dark: #992E99,
+		med: #AF4AAF, // MAIN SECONDARY
+		lite: #CC74CC
 	),
 	tertiary: (
-		extra-dark: #171A1A,
-		dark: #4C5454,
-		med: #7E8C8C,
-		lite: #C0D1D1,
+		extra-dark: #5D5D66,
+		dark: #7A7A80,
+		med: #99999C, // MAIN TERTIARY
+		lite: #C0C0C1,
 		extra-lite: #DAE6E6, //subscribe background
 		ultra-lite: #F0F2F2 //footer and media background
 	)
@@ -58,7 +58,7 @@ $colors: (
 
 
  $gray: color(tertiary, med);
- $brand-primary: color(primary, dark);
+ $brand-primary: color(primary, med);
  $brand-secondary: color(secondary, med);
  $brand-tertiary: color(tertiary, med);
 

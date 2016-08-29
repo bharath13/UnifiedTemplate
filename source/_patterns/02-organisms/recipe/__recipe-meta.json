@@ -1,0 +1,23 @@
+{
+  "recipe_meta": {
+    "sections": [
+      {
+        "label": "time",
+        "schema": "totalTime",
+        "text": "22 Minutes",
+        "ISOformat": "PT22M"
+      },
+      {
+        "label": "Active Time",
+        "schema": "cookTime",
+        "text": "15 Minutes",
+        "ISOformat": "PT15M"
+      },
+      {
+        "label": "Yield",
+        "schema": "recipeYield",
+        "text": "6 (serving size: 1 1/3 cups)"
+      }
+    ]
+  }
+}

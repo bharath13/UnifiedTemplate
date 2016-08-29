@@ -10,16 +10,12 @@
   height: 50px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: color(white);
+  background-color: $brand-primary;
   box-sizing: border-box;
   z-index: $z-2;
 
-  .icon-search {
-    color: color(primary, dark);
-  }
-
   .icon-menu {
-    color: color(primary, dark);
+    color: black;
   }
 
   .icon-logo {
@@ -83,7 +79,7 @@
     display: none;
     font-size: rem(12);
     letter-spacing: 0.1em;
-    color: #7C8a8a;
+    color: color(black);
     text-transform: uppercase;
   }
 
@@ -99,12 +95,10 @@
   }
 
   @include respond-to('md and up'){
-    background-color: color(white);
     padding-left: 0;
     padding-right: 0;
     
     &__menu {
-
       left: 10px;
       bottom: 10px;
       top: initial;
@@ -145,7 +139,7 @@
     .icon-logo,
     .icon-menu,
     .icon-search {
-      color: color(primary, dark);
+      color: color(black);
     }
 
     .icon-logo {

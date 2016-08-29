@@ -39,6 +39,11 @@ module.exports = {
                 css: getSourceAssetPath('css/main.css'),
                 cssmin: getSourceAssetPath('css/main.min.css')
             }
+        },
+
+        patternScaffolding: {
+          src: './source/css/pattern-scaffolding.scss',
+          dest: './public/css/pattern-scaffolding.css'
         }
     },
     /**
@@ -52,7 +57,7 @@ module.exports = {
     browserSyncWatchFiles: [
       'public/**/*',
       '!public/styleguide/**/*'
-    ]
+    ],
 };
 
 /**

@@ -333,7 +333,7 @@
       "article_meta" : {
         "byline" : {
           "url": "http://example.com",
-          "img": "http://placehold.it/45x45",
+          "img": "http://placehold.it/45x45?text=test!",
           "alt": "This is alternate text",
           "text": "Eva Gonzalez",
           "date": "June, 6, 2016",
@@ -387,7 +387,7 @@
           "credit" : "Christopher Testani"
         }, 
         "hero" : {
-          "src": "http://placehold.it/900x694",
+          "src": "http://placehold.it/900x694?text=test!",
           "alt": "This is some alt text for the image"
         }
       }
@@ -471,7 +471,7 @@
           {
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis velit aliquam repellat sit sint at unde, quaerat quae laboriosam error fugit explicabo suscipit voluptatem deserunt. Pariatur officiis dignissimos voluptatibus, veritatis.",
             "media" : {
-              "src": "http://placehold.it/900x694",
+              "src": "http://placehold.it/900x694?text=test!",
               "alt": "This is some alt text for the image",
               "credit": {
                 "credit" : "Image credit text"
@@ -481,7 +481,7 @@
           {
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis velit aliquam repellat sit sint at unde, quaerat quae laboriosam error fugit explicabo suscipit voluptatem deserunt. Pariatur officiis dignissimos voluptatibus, veritatis.",
             "media" : {
-              "src": "http://placehold.it/900x694",
+              "src": "http://placehold.it/900x694?text=test!",
               "alt": "This is some alt text for the image",
               "credit": {
                 "credit" : "Image credit text"
@@ -499,7 +499,7 @@
           {
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis velit aliquam repellat sit sint at unde, quaerat quae laboriosam error fugit explicabo suscipit voluptatem deserunt. Pariatur officiis dignissimos voluptatibus, veritatis.",
             "media" : {
-              "src": "http://placehold.it/900x694",
+              "src": "http://placehold.it/900x694?text=test!",
               "alt": "This is some alt text for the image",
               "credit": {
                 "credit" : "Image credit text"
@@ -509,7 +509,7 @@
           {
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis velit aliquam repellat sit sint at unde, quaerat quae laboriosam error fugit explicabo suscipit voluptatem deserunt. Pariatur officiis dignissimos voluptatibus, veritatis.",
             "media" : {
-              "src": "http://placehold.it/900x694",
+              "src": "http://placehold.it/900x694?text=test!",
               "alt": "This is some alt text for the image",
               "credit": {
                 "credit" : "Image credit text"
@@ -664,7 +664,7 @@
       },
       "items": [
         {
-          "img": "http://placehold.it/400x300",
+          "img": "http://placehold.it/400x300?text=test!",
           "alt": "This is an img alt text",
           "url": "http://example.com",
           "title": "Heirloom Tomato and Avocado Stack",
@@ -673,14 +673,14 @@
 
         },
         {
-          "img": "http://placehold.it/400x300",
+          "img": "http://placehold.it/400x300?text=test!",
           "alt": "This is an img alt text",
           "url": "http://example.com",
           "title": "How to Make Superfast Dinner Salads",
           "category": "category name"
         },
         {
-          "img": "http://placehold.it/400x300",
+          "img": "http://placehold.it/400x300?text=test!",
           "alt": "This is an img alt text",
           "url": "http://example.com",
           "title": "Chunky Tomato-Fruit Gazpacho",
@@ -732,7 +732,7 @@
         },
         "items": [
           {
-            "img": "http://placehold.it/240x240",
+            "img": "http://placehold.it/240x240?text=test!",
             "img_alt": "This is an img alt text",
             "url": "http://example.com",
             "text": "Favorite Summer Salads"

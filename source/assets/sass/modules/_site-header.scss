@@ -283,7 +283,6 @@ $menu-bar-height: 66px;
     width: 144px;
     height: 38px;
     color: color(white);
-    transition: all .5s ease;
     margin: 0 auto;
   }
 
@@ -411,6 +410,11 @@ $menu-bar-height: 66px;
       width: 1260px;
       position: relative;
       left: auto;
+      top: 46%;
+      svg {
+        width: 145px;
+        height: 38px;
+      }
     }
   }
 }
