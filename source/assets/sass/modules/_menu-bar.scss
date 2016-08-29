@@ -10,7 +10,7 @@
   height: 50px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: $brand-primary;
+  background-color: color(tertiary, dark);
   box-sizing: border-box;
   z-index: $z-2;
 
@@ -79,7 +79,7 @@
     display: none;
     font-size: rem(12);
     letter-spacing: 0.1em;
-    color: color(black);
+    color: white;
     text-transform: uppercase;
   }
 
@@ -139,7 +139,7 @@
     .icon-logo,
     .icon-menu,
     .icon-search {
-      color: color(black);
+      color: color(white);
     }
 
     .icon-logo {
