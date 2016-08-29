@@ -1,0 +1,113 @@
+  {
+  "header": [
+    {
+      "title": "Charred Lemon Pappardelle with Mushrooms and Shrimp"
+    },
+    {
+      "article_meta": {
+        "byline": {
+          "url": "http:\/\/example.com",
+          "img": "http:\/\/placehold.it\/45x45?text=test!",
+          "alt": "This is alternate text",
+          "text": "Eva Gonzalez",
+          "date": "June, 6, 2016",
+          "ISOdate": "2009-05-08"
+        },
+        "social_share": {
+          "items": [
+            {
+              "icon": "facebook",
+              "url": "foo.com"
+            },
+            {
+              "icon": "twitter",
+              "url": "foo.com"
+            },
+            {
+              "icon": "pinterest",
+              "url": "foo.com"
+            },
+            {
+              "icon": "email",
+              "url": "foo.com"
+            },
+            {
+              "icon": "print",
+              "url": "foo.com"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "article_media": {
+        "wrap?": false,
+        "left?": false,
+        "right?": false,
+        "stretch?": false,
+        "social_share": {
+          "items": [
+            {
+              "icon": "facebook",
+              "url": "foo.com"
+            },
+            {
+              "icon": "pinterest",
+              "url": "foo.com"
+            }
+          ]
+        },
+        "caption": {
+          "credit": "Christopher Testani"
+        },
+        "hero": {
+          "src": "http:\/\/placehold.it\/900x694?text=test!",
+          "alt": "This is some alt text for the image"
+        }
+      }
+    },
+    {
+      "recipe_description": {
+        "text": "Juice from charred lemons cuts the density of fat in a silky sauce like this, keeping its richness in check. Combine crumble tomato basil dot knead pan broil set skim spread toast. Baste chill coats a spoon core devil drain dress garnish glaze grill.Juice from charred lemons cuts the density of fat in a silky sauce like this, keeping its richness in check. Combine crumble tomato basil dot knead pan broil set skim spread toast. Baste chill coats a spoon core devil drain dress garnish glaze grill."
+      }
+    },
+    {
+      "recipe_meta_footer": {
+        "tag_set": {
+          "tags": [
+            {
+              "text": "Pasta",
+              "url": "http:\/\/foo.com"
+            },
+            {
+              "text": "Shrimp",
+              "url": "http:\/\/foo.com"
+            },
+            {
+              "text": "Mushrooms",
+              "url": "http:\/\/foo.com"
+            },
+            {
+              "text": "Easy Dinners",
+              "url": "http:\/\/foo.com"
+            }
+          ]
+        },
+        "recipe_utility_links": {
+          "items": [
+            {
+              "url": "foo.com",
+              "icon": "email",
+              "label": "Email"
+            },
+            {
+              "url": "foo.com",
+              "icon": "print",
+              "label": "Print"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
