@@ -9,11 +9,9 @@
  *-----------------------------------------------------------------------------
  *----------------------------------------------------------------------------- */
 
-
  /*-------------------------------------------- */
  /** Color Variables */
  /*-------------------------------------------- */
-
 
 $colors: (
 	white: #fff,
@@ -31,31 +29,29 @@ $colors: (
 	    snapchat: #FFFC00
 	),
 	primary: (
-		dark: #5C9497, 
-		med: #8EBABD, // MAIN PRIMARY
-		lite: #C1DDDE,
-		extra-lite: #EBF5F5
+		dark: #14BBFB, 
+		med: #40cafd, // MAIN PRIMARY
+		lite: #6AD4FD,
+		extra-lite: #9AE2FD
 	),
 	secondary: (
-		dark: #992E99,
-		med: #AF4AAF, // MAIN SECONDARY
-		lite: #CC74CC
+		dark: #EC3C2A,
+		med: #ff6352, // MAIN SECONDARY
+		lite: #FF8275
 	),
 	tertiary: (
-		extra-dark: #5D5D66,
-		dark: #7A7A80,
-		med: #99999C, // MAIN TERTIARY
-		lite: #C0C0C1,
-		extra-lite: #DAE6E6, //subscribe background
-		ultra-lite: #F0F2F2 //footer and media background
+		extra-dark: #000000,
+		dark: #000000,
+		med: #333333, // MAIN TERTIARY
+		lite: #6B6A6A,
+		extra-lite: #9D9C9C, //subscribe background
+		ultra-lite: #FEFCFC //footer and media background
 	)
 );
-
 
  /*-------------------------------------------- */
  /** Theme Variables */
  /*-------------------------------------------- */
-
 
  $gray: color(tertiary, med);
  $brand-primary: color(primary, med);
