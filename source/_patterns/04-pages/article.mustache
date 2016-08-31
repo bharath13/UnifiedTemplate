@@ -1,0 +1,29 @@
+{{< templates-one-col-content-sw-sidebar }}
+
+  {{$ header }}
+    {{> organisms-site-header }}
+  {{/ header }}
+
+  {{$ main }}
+
+  <article class="article">
+    {{> organisms-article-header }}
+
+    {{> organisms-article-body }}
+    
+    {{#content}}
+        {{{content}}}
+    {{/content}}
+    
+    {{> atoms-outbrain-footer }}
+  </article>
+
+  {{/ main }}
+
+  {{$ sidebar_content }}
+
+    {{> templates-sidebar }}
+
+  {{/ sidebar_content }}
+
+{{/ templates-one-col-content-sw-sidebar }}

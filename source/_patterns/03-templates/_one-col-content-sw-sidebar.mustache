@@ -1,0 +1,23 @@
+{{$ top}}
+{{> organisms-site-header }}
+{{/ top}}
+
+<div class="page-container {{#narrow_layout}}page-container--narrow{{/narrow_layout}}">
+  <main class="main-content main-content--has-sw-sidebar"  role="main">
+    {{$ main }}
+      <h1>Main Area</h1>
+    {{/ main }}
+  </main>
+  <aside class="sidebar sidebar--is-sw">
+    {{$ sidebar_content }}
+      <h2>Sidebar Area</h2>
+    {{/ sidebar_content }}
+  </aside>
+  {{$ bottom}}
+    {{> organisms-full-width-subscribe }}
+  {{/ bottom}}
+</div>
+
+{{#site_footer}}
+  {{> organisms-site-footer }}
+{{/site_footer}}

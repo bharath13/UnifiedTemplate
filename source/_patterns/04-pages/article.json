@@ -1,0 +1,855 @@
+{
+  "sponsored?": true,
+  "leaderboard": false,
+  "og:url": "http://www.cookinglight.com/og:url",
+  "home_url": "/",
+  "site_menu": {
+    "icon": "ckl-logo",
+    "brand_social": {
+      "items": [
+        {
+          "icon": "facebook",
+          "url": "https://www.facebook.com/CookingLight"
+        },
+        {
+          "icon": "pinterest",
+          "url": "http://www.pinterest.com/cookinglight/"
+        },
+        {
+          "icon": "instagram",
+          "url": "https://www.instagram.com/cookinglight/"
+        },
+        {
+          "icon": "snapchat",
+          "url": "https://www.snapchat.com/add/cookinglight"
+        },
+        {
+          "icon": "youtube",
+          "url": "https://www.youtube.com/user/cookinglight"
+        },
+        {
+          "icon": "twitter",
+          "url": "https://twitter.com/Cooking_Light"
+        }
+      ]
+    },
+    "search_bar": {
+      "form_action": "/",
+      "in_side_nav?": true
+    },
+    "primary_menu": {
+      "menu_items": [
+        {
+          "name": "Food",
+          "url": "http://foo.com",
+          "bold": false,
+          "sub_menu": {
+            "items": [
+              {
+                "name": "Foo",
+                "url": "http://bar.com"
+              },
+              {
+                "name": "Bar",
+                "url": "http://foo.com"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Nutrition",
+          "url": "http://foo.com",
+          "bold": false,
+          "sub_menu": {
+            "items": [
+              {
+                "name": "Foo",
+                "url": "http://bar.com"
+              },
+              {
+                "name": "Bar",
+                "url": "http://foo.com"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Healthy Living",
+          "url": "http://foo.com",
+          "bold": false,
+          "sub_menu": {
+            "items": [
+              {
+                "name": "Weight Loss",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Fitness",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Travel",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Healthy Habits",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Beauty",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Home",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Healthy Living Videos",
+                "url": "http://foo.com"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Diet",
+          "url": "http://foo.com"
+        },
+        {
+          "name": "Videos",
+          "url": "http://foo.com"
+        },
+        {
+          "name": "Spring Parties",
+          "url": "http://foo.com"
+        },
+        {
+          "name": "Subscribe",
+          "url": "http://foo.com",
+          "bold?": true
+        }
+      ]
+    },
+    "secondary_menu": {
+      "menu_items": [
+        {
+          "name": "Subscription",
+          "url": "https://subscription.cookinglight.com/storefront/subscribe-to-cooking-light/link/1035982.html"
+        },
+        {
+          "name": "Give a Gift",
+          "url": "https://subscription.cookinglight.com/storefront/subscribe-to-cooking-light/link/1035983.html"
+        }
+      ]
+    }
+  },
+  "site_header": {
+    "scroll_target": ".article__social-share",
+    "basic_nav?": false,
+    "title": "The Only Recipes You Need for the Ultimate Cinco de Mayo Taco Night The Only Recipes You Need for the Ultimate Cinco de Mayo Taco Night",
+    "social_share": {
+      "items": [
+        {
+          "icon" : "facebook",
+          "url" : "foo.com"
+        },
+        {
+          "icon" : "pinterest",
+          "url" : "foo.com"
+        },
+        {
+          "icon" : "twitter",
+          "url" : "foo.com"
+        },
+        {
+          "icon" : "email",
+          "url" : "foo.com"
+        }
+      ]
+    },
+    "site_nav": {
+      "items": [
+        {
+          "url": "http://foo.com",
+          "text": "food",
+          "sub_menu": {
+            "items": [
+              {
+                "text": "Recipes",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "In Season",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Everyday Menus",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Quick & Healthy",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Vegetarian",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Entertain & Menus",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Cooking 101",
+                "url": "http://bar.com"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://foo.com",
+          "text": "nutrition"
+        },
+        {
+          "url": "http://foo.com",
+          "text": "healthy living",
+          "sub_menu": {
+            "items": [
+              {
+                "text": "Recipes",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "In Season",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Everyday Menus",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Quick & Healthy",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Vegetarian",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Entertain & Menus",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Cooking 101",
+                "url": "http://bar.com"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://foo.com",
+          "text": "diet"
+        },
+        {
+          "url": "http://foo.com",
+          "text": "videos"
+        },
+        {
+          "url": "http://foo.com",
+          "text": "spring parties"
+        },
+        {
+          "url": "http://foo.com",
+          "text": "subscribe",
+          "bold?": true,
+          "subscribe?": true
+        }
+      ]
+    },
+    "glance_bar": {
+      "url": "http://foo.com",
+      "text": "In Season",
+      "subscribe_url": "https://subscription.cookinglight.com/storefront/subscribe-to-cooking-light/link/1035985.html",
+      "subscribe_text": "Subscribe"
+    },
+    "action_bar": {
+      "next_url": "http://www.cookinglight.com",
+      "social_share": {
+        "items": [
+          {
+            "icon" : "facebook",
+            "url" : "foo.com"
+          },
+          {
+            "icon" : "pinterest",
+            "url" : "foo.com"
+          },
+          {
+            "icon" : "twitter",
+            "url" : "foo.com"
+          },
+          {
+            "icon" : "email",
+            "url" : "foo.com"
+          },
+          {
+            "icon" : "sms",
+            "url" : "foo.com"
+          }
+        ]
+      }
+    },
+    "search_bar": {
+      "form_action": "/",
+      "in_site_header?": true
+    }
+  },
+  "breadcrumbs" : {
+    "items": [
+      {
+        "url": "http://example.com",
+        "text": "Food"
+      },
+      {
+        "url": "http://example.com",
+        "text": "In Season"
+      },
+      {
+        "text": "Summer Produce Guide",
+        "is_active?": true
+      }
+    ]
+  },
+  "header" : [
+    {
+      "title" : "Summer Produce Guide for the greatest summer ever"
+    },
+    {
+      "article_media" : {
+        "wrap?": false,
+        "left?" : false,
+        "right?" :false,
+        "stretch?" : false,
+        "social_share": {
+          "items": [
+            {
+              "icon" : "facebook",
+              "url" : "foo.com"
+            },
+            {
+              "icon" : "pinterest",
+              "url" : "foo.com"
+            }
+          ]
+        },
+        "hero" : {
+          "src": "http://placehold.it/900x694",
+          "alt": "This is some alt text for the image"
+        }
+      }
+    },
+    {
+      "article_meta" : {
+        "byline" : {
+          "text": "Eva Gonzalez",
+          "url": "http://example.com",
+          "img": "http://placehold.it/45x45",
+          "alt": "This is alternate text",
+          "date": "June, 6, 2016"
+        }
+      }
+    },
+    {
+      "article_lead" : "O, summer... enjoy with us the sweet taste of fruits and lucious crunch of vegetables."
+    },
+    {
+      "article_credit" : "Patrick Johnson"
+    }
+  ],
+  "body" : [
+    {
+      "article_text": {
+        "title" : "Healthy Summer Produce",
+        "text" : "For anyone who enjoys <strong>food and cooking</strong>, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
+      }
+    },
+    {
+      "blockquote": {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "citation" : "John Doe"
+      }
+    },
+    {
+      "article_media" : {
+        "wrap?": false,
+        "left?" : false,
+        "right?" :false,
+        "stretch?" : true,
+        "social_share": {
+          "items": [
+            {
+              "icon" : "facebook",
+              "url" : "foo.com"
+            },
+            {
+              "icon" : "pinterest",
+              "url" : "foo.com"
+            }
+          ]
+        },
+        "three_up_media" : {
+          "images" : [
+            {
+              "media_src": "http://placehold.it/375x375",
+              "media_alt": "This is some alt text for the image"
+            },
+            {
+              "media_src": "http://placehold.it/375x375",
+              "media_alt": "This is some alt text for the image"
+            },
+            {
+              "media_src": "http://placehold.it/375x375",
+              "media_alt": "This is some alt text for the image"
+            }
+          ],
+          "credit": "Jonathan Doensmith",
+          "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta sequi nam deleniti delectus, sit, veniam porro quos, sunt illum quaerat, voluptatem quod non repudiandae possimus placeat fuga at molestias labore?"
+        }
+      }
+    },
+    {
+      "video": {
+        "stretch?": false,
+        "caption": "Cooking Class Video: Grilling",
+        "headline": "Cooking Class Video: Grilling",
+        "description": "Cooking Light Food Editors Ann Pittman and Julie Grimes show you how to grill for perfect results.",
+        "video_duration": "T2M37S",
+        "thumbnail_image_url": "http:\/\/www.cookinglight.local\/sites\/default\/files\/image\/2008\/06\/cc-grillchicken-0806p143-m.jpg",
+        "bc_embed_url": "http:\/\/admin.brightcove.com\/viewer\/us20120509.1612\/BrightcoveBootloader.swf?playerID=2448899952001&%40videoPlayer=1568084586&bgcolor=%23000000&dynamicStreaming=true&flashID=myExperience&isUI=true&isVid=true&videoSmoothing=true&wmode=transparent",
+        "published_date": "2008-10-06T15:53:39+00:00",
+        "bgcolor": "#FFFFFF",
+        "width": "640",
+        "height": "360",
+        "playerid": "2448899952001",
+        "playerkey": "AQ~~,AAAAAEsjegg~,POvxKIwUutPG2iLIi4rfCnHra5ruZdlj",
+        "brightcove_id": "1568084586"
+      }
+    },
+    {
+      "related_content" : {
+        "related_articles" : {
+          "accent_header" : {
+            "title": "Tomato Recipes",
+            "subtitle": "Explore More"
+          },
+          "items": [
+            {
+              "img": "http://placehold.it/400x300",
+              "alt": "This is an img alt text",
+              "url": "http://example.com",
+              "title": "Heirloom Tomato and Avocado Stack",
+              "cta": "Favorite Summer Salads",
+              "category": "category name"
+            },
+            {
+              "img": "http://placehold.it/400x300",
+              "alt": "This is an img alt text",
+              "url": "http://example.com",
+              "title": "How to Make Superfast Dinner Salads",
+              "cta": "buy now",
+              "category": "category name"
+            },
+            {
+              "img": "http://placehold.it/400x300",
+              "alt": "This is an img alt text",
+              "url": "http://example.com",
+              "title": "Chunky Tomato-Fruit Gazpacho",
+              "cta": "Favorite Summer Salads",
+              "category": "patrick's category"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "article_media" : {
+        "wrap?": false,
+        "left?" : false,
+        "right?" :false,
+        "stretch?" : true,
+        "social_share": {
+          "items": [
+            {
+              "icon" : "facebook",
+              "url" : "foo.com"
+            },
+            {
+              "icon" : "pinterest",
+              "url" : "foo.com"
+            }
+          ]
+        },
+        "three_up_media" : {
+          "images" : [
+            {
+              "media_src": "http://placehold.it/375x375",
+              "media_alt": "This is some alt text for the image"
+            },
+            {
+              "media_src": "http://placehold.it/375x375",
+              "media_alt": "This is some alt text for the image"
+            },
+            {
+              "media_src": "http://placehold.it/375x375",
+              "media_alt": "This is some alt text for the image"
+            }
+          ],
+          "credit": "Jonathan Doensmith",
+          "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta sequi nam deleniti delectus, sit, veniam porro quos, sunt illum quaerat, voluptatem quod non repudiandae possimus placeat fuga at molestias labore?"
+        }
+      }
+    },
+    {
+      "article_media" : {
+        "wrap?": false,
+        "left?" : false,
+        "right?" :false,
+        "stretch?" : false,
+        "social_share": {
+          "items": [
+            {
+              "icon" : "facebook",
+              "url" : "foo.com"
+            },
+            {
+              "icon" : "pinterest",
+              "url" : "foo.com"
+            }
+          ]
+        },
+        "media" : {
+          "src": "http://placehold.it/375x375",
+          "alt": "This is some alt text for the image",
+          "credit": "Jonathan Doensmith"
+        }
+      }
+    },
+    {
+      "article_text": {
+        "title" : "Healthy Summer Produce",
+        "text" : "For anyone who enjoys food and cooking, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
+      }
+    },
+    {
+      "article_media" : {
+        "wrap?": false,
+        "left?" : false,
+        "right?" :false,
+        "stretch?" : false,
+        "social_share": {
+          "items": [
+            {
+              "icon" : "facebook",
+              "url" : "foo.com"
+            },
+            {
+              "icon" : "pinterest",
+              "url" : "foo.com"
+            }
+          ]
+        },
+        "media" : {
+          "src": "http://placehold.it/660x880",
+          "alt": "This is some alt text for the image",
+          "credit": "Jonathan Doensmith"
+        }
+      }
+    },
+    {
+      "article_text": {
+        "title" : "Healthy Summer Produce",
+        "text" : "For anyone who enjoys food and cooking, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
+      }
+    },
+    {
+      "article_media" : {
+        "wrap?": false,
+        "left?" : true,
+        "right?" :false,
+        "stretch?" : false,
+        "social_share": {
+          "items": [
+            {
+              "icon" : "facebook",
+              "url" : "foo.com"
+            },
+            {
+              "icon" : "pinterest",
+              "url" : "foo.com"
+            }
+          ]
+        },
+        "media" : {
+          "src": "http://placehold.it/375x375",
+          "alt": "This is some alt text for the image",
+          "credit": "Jonathan Doensmith"
+        }
+      }
+    },
+    {
+      "article_text": {
+        "title" : "Healthy Summer Produce",
+        "text" : "For anyone who enjoys food and cooking, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
+      }
+    },
+    {
+      "article_media" : {
+        "wrap?": false,
+        "left?" : false,
+        "right?" :false,
+        "stretch?" : true,
+        "social_share": {
+          "items": [
+            {
+              "icon" : "facebook",
+              "url" : "foo.com"
+            },
+            {
+              "icon" : "pinterest",
+              "url" : "foo.com"
+            }
+          ]
+        },
+        "media" : {
+          "src": "http://placehold.it/1200x900",
+          "alt": "This is some alt text for the image",
+          "credit": "Jonathan Doensmith"
+        }
+      }
+    },
+    {
+      "article_text": {
+        "title" : "Healthy Summer Produce",
+        "text" : "For anyone who enjoys food and cooking, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
+      }
+    },
+    {
+      "article_media" : {
+        "wrap?": false,
+        "left?" : false,
+        "right?" :false,
+        "stretch?" : false,
+        "social_share": {
+          "items": [
+            {
+              "icon" : "facebook",
+              "url" : "foo.com"
+            },
+            {
+              "icon" : "pinterest",
+              "url" : "foo.com"
+            }
+          ]
+        },
+        "media" : {
+          "src": "http://placehold.it/1200x900",
+          "alt": "This is some alt text for the image",
+          "credit": "Jonathan Doensmith"
+        }
+      }
+    },
+    {
+      "article_text": {
+        "title" : "Healthy Summer Produce",
+        "text" : "For anyone who enjoys food and cooking, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
+      }
+    }
+  ],
+  "social_share" : {
+    "items": [
+      {
+        "icon" : "facebook",
+        "url" : "foo.com"
+      },
+      {
+        "icon" : "pinterest",
+        "url" : "foo.com"
+      },
+      {
+        "icon" : "twitter",
+        "url" : "foo.com"
+      },
+      {
+        "icon" : "email",
+        "url" : "foo.com"
+      }
+    ],
+    "is_vertical?": true
+  },
+  "data_src" : "http://www.cookinglight.com/healthy-living/weight-loss/calorie-myths",
+  "sidebar_body" : [
+    {
+      "ad_300x350" : {
+        "zone": "homepage",
+        "pos": "0000001",
+        "defer": 0
+      }
+    },
+    {
+      "outbrain_url" : "http://www.cookinglight.com/healthy-living/weight-loss/calorie-myths"
+    },
+    {
+      "related_list" : {
+        "accent_header" : {
+          "title" : "Now In Season"
+        },
+        "items": [
+          {
+            "img": "http://placehold.it/240x240",
+            "img_alt": "This is an img alt text",
+            "url": "http://example.com",
+            "text": "Favorite Summer Salads"
+          },
+          {
+            "img": false,
+            "label": "Paid Content",
+            "url": "http://example.com",
+            "text": "Cooking With Plums"
+          },
+          {
+            "img": false,
+            "url": "http://example.com",
+            "text": "Cooking with Asparagus"
+          }
+        ]
+      }
+    }
+  ],
+  "embed_js?": true,
+  "full-width-subscribe": {
+    "subscribe": {
+      "title": "Subscribe & Save",
+      "tagline": "Subscribe today and save 78% off the cover price.",
+      "cta": "Subscribe Now",
+      "url": "#"
+    },
+    "newsletter": {
+      "cta": "Sign Up for our Newsletter",
+      "tagline": "Join our newsletter for free recipes, healthy living inspiration, and special offers.",
+      "privacy_policy_link": "https://subscription.timeinc.com/storefront/privacy/cookinglight/generic_privacy_new.html?dnp-source=E",
+      "privacy_policy_text": "Privacy Policy",
+      "form": {
+        "action": "http://cl.s7.exct.net/DEManager.aspx",
+        "source": "ck_rightrail",
+        "clientid": "7213753",
+        "externalkey": "Newsletter_Staging",
+        "successurl": "www.cookinglight.com",
+        "errorurl": "www.cookinglight.com",
+        "newslettername": "WEEKLY_NEWSLETTER",
+        "input1_placeholder": "Email Address",
+        "input2_placeholder": "Zipcode",
+        "btn": "Sign Up"
+      }
+    }
+  },
+  "site_footer": {
+    "ad_300x50" : {
+      "zone": "homepage",
+      "exclusive": "true",
+      "pos": "0000001",
+      "defer": 0
+    },
+    "brand_social" : {
+      "items": [
+        {
+          "icon": "facebook",
+          "url": "https://www.facebook.com/CookingLight"
+        },
+        {
+          "icon": "pinterest",
+          "url": "http://www.pinterest.com/cookinglight/"
+        },
+        {
+          "icon": "instagram",
+          "url": "https://www.instagram.com/cookinglight/"
+        },
+        {
+          "icon": "snapchat",
+          "url": "https://www.snapchat.com/add/cookinglight"
+        },
+        {
+          "icon": "youtube",
+          "url": "https://www.youtube.com/user/cookinglight"
+        },
+        {
+          "icon": "twitter",
+          "url": "https://twitter.com/Cooking_Light"
+        }
+      ]
+    },
+    "link_group": [
+      {
+        "links": [
+          {
+            "text": "Delicious Deals",
+            "url": "http://www.cookinglight.com/general/delicious-deals"
+          },
+          {
+            "text": "Healthy Chicken Recipes",
+            "url": "http://www.cookinglight.com/food/recipe-finder/healthy-chicken-breast-recipes "
+          },
+          {
+            "text": "Top Rated Recipes",
+            "url": "http://www.cookinglight.com/food/top-rated-recipes"
+          },
+          {
+            "text": "Slow Cooker Favorites",
+            "url": "http://www.cookinglight.com/food/top-rated-recipes/slow-cooker-favorites"
+          },
+          {
+            "text": "Healthy Snack Ideas",
+            "url": "http://www.cookinglight.com/food/recipe-finder/healthy-snack-ideas"
+          },
+          {
+            "text": "Dinner Tonight",
+            "url": "http://www.cookinglight.com/food/everyday-menus/dinner-tonight-quick-easy-meals"
+          },
+          {
+            "text": "Cooking Techniques",
+            "url": "http://www.cookinglight.com/cooking-101/techniques"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "Delicious Deals",
+            "url": "http://www.cookinglight.com/general/delicious-deals"
+          },
+          {
+            "text": "Healthy Chicken Recipes",
+            "url": "http://www.cookinglight.com/food/recipe-finder/healthy-chicken-breast-recipes "
+          },
+          {
+            "text": "Top Rated Recipes",
+            "url": "http://www.cookinglight.com/food/top-rated-recipes"
+          },
+          {
+            "text": "Slow Cooker Favorites",
+            "url": "http://www.cookinglight.com/food/top-rated-recipes/slow-cooker-favorites"
+          },
+          {
+            "text": "Healthy Snack Ideas",
+            "url": "http://www.cookinglight.com/food/recipe-finder/healthy-snack-ideas"
+          },
+          {
+            "text": "Dinner Tonight",
+            "url": "http://www.cookinglight.com/food/everyday-menus/dinner-tonight-quick-easy-meals"
+          },
+          {
+            "text": "Cooking Techniques",
+            "url": "http://www.cookinglight.com/cooking-101/techniques"
+          }
+        ]
+      }
+    ]
+  }
+}
