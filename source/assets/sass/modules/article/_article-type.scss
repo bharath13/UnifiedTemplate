@@ -38,13 +38,17 @@
 
 .article__lead {
   @include serif;
-  color: color(tertiary, dark);
-  font-size: rem(25);
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  color: color(tertiary, med);
+  text-align: left;
+  font-size: 1.615rem;
+  line-height: 1.225;
+  letter-spacing: 0.025em;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .article__body {
+  padding-top: 20px;
   > h1,
   > h2,
   > h3,
@@ -79,13 +83,13 @@
       font-size: rem(22);
     }
 
-    > p {
-      @include sans-serif-extra-lite;
-      font-size: rem(20);
-      line-height: 1.6;
-      margin-bottom: 1.25em;
-    }
+  > p {
+    @include sans-serif-extra-lite;
+    font-size: rem(20);
+    line-height: 1.38;
+    margin-bottom: 26px;
   }
+}
 
 
 @include respond-to('sm and up') {

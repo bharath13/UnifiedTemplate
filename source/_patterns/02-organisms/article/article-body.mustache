@@ -1,9 +1,5 @@
 <div class="article__body">
 
-  <div class="show-at-md article__social-share">
-    {{> molecules-social-share }}
-  </div>
-
   {{#body}}
       {{! render the literal value of the body if it's not a structured array }}
       {{! This requires a patch to the Mustache Compiler - Or it will print as 'Array'

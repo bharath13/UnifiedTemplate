@@ -323,30 +323,6 @@
       "title" : "Summer Produce Guide for the greatest summer ever"
     },
     {
-      "article_media" : {
-        "wrap?": false,
-        "left?" : false,
-        "right?" :false,
-        "stretch?" : false,
-        "social_share": {
-          "items": [
-            {
-              "icon" : "facebook",
-              "url" : "foo.com"
-            },
-            {
-              "icon" : "pinterest",
-              "url" : "foo.com"
-            }
-          ]
-        },
-        "hero" : {
-          "src": "http://placehold.it/900x694",
-          "alt": "This is some alt text for the image"
-        }
-      }
-    },
-    {
       "article_meta" : {
         "byline" : {
           "text": "Eva Gonzalez",
@@ -356,157 +332,7 @@
           "date": "June, 6, 2016"
         }
       }
-    },
-    {
-      "article_lead" : "O, summer... enjoy with us the sweet taste of fruits and lucious crunch of vegetables."
-    },
-    {
-      "article_credit" : "Patrick Johnson"
-    }
-  ],
-  "body" : [
-    {
-      "article_text": {
-        "title" : "Healthy Summer Produce",
-        "text" : "For anyone who enjoys <strong>food and cooking</strong>, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
-      }
-    },
-    {
-      "blockquote": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        "citation" : "John Doe"
-      }
-    },
-    {
-      "article_media" : {
-        "wrap?": false,
-        "left?" : false,
-        "right?" :false,
-        "stretch?" : true,
-        "social_share": {
-          "items": [
-            {
-              "icon" : "facebook",
-              "url" : "foo.com"
-            },
-            {
-              "icon" : "pinterest",
-              "url" : "foo.com"
-            }
-          ]
-        },
-        "three_up_media" : {
-          "images" : [
-            {
-              "media_src": "http://placehold.it/375x375",
-              "media_alt": "This is some alt text for the image"
-            },
-            {
-              "media_src": "http://placehold.it/375x375",
-              "media_alt": "This is some alt text for the image"
-            },
-            {
-              "media_src": "http://placehold.it/375x375",
-              "media_alt": "This is some alt text for the image"
-            }
-          ],
-          "credit": "Jonathan Doensmith",
-          "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta sequi nam deleniti delectus, sit, veniam porro quos, sunt illum quaerat, voluptatem quod non repudiandae possimus placeat fuga at molestias labore?"
-        }
-      }
-    },
-    {
-      "video": {
-        "stretch?": false,
-        "caption": "Cooking Class Video: Grilling",
-        "headline": "Cooking Class Video: Grilling",
-        "description": "Cooking Light Food Editors Ann Pittman and Julie Grimes show you how to grill for perfect results.",
-        "video_duration": "T2M37S",
-        "thumbnail_image_url": "http:\/\/www.cookinglight.local\/sites\/default\/files\/image\/2008\/06\/cc-grillchicken-0806p143-m.jpg",
-        "bc_embed_url": "http:\/\/admin.brightcove.com\/viewer\/us20120509.1612\/BrightcoveBootloader.swf?playerID=2448899952001&%40videoPlayer=1568084586&bgcolor=%23000000&dynamicStreaming=true&flashID=myExperience&isUI=true&isVid=true&videoSmoothing=true&wmode=transparent",
-        "published_date": "2008-10-06T15:53:39+00:00",
-        "bgcolor": "#FFFFFF",
-        "width": "640",
-        "height": "360",
-        "playerid": "2448899952001",
-        "playerkey": "AQ~~,AAAAAEsjegg~,POvxKIwUutPG2iLIi4rfCnHra5ruZdlj",
-        "brightcove_id": "1568084586"
-      }
-    },
-    {
-      "related_content" : {
-        "related_articles" : {
-          "accent_header" : {
-            "title": "Tomato Recipes",
-            "subtitle": "Explore More"
-          },
-          "items": [
-            {
-              "img": "http://placehold.it/400x300",
-              "alt": "This is an img alt text",
-              "url": "http://example.com",
-              "title": "Heirloom Tomato and Avocado Stack",
-              "cta": "Favorite Summer Salads",
-              "category": "category name"
-            },
-            {
-              "img": "http://placehold.it/400x300",
-              "alt": "This is an img alt text",
-              "url": "http://example.com",
-              "title": "How to Make Superfast Dinner Salads",
-              "cta": "buy now",
-              "category": "category name"
-            },
-            {
-              "img": "http://placehold.it/400x300",
-              "alt": "This is an img alt text",
-              "url": "http://example.com",
-              "title": "Chunky Tomato-Fruit Gazpacho",
-              "cta": "Favorite Summer Salads",
-              "category": "patrick's category"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "article_media" : {
-        "wrap?": false,
-        "left?" : false,
-        "right?" :false,
-        "stretch?" : true,
-        "social_share": {
-          "items": [
-            {
-              "icon" : "facebook",
-              "url" : "foo.com"
-            },
-            {
-              "icon" : "pinterest",
-              "url" : "foo.com"
-            }
-          ]
-        },
-        "three_up_media" : {
-          "images" : [
-            {
-              "media_src": "http://placehold.it/375x375",
-              "media_alt": "This is some alt text for the image"
-            },
-            {
-              "media_src": "http://placehold.it/375x375",
-              "media_alt": "This is some alt text for the image"
-            },
-            {
-              "media_src": "http://placehold.it/375x375",
-              "media_alt": "This is some alt text for the image"
-            }
-          ],
-          "credit": "Jonathan Doensmith",
-          "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta sequi nam deleniti delectus, sit, veniam porro quos, sunt illum quaerat, voluptatem quod non repudiandae possimus placeat fuga at molestias labore?"
-        }
-      }
-    },
+    },    
     {
       "article_media" : {
         "wrap?": false,
@@ -525,16 +351,31 @@
             }
           ]
         },
-        "media" : {
-          "src": "http://placehold.it/375x375",
-          "alt": "This is some alt text for the image",
-          "credit": "Jonathan Doensmith"
+        "caption": {
+          "credit": "Image Credit: Patrick Johnson"
+        },
+        "hero" : {
+          "src": "http://placehold.it/900x694",
+          "alt": "This is some alt text for the image"
         }
       }
     },
     {
+      "article_credit" : ""
+    },
+    {
+      "article_lead" : "O, summer... enjoy with us the sweet taste of fruits and lucious crunch of vegetables."
+    }
+  ],
+  "body" : [
+    {
       "article_text": {
         "title" : "Healthy Summer Produce",
+        "text" : "For anyone who enjoys <strong>food and cooking</strong>, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year. For anyone who enjoys <strong>food and cooking</strong>, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
+      }
+    },
+    {
+      "article_text": {
         "text" : "For anyone who enjoys food and cooking, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
       }
     },
@@ -565,101 +406,42 @@
     },
     {
       "article_text": {
-        "title" : "Healthy Summer Produce",
-        "text" : "For anyone who enjoys food and cooking, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
+        "text" : "For anyone who enjoys food and cooking, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year. For anyone who enjoys <strong>food and cooking</strong>, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
       }
     },
     {
-      "article_media" : {
-        "wrap?": false,
-        "left?" : true,
-        "right?" :false,
-        "stretch?" : false,
-        "social_share": {
+      "related_content" : {
+        "related_articles" : {
+          "accent_header" : {
+            "title": "Related"
+          },
           "items": [
             {
-              "icon" : "facebook",
-              "url" : "foo.com"
+              "img": "http://placehold.it/400x300",
+              "alt": "This is an img alt text",
+              "url": "http://example.com",
+              "title": "Heirloom Tomato and Avocado Stack",
+              "cta": "Favorite Summer Salads",
+              "category": "category name"
             },
             {
-              "icon" : "pinterest",
-              "url" : "foo.com"
-            }
-          ]
-        },
-        "media" : {
-          "src": "http://placehold.it/375x375",
-          "alt": "This is some alt text for the image",
-          "credit": "Jonathan Doensmith"
-        }
-      }
-    },
-    {
-      "article_text": {
-        "title" : "Healthy Summer Produce",
-        "text" : "For anyone who enjoys food and cooking, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
-      }
-    },
-    {
-      "article_media" : {
-        "wrap?": false,
-        "left?" : false,
-        "right?" :false,
-        "stretch?" : true,
-        "social_share": {
-          "items": [
-            {
-              "icon" : "facebook",
-              "url" : "foo.com"
+              "img": "http://placehold.it/400x300",
+              "alt": "This is an img alt text",
+              "url": "http://example.com",
+              "title": "How to Make Superfast Dinner Salads",
+              "cta": "buy now",
+              "category": "category name"
             },
             {
-              "icon" : "pinterest",
-              "url" : "foo.com"
+              "img": "http://placehold.it/400x300",
+              "alt": "This is an img alt text",
+              "url": "http://example.com",
+              "title": "Chunky Tomato-Fruit Gazpacho",
+              "cta": "Favorite Summer Salads",
+              "category": "patrick's category"
             }
           ]
-        },
-        "media" : {
-          "src": "http://placehold.it/1200x900",
-          "alt": "This is some alt text for the image",
-          "credit": "Jonathan Doensmith"
         }
-      }
-    },
-    {
-      "article_text": {
-        "title" : "Healthy Summer Produce",
-        "text" : "For anyone who enjoys food and cooking, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
-      }
-    },
-    {
-      "article_media" : {
-        "wrap?": false,
-        "left?" : false,
-        "right?" :false,
-        "stretch?" : false,
-        "social_share": {
-          "items": [
-            {
-              "icon" : "facebook",
-              "url" : "foo.com"
-            },
-            {
-              "icon" : "pinterest",
-              "url" : "foo.com"
-            }
-          ]
-        },
-        "media" : {
-          "src": "http://placehold.it/1200x900",
-          "alt": "This is some alt text for the image",
-          "credit": "Jonathan Doensmith"
-        }
-      }
-    },
-    {
-      "article_text": {
-        "title" : "Healthy Summer Produce",
-        "text" : "For anyone who enjoys food and cooking, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
       }
     }
   ],
@@ -682,7 +464,7 @@
         "url" : "foo.com"
       }
     ],
-    "is_vertical?": true
+    "is_vertical?": false
   },
   "data_src" : "http://www.cookinglight.com/healthy-living/weight-loss/calorie-myths",
   "sidebar_body" : [
@@ -803,18 +585,6 @@
           {
             "text": "Slow Cooker Favorites",
             "url": "http://www.cookinglight.com/food/top-rated-recipes/slow-cooker-favorites"
-          },
-          {
-            "text": "Healthy Snack Ideas",
-            "url": "http://www.cookinglight.com/food/recipe-finder/healthy-snack-ideas"
-          },
-          {
-            "text": "Dinner Tonight",
-            "url": "http://www.cookinglight.com/food/everyday-menus/dinner-tonight-quick-easy-meals"
-          },
-          {
-            "text": "Cooking Techniques",
-            "url": "http://www.cookinglight.com/cooking-101/techniques"
           }
         ]
       },
@@ -835,7 +605,31 @@
           {
             "text": "Slow Cooker Favorites",
             "url": "http://www.cookinglight.com/food/top-rated-recipes/slow-cooker-favorites"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "Delicious Deals",
+            "url": "http://www.cookinglight.com/general/delicious-deals"
           },
+          {
+            "text": "Healthy Chicken Recipes",
+            "url": "http://www.cookinglight.com/food/recipe-finder/healthy-chicken-breast-recipes "
+          },
+          {
+            "text": "Top Rated Recipes",
+            "url": "http://www.cookinglight.com/food/top-rated-recipes"
+          },
+          {
+            "text": "Slow Cooker Favorites",
+            "url": "http://www.cookinglight.com/food/top-rated-recipes/slow-cooker-favorites"
+          }
+        ]
+      },
+      {
+        "links": [
           {
             "text": "Healthy Snack Ideas",
             "url": "http://www.cookinglight.com/food/recipe-finder/healthy-snack-ideas"
