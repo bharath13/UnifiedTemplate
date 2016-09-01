@@ -1,6 +1,17 @@
 .ad {
   margin: 0 auto;
   text-align: center;
+  background-color: color(tertiary, extra-lite);
+  position: relative;
+  &:after {
+    content: 'ADVERTISEMENT';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: rem(12);
+    @include sans-serif-semibold;
+  }
 
   &-leaderboard {
     background-color: color(ad-background);

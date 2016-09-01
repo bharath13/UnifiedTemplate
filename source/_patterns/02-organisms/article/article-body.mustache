@@ -1,0 +1,23 @@
+<div class="article__body">
+
+  {{#body}}
+      {{! render the literal value of the body if it's not a structured array }}
+      {{! This requires a patch to the Mustache Compiler - Or it will print as 'Array'
+      see -- pattern-lab/patches/fix-printing-array-value.diff}}
+
+      {{{body}}}
+
+      {{> organisms-article-text }}
+
+      {{> organisms-article-media }}
+
+      {{> molecules-blockquote }}
+
+      {{> organisms-article-video }}
+    
+      {{#related_content}}
+        {{> organisms-related-content }}
+      {{/related_content}}
+
+  {{/body}}
+</div>

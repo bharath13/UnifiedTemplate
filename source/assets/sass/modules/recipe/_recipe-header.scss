@@ -1,0 +1,6 @@
+.recipe__header {
+	@include respond-to('md and up') {
+		border-bottom: 2px solid color(tertiary, lite);
+	}
+}
+

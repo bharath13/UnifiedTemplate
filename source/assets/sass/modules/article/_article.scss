@@ -62,6 +62,8 @@ $article-ad-spacing: 200px;
         }
       }
     }
+
+
   }
 
   &__lead {
@@ -98,10 +100,7 @@ $article-ad-spacing: 200px;
     overflow: hidden;
 
     &--hero {
-      margin-bottom: 20px;
-      .media__credit {
-        margin-left: 10px;
-      }
+      margin-bottom: 15px;
     }
   }
 
@@ -114,6 +113,7 @@ $article-ad-spacing: 200px;
 
   &__body {
     position: relative;
+    padding-top: 20px;
 
     &:last-of-type:after {
       content: "";
@@ -194,8 +194,9 @@ $article-ad-spacing: 200px;
     margin-bottom: 50px;
 
     &__body {
-      padding-left: $article-spacing;
+      // padding-left: $article-spacing;
       padding-right: 0;
+      padding-top: 0;
     }
 
     &__social-share {
@@ -220,6 +221,10 @@ $article-ad-spacing: 200px;
     }
     &__meta {
       margin-bottom: 20px;
+    }
+
+    &__header {
+      border-bottom: none;
     }
   }
 }

@@ -37,13 +37,18 @@
     font-size: rem(11);
     letter-spacing: 0.05em;
     text-transform: uppercase;
+
   }
 
   &__caption {
-    float: left;
     font-size: rem(22);
     margin-top: 5px;
   }
+
+  &__credit, &__caption {
+    margin-right: 15px;
+    margin-left: 15px;
+  } 
 
   .social-share {
     position: absolute;
