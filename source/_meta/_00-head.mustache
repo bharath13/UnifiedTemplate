@@ -13,22 +13,6 @@
     <script src="../../assets/js/lib/modernizr.min.js"></script>
     <script src="http://tia.timeinc.net/timeinc/tia_tgx.js" async></script>
     <script src="../../assets/js/lib/ti_ads_dfp.js" async></script>
-
-    <script>
-        var tgx_ad_slots = tgx_ad_slots || [];
-        var rsAdConfig = {
-            "params": {
-                "ptype": "content"
-            },
-            "TiiAdConfig": "3475.ckl",
-            "CmSitename":"cm.ckl",
-            "zone":"homepage",
-            "channel":"",
-            "channel_page":"",
-            "zone_override":"true"
-        };
-    </script>
-    
     
     <!-- patternLabHead & Patternlab specific CSS-->
     <!-- DO NOT REMOVE FROM PATTERLAB -->
@@ -39,10 +23,13 @@
     <link rel="stylesheet" href="../../css/pattern-scaffolding.css?{{ cacheBuster }}" media="all" />
 
 
-    <!-- TYPE KIT INTEGRATION -->
-    <!-- REPLACE IN ATOM -->
+     <script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script>
+
+    <!-- BRAND INTEGRATIONS -->
+    {{> atoms-tgx-integration }}
     {{> atoms-typekit-integration }}
     
+  
   </head>
   <body class="{{ bodyClass }}">
 
