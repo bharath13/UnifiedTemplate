@@ -1,5 +1,6 @@
 {
   "sponsored?": true,
+  "leaderboard": true,
   "site_menu": {
     "icon": "logo",
     "brand_social": {
