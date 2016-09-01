@@ -370,9 +370,14 @@
   "body" : [
     {
       "article_text": {
-        "title" : "Healthy Summer Produce",
         "text" : "For anyone who enjoys <strong>food and cooking</strong>, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year. For anyone who enjoys <strong>food and cooking</strong>, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
       }
+    },
+    {
+        "blockquote": {
+          "text": "\"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+          "citation" : "John Doe"
+        }
     },
     {
       "article_text": {

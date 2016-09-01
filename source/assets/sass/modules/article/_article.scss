@@ -113,6 +113,7 @@ $article-ad-spacing: 200px;
 
   &__body {
     position: relative;
+    padding-top: 20px;
 
     &:last-of-type:after {
       content: "";
@@ -195,6 +196,7 @@ $article-ad-spacing: 200px;
     &__body {
       // padding-left: $article-spacing;
       padding-right: 0;
+      padding-top: 0;
     }
 
     &__social-share {
