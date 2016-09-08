@@ -1,6 +1,6 @@
 {
   "sponsored?": true,
-  "leaderboard": false,
+  "leaderboard": true,
   "og:url": "http://www.cookinglight.com/og:url",
   "home_url": "/",
   "site_menu": {
@@ -471,6 +471,14 @@
     ],
     "is_vertical?": false
   },
+  "content_outbrain": [
+    {
+      "widget_class": "outbrain_widget_container",
+      "data_src": "http:\/\/www.cookinglight.com",
+      "widget_id": "AR_15",
+      "ob_template": "cookinglight"
+    }
+  ],
   "data_src" : "http://www.cookinglight.com/healthy-living/weight-loss/calorie-myths",
   "sidebar_body" : [
     {

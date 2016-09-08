@@ -9,10 +9,7 @@
     <meta property="og:url" content="{{#og:url}}{{og:url}}{{/og:url}}{{^og:url}}http://www.cookinglight.com/food/everyday-menus/healthy-grilled-burgers{{/og:url}}" />
     <meta property="og:description" content="Find juicy, grilled burgers that are also good for you: not only beef, but salmon, lamb, and turkey, too." />
     <meta property="og:image" content="http://img1.cookinglight.timeinc.net/sites/default/files/image/2012/06/1206p80-cheddar-cheeseburgers-caramelized-shallots-m.jpg" />
-    <link rel="stylesheet" href="../../assets/css/main.css?{{ cacheBuster }}" media="all" />
-    <script src="../../assets/js/lib/modernizr.min.js"></script>
-    
-    
+
     <!-- patternLabHead & Patternlab specific CSS-->
     <!-- DO NOT REMOVE FROM PATTERLAB -->
     <!-- REMOVE FOR PRODUCTION -->
@@ -21,11 +18,19 @@
     <!-- End Pattern Lab -->
     <link rel="stylesheet" href="../../css/pattern-scaffolding.css?{{ cacheBuster }}" media="all" />
 
+    
 
-    <!-- TYPE KIT INTEGRATION -->
-    <!-- REPLACE IN ATOM -->
+    <link rel="stylesheet" href="../../assets/css/main.css?{{ cacheBuster }}" media="all" />
+    <script src="../../assets/js/lib/modernizr.min.js"></script>
+    <script src="http://tia.timeinc.net/timeinc/tia_tgx.js" async></script>
+    <script src="../../assets/js/lib/ti_ads_dfp.js" async></script>
+    <script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script>
+
+    <!-- BRAND INTEGRATIONS -->
+    {{> atoms-tgx-integration }}
     {{> atoms-typekit-integration }}
     
+  
   </head>
   <body class="{{ bodyClass }}">
 

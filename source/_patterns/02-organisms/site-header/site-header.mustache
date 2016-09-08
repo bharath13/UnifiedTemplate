@@ -2,10 +2,6 @@
 <header class="site-header {{#glance_bar}}has-glance-bar{{/glance_bar}}">
   <div class="site-header__bar site-header__menu-bar {{#basic_nav?}}basic-nav{{/basic_nav?}}" data-js-component="stickyNav" {{#scroll_target}} data-scroll-target="{{scroll_target}}" {{/scroll_target}}>
 
-    {{#leaderboard}}
-    {{> molecules-ads-leaderboard-flex }}
-    {{/leaderboard}}
-
     {{! <div class="site-header__wrap"> }}
       <div class="menu-bar">
         
@@ -39,16 +35,9 @@
     
   </div>
 
-  <!--<div class="site-header__group">
-    <div class="site-header__bar show-at-md">
-      <div class="site-header__wrap">
-          {{> organisms-site-nav  }}
-      </div>
-    </div>
-
-      
-    {{> organisms-glance-bar }}
-  </div> -->
+  {{#leaderboard}}
+    {{> molecules-ads-leaderboard-flex }}
+  {{/leaderboard}}
 
 </header>
 {{/site_header}}
