@@ -73,6 +73,11 @@
                               $opacity-animation;
     }
 
+    &__credit, &__caption {
+      margin-right: 0px;
+      margin-left: 0px;
+    } 
+
     &:hover .social-share {
       opacity: 1;
       visibility: visible;
