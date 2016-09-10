@@ -1,0 +1,24 @@
+{
+  "primary_menu" :{
+    "icon": "arrow-down",
+    "menu_items": [
+      {
+        "name": "Patrick Menu Item",
+        "url": "http://foo.com",
+        "bold?": false,
+        "sub_menu": {
+          "items": [
+            {
+              "name": "Child Menu Item",
+              "url": "http://bar.com"
+            },
+            {
+              "name": "Weight Loss",
+              "url": "http://foo.com"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

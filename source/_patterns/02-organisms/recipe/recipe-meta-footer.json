@@ -1,0 +1,38 @@
+{
+  "recipe_meta_footer": {
+    "tag_set": {
+      "tags": [
+        {
+          "text": "Pasta",
+          "url": "http://foo.com"
+        },
+        {
+          "text": "Shrimp",
+          "url": "http://foo.com"
+        },
+        {
+          "text": "Mushrooms",
+          "url": "http://foo.com"
+        },
+        {
+          "text": "Easy Dinners",
+          "url": "http://foo.com"
+        }
+      ]
+    },
+    "recipe_utility_links": {
+      "items": [
+        {
+          "url": "foo.com",
+          "icon": "email",
+          "label": "Email"
+        },
+        {
+          "url": "foo.com",
+          "icon": "print",
+          "label": "Print"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "breadcrumbs" : {
+    "items": [
+      {
+        "url": "http://example.com",
+        "text": "Food"
+      },
+      {
+        "url": "http://example.com",
+        "text": "In Season"
+      },
+      {
+        "text": "Summer Produce Guide",
+        "is_active?": true
+      }
+    ]
+  },
+  "header" : [
+    {
+      "title" : "Summer Produce Guide"
+    },
+    {
+      "article_media" : {
+        "wrap?": false,
+        "left?" : false,
+        "right?" :false,
+        "stretch?" : false,
+        "social_share": {
+          "items": [
+            {
+              "icon" : "facebook",
+              "url" : "foo.com"
+            },
+            {
+              "icon" : "pinterest",
+              "url" : "foo.com"
+            }
+          ]
+        },
+        "hero" : {
+          "src": "http://placehold.it/900x694",
+          "alt": "This is some alt text for the image"
+        }
+      }
+    },
+    {
+      "article_sponsor" : "<img src='http://placehold.it/170x30' alt='this is some alt text'>"
+    },
+    {
+      "article_meta" : {
+        "byline" : {
+          "url": "http://example.com",
+          "img": "http://placehold.it/45x45",
+          "alt": "This is alternate text",
+          "text": "Eva Gonzalez",
+          "date": "June, 6, 2016"
+        }
+      }
+    },
+    {
+      "article_lead" : "O, summer... enjoy with us the sweet taste of fruits and lucious crunch of vegetables."
+    },
+    {
+      "article_credit" : "Patrick Johnson"
+    }
+
+  ],
+  "social_share" : {
+    "items": [
+      {
+        "icon" : "facebook",
+        "url" : "foo.com"
+      },
+      {
+        "icon" : "pinterest",
+        "url" : "foo.com"
+      },
+      {
+        "icon" : "twitter",
+        "url" : "foo.com"
+      },
+      {
+        "icon" : "email",
+        "url" : "foo.com"
+      }
+    ],
+    "is_vertical?": true
+  },
+  "body" : [
+
+    {
+      "article_text": {
+        "title" : "Healthy Summer Produce",
+        "text" : "For anyone who enjoys food and cooking, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
+      }
+    },
+    {
+      "article_media" : {
+        "wrap?": false,
+        "left?" : false,
+        "right?" :false,
+        "stretch?" : true,
+        "social_share": {
+          "items": [
+            {
+              "icon" : "facebook",
+              "url" : "foo.com"
+            },
+            {
+              "icon" : "pinterest",
+              "url" : "foo.com"
+            }
+          ]
+        },
+        "three_up_media" : {
+          "images" : [
+            {
+              "media_src": "http://placehold.it/375x375",
+              "media_alt": "This is some alt text for the image"
+            },
+            {
+              "media_src": "http://placehold.it/375x375",
+              "media_alt": "This is some alt text for the image"
+            },
+            {
+              "media_src": "http://placehold.it/375x375",
+              "media_alt": "This is some alt text for the image"
+            }
+          ],
+          "credit": "Jonathan Doensmith",
+          "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta sequi nam deleniti delectus, sit, veniam porro quos, sunt illum quaerat, voluptatem quod non repudiandae possimus placeat fuga at molestias labore?"
+        }
+      }
+    },
+    {
+      "related_content" : {
+        "related_articles" : {
+          "accent_header" : {
+            "title": "Tomato Recipes",
+            "subtitle": "Explore More"
+          },
+          "items": [
+            {
+              "img": "http://placehold.it/400x300",
+              "alt": "This is an img alt text",
+              "url": "http://example.com",
+              "title": "Heirloom Tomato and Avocado Stack",
+              "cta": "Favorite Summer Salads",
+              "category": "category name"
+            },
+            {
+              "img": "http://placehold.it/400x300",
+              "alt": "This is an img alt text",
+              "url": "http://example.com",
+              "title": "How to Make Superfast Dinner Salads",
+              "cta": "buy now",
+              "category": "category name"
+            },
+            {
+              "img": "http://placehold.it/400x300",
+              "alt": "This is an img alt text",
+              "url": "http://example.com",
+              "title": "Chunky Tomato-Fruit Gazpacho",
+              "cta": "Favorite Summer Salads",
+              "category": "patrick's category"
+            }
+          ]
+        },
+        "content_slider": {
+          "items": [
+            {
+              "url": "#",
+              "caption": "Tomato and Avocado Stack",
+              "cta": "Get the recipe"
+            },
+            {
+              "url": "#",
+              "caption": "Orange and Avocado Stack",
+              "cta": "Get the recipe"
+            },
+            {
+              "url": "#",
+              "caption": "Grape and Avocado Stack",
+              "cta": "Get the recipe"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "secondary_menu" :{
+    "menu_items": [
+      {
+        "name": "Customer Service",
+        "url": "http://foo.com"
+      },
+      {
+        "name": "Secondary Link",
+        "url": "http://foo.com"
+      },
+      {
+        "name": "Secondary Link",
+        "url": "http://foo.com"
+      },
+      {
+        "name": "Secondary Link",
+        "url": "http://foo.com"
+      }
+    ]
+  }
+}

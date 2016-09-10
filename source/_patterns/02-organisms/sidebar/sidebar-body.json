@@ -1,0 +1,46 @@
+{
+  "sidebar_body" : [
+    {
+      "ad_300x350" : {
+        "single_pattern?": true,
+        "zone": "homepage",
+        "pos": "0000001",
+        "defer": 0
+      }
+    },
+   { 
+    "outbrain" : {
+        "widget_class": "outbrain_widget_sidebar",
+        "data_src": "http://www.cookinglight.com",
+        "widget_id": "AR_11",
+        "ob_template": "cookinglight"
+      }
+    },
+    {
+      "related_list" : {
+        "accent_header" : {
+          "title" : "Now In Season"
+        },
+        "items": [
+          {
+            "img": "http://placehold.it/240x240",
+            "img_alt": "This is an img alt text",
+            "url": "http://example.com",
+            "text": "Favorite Summer Salads"
+          },
+          {
+            "img": false,
+            "label": "Paid Content",
+            "url": "http://example.com",
+            "text": "Cooking With Plums"
+          },
+          {
+            "img": false,
+            "url": "http://example.com",
+            "text": "Cooking with Asparagus"
+          }
+        ]
+      }
+    }
+  ]
+}

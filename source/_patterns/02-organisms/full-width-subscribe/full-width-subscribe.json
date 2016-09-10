@@ -1,0 +1,28 @@
+{
+  "full-width-subscribe": {
+    "subscribe": {
+      "title": "Subscribe & Save",
+      "tagline": "Subscribe today and save 78% off the cover price.",
+      "cta": "Subscribe Now",
+      "url": "https://subscription.cookinglight.com/storefront/subscribe-to-cooking-light/link/1035986.html"
+    },
+    "newsletter": {
+      "cta": "Sign Up for our Newsletter",
+      "tagline": "Join our newsletter for free recipes, healthy living inspiration, and special offers.",
+      "privacy_policy_link": "https://subscription.timeinc.com/storefront/privacy/cookinglight/generic_privacy_new.html?dnp-source=E",
+      "privacy_policy_text": "Privacy Policy",
+      "form": {
+        "action": "http://cl.s7.exct.net/DEManager.aspx",
+        "source": "ck_rightrail",
+        "clientid": "7213753",
+        "externalkey": "Newsletter_Staging",
+        "successurl": "www.cookinglight.com",
+        "errorurl": "www.cookinglight.com",
+        "newslettername": "WEEKLY_NEWSLETTER",
+        "input1_placeholder": "Email Address",
+        "input2_placeholder": "Zipcode",
+        "btn": "Sign Up"
+      }
+    }
+  }
+}

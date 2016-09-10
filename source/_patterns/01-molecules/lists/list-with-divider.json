@@ -1,0 +1,27 @@
+{
+  "list_with_divider": {
+    "items": [
+      {
+        "text": "This is a list item in an unordered list foo"
+      },
+      {
+        "text": "This is a list item in an unordered list"
+      },
+      {
+        "text": "This is a list item in an unordered list"
+      },
+      {
+        "text": "This is a list item in an unordered list"
+      },
+      {
+        "text": "This is a list item in an unordered list"
+      },
+      {
+        "text": "This is a list item in an unordered list"
+      },
+      {
+        "text": "This is a list item in an unordered list"
+      }
+    ]
+  }
+}

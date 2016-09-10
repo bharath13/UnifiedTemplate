@@ -1,0 +1,150 @@
+{
+  "site_menu": {
+    "home_url": "/",
+    "icon": "ckl-logo",
+    "brand_social": {
+      "items": [
+        {
+          "icon": "facebook",
+          "url": "https://www.facebook.com/CookingLight"
+        },
+        {
+          "icon": "pinterest",
+          "url": "http://www.pinterest.com/cookinglight/"
+        },
+        {
+          "icon": "instagram",
+          "url": "https://www.instagram.com/cookinglight/"
+        },
+        {
+          "icon": "snapchat",
+          "url": "https://www.snapchat.com/add/cookinglight"
+        },
+        {
+          "icon": "youtube",
+          "url": "https://www.youtube.com/user/cookinglight"
+        },
+        {
+          "icon": "twitter",
+          "url": "https://twitter.com/Cooking_Light"
+        }
+      ]
+    },
+    "search_bar": {
+      "form_action": "/",
+      "in_side_nav?": true
+    },
+    "primary_menu": {
+      "menu_items": [
+        {
+          "name": "Food",
+          "url": "http://foo.com",
+          "bold": false,
+          "sub_menu": {
+            "items": [
+              {
+                "name": "Foo",
+                "url": "http://bar.com"
+              },
+              {
+                "name": "Bar",
+                "url": "http://foo.com"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Nutrition",
+          "url": "http://foo.com",
+          "bold": false,
+          "sub_menu": {
+            "items": [
+              {
+                "name": "Foo",
+                "url": "http://bar.com"
+              },
+              {
+                "name": "Bar",
+                "url": "http://foo.com"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Healthy Living",
+          "url": "http://foo.com",
+          "bold": false,
+          "sub_menu": {
+            "items": [
+              {
+                "name": "Weight Loss",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Fitness",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Travel",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Healthy Habits",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Beauty",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Home",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Healthy Living Videos",
+                "url": "http://foo.com"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Diet",
+          "url": "http://foo.com"
+        },
+        {
+          "name": "Videos",
+          "url": "http://foo.com"
+        },
+        {
+          "name": "Spring Parties",
+          "url": "http://foo.com"
+        },
+        {
+          "name": "Subscribe",
+          "url": "http://foo.com",
+          "bold?": true
+        }
+      ]
+    },
+    "secondary_menu": {
+      "menu_items": [
+        {
+          "name": "Patrick Menu Item",
+          "url": "http://foo.com"
+        },
+        {
+          "name": "Patrick Menu Item",
+          "url": "http://foo.com"
+        },
+        {
+          "name": "Patrick Menu Item",
+          "url": "http://foo.com"
+        },
+        {
+          "name": "Patrick Menu Item",
+          "url": "http://foo.com"
+        }
+      ]
+    }
+  }
+}

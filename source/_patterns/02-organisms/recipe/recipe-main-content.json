@@ -1,0 +1,86 @@
+{
+    "content_main" : [
+      {
+        "article_text": {
+          "title" : "Instructions"
+        }
+      },
+      {
+        "recipe_instruction_list": {
+          "items": [
+            {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis velit aliquam repellat sit sint at unde, quaerat quae laboriosam error fugit explicabo suscipit voluptatem deserunt. Pariatur officiis dignissimos voluptatibus, veritatis.",
+              "media" : {
+                "src": "http://placehold.it/900x694",
+                "alt": "This is some alt text for the image",
+                "caption": {
+                  "credit" : "Patrick Johnson",
+                  "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit exercitationem totam nisi illo quisquam laboriosam alias facilis repudiandae sit sed ut quo voluptate fugit repellat, voluptatum eligendi tempore veniam magnam."
+                }
+              }
+            },
+            {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis velit aliquam repellat sit sint at unde, quaerat quae laboriosam error fugit explicabo suscipit voluptatem deserunt. Pariatur officiis dignissimos voluptatibus, veritatis.",
+              "media" : {
+                "src": "http://placehold.it/900x694",
+                "alt": "This is some alt text for the image",
+                "caption": {
+                  "credit" : "Patrick Johnson",
+                  "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit exercitationem totam nisi illo quisquam laboriosam alias facilis repudiandae sit sed ut quo voluptate fugit repellat, voluptatum eligendi tempore veniam magnam."
+                }
+              }
+            },
+            {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis velit aliquam repellat sit sint at unde, quaerat quae laboriosam error fugit explicabo suscipit voluptatem deserunt. Pariatur officiis dignissimos voluptatibus, veritatis.",
+                "video" : {
+                  "caption": {
+                    "credit": "Video Credit Text"
+                  }
+                }
+            },
+            {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis velit aliquam repellat sit sint at unde, quaerat quae laboriosam error fugit explicabo suscipit voluptatem deserunt. Pariatur officiis dignissimos voluptatibus, veritatis.",
+              "media" : {
+                "src": "http://placehold.it/900x694",
+                "alt": "This is some alt text for the image",
+                "caption": {
+                  "credit" : "Patrick Johnson",
+                  "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit exercitationem totam nisi illo quisquam laboriosam alias facilis repudiandae sit sed ut quo voluptate fugit repellat, voluptatum eligendi tempore veniam magnam."
+                }
+              }
+            },
+            {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis velit aliquam repellat sit sint at unde, quaerat quae laboriosam error fugit explicabo suscipit voluptatem deserunt. Pariatur officiis dignissimos voluptatibus, veritatis.",
+              "media" : {
+                "src": "http://placehold.it/900x694",
+                "alt": "This is some alt text for the image",
+                "caption": {
+                  "credit" : "Patrick Johnson",
+                  "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit exercitationem totam nisi illo quisquam laboriosam alias facilis repudiandae sit sed ut quo voluptate fugit repellat, voluptatum eligendi tempore veniam magnam."
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "article_text": {
+          "title" : "Healthy Summer Produce123",
+          "text" : "For anyone who enjoys food and cooking, summer offers the finest ingredients—fresh local produce from the garden, farmers' market, and grocery—to make any dish superlative. The key is to keep things simple and let the quality of <a href='#'>seasonal ingredients</a> shine through. It's so easy, enjoyable, and affordable to indulge your cravings for fresh fruits and vegetables this time of year."
+        }
+      },
+      {
+        "article_copyright": {
+          "text": "Originally published <a href='#'>June 2016 on MyRecipes</a>. Adapted with permission from Book Title, copyright 2015 by Author, Yumco Publishing Co., Inc."
+        }
+      }
+    ],
+    "content_outbrain" : [
+      {
+            "widget_class": "outbrain_widget_container",
+            "data_src": "http://www.cookinglight.com",
+            "widget_id": "AR_15",
+            "ob_template": "cookinglight"
+      }
+    ] 
+ }

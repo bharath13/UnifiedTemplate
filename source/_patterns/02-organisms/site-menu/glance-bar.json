@@ -1,0 +1,8 @@
+{
+  "glance_bar": {
+    "url": "http://foo.com",
+    "text": "In Season",
+    "subscribe_url": "http://bar.com",
+    "subscribe_text": "Subscribe"
+  }
+}

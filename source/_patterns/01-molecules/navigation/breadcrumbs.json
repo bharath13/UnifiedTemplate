@@ -1,0 +1,19 @@
+{
+  "breadcrumbs": {
+    "items": [
+      {
+        "url": "http://example.com",
+        "text": "Food"
+      },
+      {
+        "url": "http://example.com",
+        "text": "In Season"
+      },
+      {
+        "url": "http://example.com",
+        "text": "Summer Produce Guide",
+        "is_active?": true
+      }
+    ]
+  }
+}
