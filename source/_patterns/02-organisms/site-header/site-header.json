@@ -1,0 +1,308 @@
+{
+  "site_header": {
+    "home_url": "/",
+    "leaderboard": "true",
+    "social_share": {
+      "items": [
+        {
+          "icon" : "facebook",
+          "url" : "foo.com"
+        },
+        {
+          "icon" : "pinterest",
+          "url" : "foo.com"
+        },
+        {
+          "icon" : "twitter",
+          "url" : "foo.com"
+        },
+        {
+          "icon" : "email",
+          "url" : "foo.com"
+        }
+      ]
+    },
+    "site_nav": {
+      "items": [
+        {
+          "url": "http://foo.com",
+          "text": "food",
+          "sub_menu": {
+            "items": [
+              {
+                "text": "Recipes",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "In Season",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Everyday Menus",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Quick & Healthy",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Vegetarian",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Entertain & Menus",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Cooking 101",
+                "url": "http://bar.com"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://foo.com",
+          "text": "nutrition"
+        },
+        {
+          "url": "http://foo.com",
+          "text": "healthy living",
+          "sub_menu": {
+            "items": [
+              {
+                "text": "Recipes",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "In Season",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Everyday Menus",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Quick & Healthy",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Vegetarian",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Entertain & Menus",
+                "url": "http://bar.com"
+              },
+              {
+                "text": "Cooking 101",
+                "url": "http://bar.com"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://foo.com",
+          "text": "diet"
+        },
+        {
+          "url": "http://foo.com",
+          "text": "videos"
+        },
+        {
+          "url": "http://foo.com",
+          "text": "spring parties"
+        },
+        {
+          "url": "http://foo.com",
+          "text": "subscribe",
+          "bold?": true,
+          "subscribe?": true
+        }
+      ]
+    },
+    "glance_bar": {
+      "url": "http://foo.com",
+      "text": "In Season",
+      "subscribe_url": "http://bar.com",
+      "subscribe_text": "Subscribe"
+    },
+    "action_bar": {
+      "next_url": "#",
+      "social_share": {
+        "items": [
+          {
+            "icon" : "facebook",
+            "url" : "foo.com"
+          },
+          {
+            "icon" : "pinterest",
+            "url" : "foo.com"
+          },
+          {
+            "icon" : "twitter",
+            "url" : "foo.com"
+          },
+          {
+            "icon" : "email",
+            "url" : "foo.com"
+          },
+          {
+            "icon" : "sms",
+            "url" : "foo.com"
+          }
+        ]
+      }
+    }
+  },
+  "site_menu": {
+    "icon": "ckl-logo",
+    "brand_social": {
+      "items": [
+        {
+        "icon": "facebook",
+        "url": "https://www.facebook.com/CookingLight"
+        },
+        {
+          "icon": "pinterest",
+          "url": "http://www.pinterest.com/cookinglight/"
+        },
+        {
+          "icon": "instagram",
+          "url": "https://www.instagram.com/cookinglight/"
+        },
+        {
+          "icon": "snapchat",
+          "url": "https://www.snapchat.com/add/cookinglight"
+        },
+        {
+          "icon": "youtube",
+          "url": "https://www.youtube.com/user/cookinglight"
+        },
+        {
+          "icon": "twitter",
+          "url": "https://twitter.com/Cooking_Light"
+        }
+      ]
+    },
+    "search_bar": {
+      "form_action": "/",
+      "in_side_nav?": true
+    },
+    "primary_menu": {
+      "menu_items": [
+        {
+          "name": "Food",
+          "url": "http://foo.com",
+          "bold": false,
+          "sub_menu": {
+            "items": [
+              {
+                "name": "Foo",
+                "url": "http://bar.com"
+              },
+              {
+                "name": "Bar",
+                "url": "http://foo.com"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Nutrition",
+          "url": "http://foo.com",
+          "bold": false,
+          "sub_menu": {
+            "items": [
+              {
+                "name": "Foo",
+                "url": "http://bar.com"
+              },
+              {
+                "name": "Bar",
+                "url": "http://foo.com"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Healthy Living",
+          "url": "http://foo.com",
+          "bold": false,
+          "sub_menu": {
+            "items": [
+              {
+                "name": "Weight Loss",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Fitness",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Travel",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Healthy Habits",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Beauty",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Home",
+                "url": "http://foo.com"
+              },
+              {
+                "name": "Healthy Living Videos",
+                "url": "http://foo.com"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Diet",
+          "url": "http://foo.com"
+        },
+        {
+          "name": "Videos",
+          "url": "http://foo.com"
+        },
+        {
+          "name": "Spring Parties",
+          "url": "http://foo.com"
+        },
+        {
+          "name": "Subscribe",
+          "url": "http://foo.com",
+          "bold?": true
+        }
+      ]
+    },
+    "secondary_menu": {
+      "menu_items": [
+        {
+          "name": "Patrick Menu Item",
+          "url": "http://foo.com"
+        },
+        {
+          "name": "Patrick Menu Item",
+          "url": "http://foo.com"
+        },
+        {
+          "name": "Patrick Menu Item",
+          "url": "http://foo.com"
+        },
+        {
+          "name": "Patrick Menu Item",
+          "url": "http://foo.com"
+        }
+      ]
+    }
+  },
+  "search_bar": {
+    "form_action": "/",
+    "in_site_header?": true
+  }
+}

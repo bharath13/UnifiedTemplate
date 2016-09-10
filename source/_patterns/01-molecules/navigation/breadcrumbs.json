@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "url": "http://example.com",
+      "text": "Food"
+    },
+    {
+      "url": "http://example.com",
+      "text": "In Season"
+    },
+    {
+      "text": "Summer Produce Guide",
+      "is_active?": true
+    }
+  ]
+}

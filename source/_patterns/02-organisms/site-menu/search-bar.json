@@ -1,0 +1,6 @@
+{
+  "search_bar": {
+    "form_action": "/",
+    "in_site_header?": true
+  }
+}

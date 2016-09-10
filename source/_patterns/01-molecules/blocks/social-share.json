@@ -1,0 +1,30 @@
+{
+  "social_share" : {
+    "items": [
+      {
+        "icon": "facebook",
+        "url": "https://www.facebook.com/CookingLight"
+      },
+      {
+        "icon": "pinterest",
+        "url": "http://www.pinterest.com/cookinglight/"
+      },
+      {
+        "icon": "instagram",
+        "url": "https://www.instagram.com/cookinglight/"
+      },
+      {
+        "icon": "snapchat",
+        "url": "https://www.snapchat.com/add/cookinglight"
+      },
+      {
+        "icon": "youtube",
+        "url": "https://www.youtube.com/user/cookinglight"
+      },
+      {
+        "icon": "twitter",
+        "url": "https://twitter.com/Cooking_Light"
+      }
+    ]
+  }
+}

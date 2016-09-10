@@ -1,0 +1,66 @@
+{
+
+  "breadcrumbs": {
+    "items": [
+      {
+        "url": "http://example.com",
+        "text": "Food"
+      },
+      {
+        "url": "http://example.com",
+        "text": "In Season"
+      },
+      {
+        "url": "http://example.com",
+        "text": "Summer Produce Guide",
+        "is_active?": true
+      }
+    ]
+  },
+  "header" : [
+    {
+      "title" : "Summer Produce Guide for the greatest summer ever"
+    },
+    {
+      "article_media" : {
+        "wrap?": false,
+        "left?" : false,
+        "right?" :false,
+        "stretch?" : false,
+        "social_share": {
+          "items": [
+            {
+              "icon" : "facebook",
+              "url" : "foo.com"
+            },
+            {
+              "icon" : "pinterest",
+              "url" : "foo.com"
+            }
+          ]
+        },
+        "hero" : {
+          "src": "http://placehold.it/900x694",
+          "alt": "This is some alt text for the image"
+        }
+      }
+    },
+    {
+      "article_meta" : {
+        "byline" : {
+          "url": "http://example.com",
+          "img": "http://placehold.it/45x45",
+          "alt": "This is alternate text",
+          "text": "Eva Gonzalez",
+          "date": "June, 6, 2016"
+        }
+      }
+    },
+    {
+      "article_lead" : "O, summer... enjoy with us the sweet taste of fruits and lucious crunch of vegetables."
+    },
+    {
+      "article_credit" : "Patrick Johnson"
+    }
+  ]
+}

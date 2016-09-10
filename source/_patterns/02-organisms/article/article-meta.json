@@ -1,0 +1,11 @@
+{
+  "article_meta" : {
+    "byline" : {
+      "text": "Eva Gonzalez",
+      "url": "http://example.com",
+      "img": "http://placehold.it/45x45",
+      "alt": "This is alternate text",
+      "date": "June, 6, 2016"
+    }
+  }
+}

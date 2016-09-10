@@ -1,0 +1,100 @@
+{
+  "site_nav": {
+    "items": [
+      {
+        "url": "http://foo.com",
+        "text": "food",
+        "sub_menu": {
+          "items": [
+            {
+              "text": "Recipes",
+              "url": "http://bar.com"
+            },
+            {
+              "text": "In Season",
+              "url": "http://bar.com"
+            },
+            {
+              "text": "Everyday Menus",
+              "url": "http://bar.com"
+            },
+            {
+              "text": "Quick & Healthy",
+              "url": "http://bar.com"
+            },
+            {
+              "text": "Vegetarian",
+              "url": "http://bar.com"
+            },
+            {
+              "text": "Entertain & Menus",
+              "url": "http://bar.com"
+            },
+            {
+              "text": "Cooking 101",
+              "url": "http://bar.com"
+            }
+          ]
+        }
+      },
+      {
+        "url": "http://foo.com",
+        "text": "nutrition"
+      },
+      {
+        "url": "http://foo.com",
+        "text": "healthy living",
+        "sub_menu": {
+          "items": [
+            {
+              "text": "Recipes",
+              "url": "http://bar.com"
+            },
+            {
+              "text": "In Season",
+              "url": "http://bar.com"
+            },
+            {
+              "text": "Everyday Menus",
+              "url": "http://bar.com"
+            },
+            {
+              "text": "Quick & Healthy",
+              "url": "http://bar.com"
+            },
+            {
+              "text": "Vegetarian",
+              "url": "http://bar.com"
+            },
+            {
+              "text": "Entertain & Menus",
+              "url": "http://bar.com"
+            },
+            {
+              "text": "Cooking 101",
+              "url": "http://bar.com"
+            }
+          ]
+        }
+      },
+      {
+        "url": "http://foo.com",
+        "text": "diet"
+      },
+      {
+        "url": "http://foo.com",
+        "text": "videos"
+      },
+      {
+        "url": "http://foo.com",
+        "text": "spring parties"
+      },
+      {
+        "url": "http://foo.com",
+        "text": "subscribe",
+        "bold?": true,
+        "subscribe": true
+      }
+    ]
+  }
+}

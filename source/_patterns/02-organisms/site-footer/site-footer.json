@@ -1,0 +1,104 @@
+{
+  "site_footer": {
+    "ad_300x50" : {
+      "single_pattern?": true,
+      "zone": "homepage",
+      "pos": "0000001",
+      "defer": 0
+    },
+    "brand_social" : {
+      "items": [
+        {
+          "icon": "facebook",
+          "url": "https://www.facebook.com/CookingLight"
+        },
+        {
+          "icon": "pinterest",
+          "url": "http://www.pinterest.com/cookinglight/"
+        },
+        {
+          "icon": "snapchat",
+          "url": "https://www.snapchat.com/add/cookinglight"
+        },
+        {
+          "icon": "youtube",
+          "url": "https://www.youtube.com/user/cookinglight"
+        },
+        {
+          "icon": "twitter",
+          "url": "https://twitter.com/Cooking_Light"
+        },
+        {
+          "icon" : "email",
+          "url" : "http://www.cookinglight.com/general/contact-us"
+        }
+      ]
+    },
+    "link_group": [
+      {
+        "links": [
+          {
+            "text": "Delicious Deals",
+            "url": "http://www.cookinglight.com/general/delicious-deals"
+          },
+          {
+            "text": "Healthy Chicken Recipes",
+            "url": "http://www.cookinglight.com/food/recipe-finder/healthy-chicken-breast-recipes "
+          },
+          {
+            "text": "Top Rated Recipes",
+            "url": "http://www.cookinglight.com/food/top-rated-recipes"
+          },
+          {
+            "text": "Slow Cooker Favorites",
+            "url": "http://www.cookinglight.com/food/top-rated-recipes/slow-cooker-favorites"
+          },
+          {
+            "text": "Healthy Snack Ideas",
+            "url": "http://www.cookinglight.com/food/recipe-finder/healthy-snack-ideas"
+          },
+          {
+            "text": "Dinner Tonight",
+            "url": "http://www.cookinglight.com/food/everyday-menus/dinner-tonight-quick-easy-meals"
+          },
+          {
+            "text": "Cooking Techniques",
+            "url": "http://www.cookinglight.com/cooking-101/techniques"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "Delicious Deals",
+            "url": "http://www.cookinglight.com/general/delicious-deals"
+          },
+          {
+            "text": "Healthy Chicken Recipes",
+            "url": "http://www.cookinglight.com/food/recipe-finder/healthy-chicken-breast-recipes "
+          },
+          {
+            "text": "Top Rated Recipes",
+            "url": "http://www.cookinglight.com/food/top-rated-recipes"
+          },
+          {
+            "text": "Slow Cooker Favorites",
+            "url": "http://www.cookinglight.com/food/top-rated-recipes/slow-cooker-favorites"
+          },
+          {
+            "text": "Healthy Snack Ideas",
+            "url": "http://www.cookinglight.com/food/recipe-finder/healthy-snack-ideas"
+          },
+          {
+            "text": "Dinner Tonight",
+            "url": "http://www.cookinglight.com/food/everyday-menus/dinner-tonight-quick-easy-meals"
+          },
+          {
+            "text": "Cooking Techniques",
+            "url": "http://www.cookinglight.com/cooking-101/techniques"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "hero" : {
+    "src": "http://placehold.it/900x694",
+    "alt": "This is some alt text for the image",
+    "caption": {
+      "credit" : "Patrick Johnson",
+      "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit exercitationem totam nisi illo quisquam laboriosam alias facilis repudiandae sit sed ut quo voluptate fugit repellat, voluptatum eligendi tempore veniam magnam."
+    }
+  }
+}

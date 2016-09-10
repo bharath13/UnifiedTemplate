@@ -128,3 +128,6 @@
 .sg-pattern-category-title a {
   color: #333;
 }
+.sg-pattern-category-title + .sg-pattern-category-body:empty {
+  display: none;
+}

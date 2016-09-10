@@ -1,0 +1,27 @@
+{
+  "related_list" : {
+      "accent_header" : {
+        "title" : "Now In Season"
+      },
+      "items": [
+        {
+          "img": "http://placehold.it/150x150",
+          "img_alt": "This is an img alt text",
+          "url": "http://example.com",
+          "text": "Favorite Summer Salads"
+        },
+        {
+          "img": false,
+          "label": "Paid Content",
+          "url": "http://example.com",
+          "text": "Cooking With Plums"
+        },
+        {
+          "img": false,
+          "url": "http://example.com",
+          "text": "Cooking with Asparagus"
+        }
+      ]
+  }
+
+}

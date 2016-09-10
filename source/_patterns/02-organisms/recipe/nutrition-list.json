@@ -1,0 +1,33 @@
+{
+  "nutrition_list": {
+    "title": "Nutrition Information",
+    "icon": "arrow-down-thick",
+    "list_with_divider": {
+      "is_small?": true,
+      "items": [
+        {
+          "text": "This is a list item in an unordered list"
+        },
+        {
+          "text": "This is a list item in an unordered list"
+        },
+        {
+          "text": "This is a list item in an unordered list"
+        },
+        {
+          "text": "This is a list item in an unordered list"
+        },
+        {
+          "text": "This is a list item in an unordered list"
+        },
+        {
+          "text": "This is a list item in an unordered list"
+        },
+        {
+          "text": "This is a list item in an unordered list"
+        }
+      ]
+    }
+  }
+
+}

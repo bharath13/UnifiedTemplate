@@ -1,0 +1,25 @@
+{
+  "article_media" : {
+    "wrap?": false,
+    "left?" : false,
+    "right?" :false,
+    "stretch?" : false,
+    "social_share": {
+      "items": [
+        {
+          "icon" : "facebook",
+          "url" : "foo.com"
+        },
+        {
+          "icon" : "pinterest",
+          "url" : "foo.com"
+        }
+      ]
+    },
+    "media" : {
+      "src": "http://placehold.it/300x400",
+      "alt": "This is some alt text for the image",
+      "credit": "Jonathan Doensmith"
+    }
+  }
+}
