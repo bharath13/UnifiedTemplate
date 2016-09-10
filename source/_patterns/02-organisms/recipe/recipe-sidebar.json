@@ -1,0 +1,119 @@
+{
+	"content_sidebar": [
+    {
+      "article_text": {
+        "title": "Ingredients"
+      },
+      "recipe_list": [
+        {
+          "title": "Sauce",
+          "recipe_ingredient_list": {
+            "items": [
+              {
+                "text": "This is a list item in an unordered list foo",
+                "url": ""
+              },
+              {
+                "text": "This is a list item in an unordered list",
+                "url": ""
+              },
+              {
+                "text": "This is a list item in an unordered list",
+                "url": ""
+              },
+              {
+                "text": "This is a list item in an unordered list",
+                "url": ""
+              },
+              {
+                "text": "This is a list item in an unordered list",
+                "url": ""
+              },
+              {
+                "text": "This is a list item in an unordered list",
+                "url": ""
+              },
+              {
+                "text": "This is a list item in an unordered list",
+                "url": "http:\/\/www.google.com"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Sauce",
+          "recipe_ingredient_list": {
+            "items": [
+              {
+                "text": "This is a list item in an unordered list foo",
+                "url": ""
+              },
+              {
+                "text": "This is a list item in an unordered list",
+                "url": ""
+              },
+              {
+                "text": "This is a list item in an unordered list",
+                "url": ""
+              },
+              {
+                "text": "This is a list item in an unordered list",
+                "url": ""
+              },
+              {
+                "text": "This is a list item in an unordered list",
+                "url": ""
+              },
+              {
+                "text": "This is a list item in an unordered list",
+                "url": ""
+              },
+              {
+                "text": "This is a list item in an unordered list",
+                "url": "http:\/\/www.google.com"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chicory": {
+        "url": "#",
+        "text": "Get Ingredients"
+      }
+    },
+    {
+      "nutrition_list": {
+        "title": "Nutrition Information",
+        "icon": "arrow-down-thick",
+        "list_with_divider": {
+          "is_small?": true,
+          "items": [
+            {
+              "text": "This is a list item in an unordered list foo"
+            },
+            {
+              "text": "This is a list item in an unordered list"
+            },
+            {
+              "text": "This is a list item in an unordered list"
+            },
+            {
+              "text": "This is a list item in an unordered list"
+            },
+            {
+              "text": "This is a list item in an unordered list"
+            },
+            {
+              "text": "This is a list item in an unordered list"
+            },
+            {
+              "text": "This is a list item in an unordered list"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,5 +1,4 @@
 {
-
   "breadcrumbs": {
     "items": [
       {
@@ -22,6 +21,17 @@
       "title" : "Summer Produce Guide for the greatest summer ever"
     },
     {
+      "article_meta" : {
+        "byline" : {
+          "text": "Eva Gonzalez",
+          "url": "http://example.com",
+          "img": "http://placehold.it/45x45",
+          "alt": "This is alternate text",
+          "date": "June, 6, 2016"
+        }
+      }
+    },    
+    {
       "article_media" : {
         "wrap?": false,
         "left?" : false,
@@ -39,6 +49,9 @@
             }
           ]
         },
+        "caption": {
+          "credit": "Image Credit: Patrick Johnson"
+        },
         "hero" : {
           "src": "http://placehold.it/900x694",
           "alt": "This is some alt text for the image"
@@ -46,21 +59,10 @@
       }
     },
     {
-      "article_meta" : {
-        "byline" : {
-          "url": "http://example.com",
-          "img": "http://placehold.it/45x45",
-          "alt": "This is alternate text",
-          "text": "Eva Gonzalez",
-          "date": "June, 6, 2016"
-        }
-      }
+      "article_credit" : ""
     },
     {
       "article_lead" : "O, summer... enjoy with us the sweet taste of fruits and lucious crunch of vegetables."
-    },
-    {
-      "article_credit" : "Patrick Johnson"
     }
   ]
 }
