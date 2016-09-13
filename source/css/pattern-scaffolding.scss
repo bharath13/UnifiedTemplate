@@ -137,3 +137,16 @@
     fill: color(primary, med);
   }
 }
+
+
+
+/* PATTERN HEADINGS TO HIDE ON THE ALL PAGE */ 
+
+#viewall-atoms-ads,
+#viewall-atoms-integrations,
+#viewall-atoms-icons,
+#viewall-molecules-ads,
+#viewall-organisms-site-menu,
+#viewall-organisms-site-nav {
+  display: none;
+}
