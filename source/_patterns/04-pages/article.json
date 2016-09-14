@@ -1,5 +1,5 @@
 {
-  "sponsored?": true,
+  "sponsored?": false,
   "leaderboard": true,
   "og:url": "http://www.cookinglight.com/og:url",
   "home_url": "/",
@@ -260,7 +260,7 @@
           "url": "http://foo.com",
           "text": "subscribe",
           "bold?": true,
-          "subscribe?": true
+          "subscribe?": false
         }
       ]
     },
@@ -320,7 +320,7 @@
   },
   "header" : [
     {
-      "title" : "Summer Produce Guide for the greatest summer ever"
+      "title" : "Summer Produce Guide for the Greatest Summer Ever"
     },
     {
       "article_meta" : {
