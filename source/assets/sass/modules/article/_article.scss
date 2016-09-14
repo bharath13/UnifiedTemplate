@@ -18,7 +18,7 @@ $article-ad-spacing: 200px;
     margin-bottom: 0px;
     padding-top: 18px;
     padding-bottom: 10px;
-    border-bottom: 2px solid color(tertiary, lite);
+    border-bottom: 2px solid color(tertiary, extra-lite);
 
     &-wrap {
       position: relative;
@@ -102,6 +102,12 @@ $article-ad-spacing: 200px;
 
     &--hero {
       margin-bottom: 15px;
+      figcaption {
+        padding: 0 15px;
+        @include respond-to('md and up') {
+          padding: 0;
+        }
+      }
     }
   }
 
