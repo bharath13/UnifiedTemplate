@@ -269,7 +269,7 @@
           "url": "http:\/\/foo.com",
           "text": "subscribe",
           "bold?": true,
-          "subscribe?": true
+          "subscribe?": false
         }
       ]
     },

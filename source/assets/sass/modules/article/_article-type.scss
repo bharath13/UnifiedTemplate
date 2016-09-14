@@ -40,7 +40,7 @@
   @include serif;
   color: color(tertiary, med);
   text-align: left;
-  font-size: 1.615rem;
+  font-size: 1.85rem;
   line-height: 1.225;
   letter-spacing: 0.025em;
   margin-top: 0;
@@ -85,7 +85,7 @@
   > p {
     @include sans-serif-extra-lite;
     font-size: rem(20);
-    line-height: 1.38;
+    line-height: 1.5;
     margin-bottom: 26px;
   }
 }
@@ -108,7 +108,7 @@
     }
 
     > p {
-      font-size: rem(22);
+      font-size: 1.3rem;
     }
   }
   .article__header {
