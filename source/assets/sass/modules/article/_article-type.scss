@@ -24,7 +24,7 @@
 .article-section-title {
   @include serif-bold;
   color: color(primary, dark);
-  font-size: rem(32);
+  font-size: 1.9rem;
   line-height: 1.2;
   margin: 25px 0 15px 0;
   letter-spacing: .018em;
@@ -49,7 +49,6 @@
 
 .article__body {
   > h1,
-  > h2,
   > h3,
   > h4,
   > h5,
@@ -60,9 +59,7 @@
     letter-spacing: 0.01em;
   }
 
-  > h1,
-  > h2,
-  > .article-section-title {
+  > h1 {
       font-size: rem(34);
     }
 
@@ -101,9 +98,7 @@
   }
 
   .article__body {
-    > h1,
-    > h2,
-    > .article-section-title {
+    > h1 {
       font-size: rem(32);
     }
 
@@ -114,11 +109,4 @@
   .article__header {
     text-align: left;
   }
-}
-
-@include respond-to('md and up') {
-  .article-section-title {
-    font-size: rem(35);
-  }
-  
 }

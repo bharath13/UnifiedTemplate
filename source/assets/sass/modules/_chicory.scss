@@ -7,7 +7,7 @@
 .chicory {
   @include clearfix;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
   &__btn {
     @include sans-serif-semibold;
@@ -32,7 +32,7 @@
     @include sans-serif;
     display: block;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
     line-height: 1;
     font-size: rem(14);
     color: color(tertiary, lite);
