@@ -9,7 +9,7 @@ $size: 25px;
 
 .recipe-instructions {
   @include clearfix;
-  padding-bottom: 30px;
+  padding-bottom: 5px;
   &__list-item {
     overflow: hidden;
     margin-bottom: 10px;
