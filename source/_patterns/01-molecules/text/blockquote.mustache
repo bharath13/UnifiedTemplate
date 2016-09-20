@@ -1,13 +1,9 @@
 {{#blockquote}}
   <blockquote>
-  <?xml version="1.0" encoding="utf-8"?>
-	<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-	<svg class="icon-quotation-mark">
-		{{> atoms-icon-quotation-mark }}
-    </svg>
-    <p>{{text}}</p>
+    {{> atoms-blockquote-icon }}
+    {{> atoms-blockquote-text }}
     {{#citation}}
-      <cite class="citation">{{citation}}</cite>
+      {{> atoms-blockquote-citation }}
     {{/citation}}
   </blockquote>
 {{/blockquote}}

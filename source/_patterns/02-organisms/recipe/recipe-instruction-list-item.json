@@ -1,5 +1,6 @@
 {
-  "hero" : {
+  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis velit aliquam repellat sit sint at unde, quaerat quae laboriosam error fugit explicabo suscipit voluptatem deserunt. Pariatur officiis dignissimos voluptatibus, veritatis.",
+  "media" : {
     "src": "http://placehold.it/900x694",
     "alt": "This is some alt text for the image",
     "caption": {
