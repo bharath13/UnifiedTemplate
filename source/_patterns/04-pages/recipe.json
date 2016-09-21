@@ -423,8 +423,8 @@
     },
     {
       "recipe_meta_footer": {
-        "tag_set": {
-          "tags": [
+        "keyword_set": {
+          "keyword": [
             {
               "text": "Pasta",
               "url": "http:\/\/foo.com"
