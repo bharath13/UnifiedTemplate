@@ -3,15 +3,7 @@
 
     <ol class="recipe-instructions__list custom-list custom-list--lg custom-list--branded custom-list--serif" itemprop="recipeInstructions">
       {{#items}}
-        <li class="recipe-instructions__list-item custom-list__item">
-          <div class="recipe-instructions__content">
-            {{text}}
-            {{> organisms-article-media-single }}
-
-            {{> organisms-article-media-video }}
-          </div>
-
-        </li>
+        {{> organisms-recipe-instruction-list-item }}
       {{/items}}
     </ol>
   </div>

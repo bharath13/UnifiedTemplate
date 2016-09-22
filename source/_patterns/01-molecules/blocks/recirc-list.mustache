@@ -11,25 +11,13 @@
 }}
 
 {{#related_list}}
-<div class="related-list">
+<div class="recirc-list">
   {{#accent_header}}
-    {{> molecules-accent-header }}
+    {{> molecules-section-title }}
   {{/accent_header}}
 
   {{#items}}
-    <a class="related-list__item" href="{{url}}">
-      {{#img}}
-        <div class="related-list__img-wrap">
-          <img class="related-list__img" src="{{img}}" alt="{{img_alt}}">
-        </div>
-      {{/img}}
-
-      {{ text }}
-
-      {{#label}}
-        <span class="related-list__label">{{label}}</span>
-      {{/label}}
-    </a>
+    {{> atoms-recirc-list-item }}
   {{/items}}
 </div>
 {{/related_list}}
