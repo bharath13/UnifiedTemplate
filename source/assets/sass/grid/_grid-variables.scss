@@ -1,0 +1,39 @@
+$container-width: 1260px;
+$fixed-width-columns: 3, 4, 8, 9;  // Enables generation of static sidebar classes
+
+$column-count: 12;
+$gutter-ratio: .40; // Represented as a percentage of column width.
+
+$custom-grid-settings: (
+  container: $container-width,
+  columns: $column-count,
+  gutters: $gutter-ratio,
+);
+
+$susy: (
+    flow: ltr,
+    math: fluid,
+    output: float,
+    gutter-position: inside,
+    container: auto,
+    container-position: center,
+    columns: 12,
+    gutters: .25,
+    global-box-sizing: content-box,
+    last-flow: to,
+    debug: (
+      image: show,
+      color: rgba(#66f, .25),
+      output: background,
+      toggle: top right,
+    ),
+    use-custom: (
+      background-image: true,
+      background-options: false,
+      box-sizing: true,
+      clearfix: false,
+      rem: true,
+    )
+);
+
+$susy: map-merge($susy, $custom-grid-settings);

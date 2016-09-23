@@ -1,0 +1,29 @@
+@import 'grid-variables';
+
+.g-span-xs-12 {
+  width: 100%; }
+
+@media (min-width: 1024px) {
+  .g-span-md-4 {
+    width: 33.3333333333%; } 
+  .g-span-md-8 {
+    width: 66.6666666667%; }
+  .g-span-md-12 {
+    width: 100%; } }
+
+[class*="--has-sw-sidebar"],
+[class*="--is-sw-sidebar"] {
+  width: 100%; }
+
+[class*="g-span-"] {
+  @include gutters();
+  float: left;
+  box-sizing: border-box;
+}
+
+.g-wrap {
+  @include clearfix();
+  margin-left: - gutter();
+  margin-right: - gutter();
+  clear: both;
+}
