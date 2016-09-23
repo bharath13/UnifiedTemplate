@@ -44,7 +44,10 @@
 /*-------------------------------------------- */
 /** Grid */
 /*-------------------------------------------- */
-@import 'grid/base-grid';
+// 'grid/base-grid' is used to generate new grid classes
+// 'grid/grid' contains classes we're actually using
+// @import 'grid/base-grid';
+@import 'grid/grid';
 
 
 

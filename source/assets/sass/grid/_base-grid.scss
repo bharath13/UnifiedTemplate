@@ -1,43 +1,7 @@
-$generate-grid-classes: true;   // Determines whether or not we output a grid in CSS
-$fixed-width-columns: 3, 4, 8, 9;  // Enables generation of static sidebar classes
+// THIS FILE SHOULD ONLY BE USED WHEN GENERATING NEW GRID CLASSES
 
-$container-width: 1260px;
-$column-count: 12;
-$gutter-ratio: .40; // Represented as a percentage of column width.
-
-$custom-grid-settings: (
-  container: $container-width,
-  columns: $column-count,
-  gutters: $gutter-ratio,
-);
-
-$susy: (
-    flow: ltr,
-    math: fluid,
-    output: float,
-    gutter-position: inside,
-    container: auto,
-    container-position: center,
-    columns: 12,
-    gutters: .25,
-    global-box-sizing: content-box,
-    last-flow: to,
-    debug: (
-      image: show,
-      color: rgba(#66f, .25),
-      output: background,
-      toggle: top right,
-    ),
-    use-custom: (
-      background-image: true,
-      background-options: false,
-      box-sizing: true,
-      clearfix: false,
-      rem: true,
-    )
-);
-
-$susy: map-merge($susy, $custom-grid-settings);
+@import 'grid-variables';
+$generate-grid-classes: true; 
 
 @if $generate-grid-classes {
 
@@ -91,22 +55,4 @@ $susy: map-merge($susy, $custom-grid-settings);
   margin-left: - gutter();
   margin-right: - gutter();
   clear: both;
-}
-
-
-// Documentation only classes
-// Should not be used in production
-// Just to show how the grid works
-.g-inner {
-  background-color: salmon;
-}
-
-.g-nested {
-  background-color: blue;
-  color: white;
-}
-
-.g-wrap-space {
-  margin-bottom: 25px;
-  background-color: gold;
 }

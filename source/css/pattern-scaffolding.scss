@@ -151,3 +151,21 @@
 #universal-ad-call_1 {
   display: none;
 }
+
+
+// Documentation only classes
+// Should not be used in production
+// Just to show how the grid works
+.g-inner {
+  background-color: salmon;
+}
+
+.g-nested {
+  background-color: blue;
+  color: white;
+}
+
+.g-wrap-space {
+  margin-bottom: 25px;
+  background-color: gold;
+}
