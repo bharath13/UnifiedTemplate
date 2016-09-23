@@ -61,3 +61,16 @@ $colors: (
  $link-color: color(secondary, med);
  $link-color-hover: color(secondary, dark);
  $link-color-active:  $link-color-hover;
+
+
+ /*-------------------------------------------- */
+ /** Nav Colors */
+ /*-------------------------------------------- */
+
+ $brand-bar-bg: color(tertiary, dark);
+ $brand-bar-link: color(white);
+ $brand-bar-link-hover: $brand-primary;
+ $brand-bar-icons: color(white);
+ $brand-bar-title-color: color(white);
+ $brand-bar-next-bg-color: color(primary, dark);
+ $brand-bar-next-color: color(white);
