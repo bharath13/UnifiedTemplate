@@ -31,8 +31,8 @@
   }
 
   &__next {
-    background-color: color(primary, dark);
-    color: color(white);
+    background-color: $brand-bar-next-bg-color;
+    color: $brand-bar-next-color;
     width: 85px;
     text-align: center;
   }
@@ -40,7 +40,7 @@
   &__link {
     display: block;
     letter-spacing: 0.175em;
-    color: color(white);
+    color: $brand-bar-next-color;
 
     &:hover {
       color: color(white);
