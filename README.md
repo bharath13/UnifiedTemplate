@@ -19,3 +19,6 @@ Molecules - can contain HTML/SVG markup and Atoms.  Molecules should not contain
 
 Organisms - can contain HTML/SVG mark up, Atoms, Molecules, and other Organisms.
 
+## Validate JSON
+From project root folder run:
+`npm run validate-json`

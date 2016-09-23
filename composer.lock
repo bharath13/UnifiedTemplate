@@ -1029,6 +1029,20 @@
                 "websocket"
             ],
             "time": "2015-11-06 07:45:55"
+        },
+        {
+            "name": "jcr",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:aylusltd/jcr.git",
+                "reference": "master"
+            },
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "master"
+                }
+            }
         }
     ],
     "packages-dev": [],
