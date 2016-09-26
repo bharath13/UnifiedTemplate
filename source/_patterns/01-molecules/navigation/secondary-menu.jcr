@@ -1,0 +1,10 @@
+{
+  "secondary_menu" :{
+    "menu_items": [
+      {
+        "name": String,
+        "url": String
+      }
+    ]
+  }
+}

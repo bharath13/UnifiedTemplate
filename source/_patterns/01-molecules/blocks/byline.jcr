@@ -1,0 +1,10 @@
+{
+  "byline" : {
+    "url": String,
+    "img": String,
+    "alt": String,
+    "text": String,
+    "date": String,
+    "ISOdate": String
+  }
+}

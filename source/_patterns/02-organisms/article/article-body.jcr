@@ -1,0 +1,115 @@
+{
+  "breadcrumbs" : {
+    "items": [
+      {
+        "url": String,
+        "text": String,
+        "is_active?": Boolean
+      }
+    ]
+  },
+  "header" : [
+    {
+      "title" : String,
+      "article_media" : {
+        "wrap?": Boolean,
+        "left?" : Boolean,
+        "right?" :Boolean,
+        "stretch?" : Boolean,
+        "social_share": {
+          "items": [
+            {
+              "icon" : String,
+              "url" : String
+            }
+          ]
+        },
+        "hero" : {
+          "src": String,
+          "alt": String
+        }
+      },
+      "article_sponsor" : String,
+      "article_meta" : {
+        "byline" : {
+          "url": String,
+          "img": String,
+          "alt": String,
+          "text": String,
+          "date": String
+        }
+      },
+      "article_lead" : String,
+      "article_credit" : String
+
+    }
+  ],
+  "social_share" : {
+    "items": [
+      {
+        "icon" : String,
+        "url" : String
+      }
+    ],
+    "is_vertical?": Boolean
+  },
+  "body" : [
+    {
+      "article_text": {
+        "title" : String,
+        "text" : String
+      },
+      "article_media" : {
+        "wrap?": Boolean,
+        "left?" : Boolean,
+        "right?" :Boolean,
+        "stretch?" : Boolean,
+        "social_share": {
+          "items": [
+            {
+              "icon" : String,
+              "url" : String
+            }
+          ]
+        },
+        "three_up_media" : {
+          "images" : [
+            {
+              "media_src": String,
+              "media_alt": String
+            }
+          ],
+          "credit": String,
+          "caption": String
+        }
+      },
+      "related_content" : {
+        "related_articles" : {
+          "accent_header" : {
+            "title": String,
+            "subtitle": String
+          },
+          "items": [
+            {
+              "img": String,
+              "alt": String,
+              "url": String,
+              "title": String,
+              "cta": String,
+              "category": String
+            }
+          ]
+        },
+        "content_slider": {
+          "items": [
+            {
+              "url": String,
+              "caption": String,
+              "cta": String
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

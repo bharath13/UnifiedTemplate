@@ -1,0 +1,18 @@
+{
+  "related_articles" : {
+    "accent_header" : {
+      "title": String,
+      "subtitle": String
+    },
+    "items": [
+      {
+        "img": String,
+        "alt": String,
+        "url": String,
+        "title": String,
+        "cta": String,
+        "category": String
+      }
+    ]
+  }
+}

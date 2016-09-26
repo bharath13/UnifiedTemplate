@@ -1,0 +1,16 @@
+{
+  "related_list" : {
+      "accent_header" : {
+        "title" : String
+      },
+      "items": [
+        {
+          "img": String,
+          "img_alt": String,
+          "url": String,
+          "text": String
+        }
+      ]
+  }
+
+}

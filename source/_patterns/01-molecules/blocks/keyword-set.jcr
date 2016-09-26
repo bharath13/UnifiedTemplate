@@ -1,0 +1,10 @@
+{
+  "keyword_set": {
+    "keyword": [
+      {
+        "text": String,
+        "url": String
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "primary_menu" :{
+    "icon": String,
+    "menu_items": [
+      {
+        "name": String,
+        "url": String,
+        "bold?": Boolean,
+        "sub_menu": {
+          "items": [
+            {
+              "name": String,
+              "url": String
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

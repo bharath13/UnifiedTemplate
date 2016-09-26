@@ -1,0 +1,6 @@
+{
+    "label": String,
+    "schema": String,
+    "text": String,
+    "ISOformat": String
+}

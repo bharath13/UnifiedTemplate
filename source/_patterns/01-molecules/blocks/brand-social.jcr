@@ -1,0 +1,10 @@
+{
+  "brand_social" : {
+    "items": [
+      {
+        "icon": String,
+        "url": String
+      }
+    ]
+  }
+}
