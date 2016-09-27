@@ -21,6 +21,7 @@
           {
             "img": String,
             "img_alt": String,
+            "label": String,
             "url": String,
             "text": String
           }

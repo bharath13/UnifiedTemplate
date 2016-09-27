@@ -1,9 +1,7 @@
   {
   "header": [
     {
-      "title": String
-    },
-    {
+      "title": String,
       "article_meta": {
         "byline": {
           "url": String,
@@ -21,9 +19,7 @@
             }
           ]
         }
-      }
-    },
-    {
+      },
       "article_media": {
         "wrap?": Boolean,
         "left?": Boolean,
@@ -44,14 +40,10 @@
           "src": String,
           "alt": String
         }
-      }
-    },
-    {
+      },
       "recipe_description": {
         "text": String
-      }
-    },
-    {
+      },
       "recipe_meta_footer": {
         "tag_set": {
           "tags": [

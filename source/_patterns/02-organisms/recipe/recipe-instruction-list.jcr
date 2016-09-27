@@ -10,7 +10,12 @@
             "credit" : String,
             "caption": String
           }
-        }
+        },
+        "video" : {
+            "caption": {
+              "credit": String
+            }
+          }
       }
     ]
   }
