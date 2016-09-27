@@ -4,5 +4,8 @@ module.exports = {
   },
   patternlab_generate: {
     command: "php core/console --generate"
+  },
+  jcr_watch: {
+    command: "npm run validate-json"
   }
 };

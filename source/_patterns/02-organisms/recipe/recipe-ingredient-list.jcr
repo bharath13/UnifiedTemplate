@@ -1,0 +1,10 @@
+{
+  "recipe_ingredient_list": {
+    "items": [
+      {
+        "text": String,
+        "url" : String
+      }
+    ]
+  }
+}

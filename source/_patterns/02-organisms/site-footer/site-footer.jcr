@@ -1,0 +1,28 @@
+{
+  "site_footer": {
+    "ad_300x50" : {
+      "single_pattern?": Boolean,
+      "zone": String,
+      "pos": String,
+      "defer": Number
+    },
+    "brand_social" : {
+      "items": [
+        {
+          "icon": String,
+          "url": String
+        }
+      ]
+    },
+    "link_group": [
+      {
+        "links": [
+          {
+            "text": String,
+            "url": String
+          }
+        ]
+      }
+    ]
+  }
+}

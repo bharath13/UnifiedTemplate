@@ -1,0 +1,6 @@
+{
+    "blockquote": {
+      "text": String,
+      "citation" : String
+    }
+}

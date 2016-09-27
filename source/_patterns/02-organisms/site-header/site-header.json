@@ -193,7 +193,7 @@
         {
           "name": "Food",
           "url": "http://foo.com",
-          "bold": false,
+          "bold?": false,
           "sub_menu": {
             "items": [
               {
@@ -210,7 +210,7 @@
         {
           "name": "Nutrition",
           "url": "http://foo.com",
-          "bold": false,
+          "bold?": false,
           "sub_menu": {
             "items": [
               {
@@ -227,7 +227,7 @@
         {
           "name": "Healthy Living",
           "url": "http://foo.com",
-          "bold": false,
+          "bold?": false,
           "sub_menu": {
             "items": [
               {

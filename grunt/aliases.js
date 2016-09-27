@@ -2,6 +2,7 @@ module.exports = {
   default: {
       description: 'Starts watching Sass/JS files for changes and opens site with BrowserSync watching to reload page.',
       tasks: [
+        'shell:jcr_watch',
         'shell:patternlab_generate',
         'sass:dev',
         'postcss:dev',

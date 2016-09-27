@@ -1,0 +1,5 @@
+{
+	"accent_header" : {
+		"title" : String
+    }
+}

@@ -1,0 +1,68 @@
+  {
+  "header": [
+    {
+      "title": String,
+      "article_meta": {
+        "byline": {
+          "url": String,
+          "img": String,
+          "alt": String,
+          "text": String,
+          "date": String,
+          "ISOdate": String
+        },
+        "social_share": {
+          "items": [
+            {
+              "icon": String,
+              "url": String
+            }
+          ]
+        }
+      },
+      "article_media": {
+        "wrap?": Boolean,
+        "left?": Boolean,
+        "right?": Boolean,
+        "stretch?": Boolean,
+        "social_share": {
+          "items": [
+            {
+              "icon": String,
+              "url": String
+            }
+          ]
+        },
+        "caption": {
+          "credit": String
+        },
+        "hero": {
+          "src": String,
+          "alt": String
+        }
+      },
+      "recipe_description": {
+        "text": String
+      },
+      "recipe_meta_footer": {
+        "tag_set": {
+          "tags": [
+            {
+              "text": String,
+              "url": String
+            }
+          ]
+        },
+        "recipe_utility_links": {
+          "items": [
+            {
+              "url": String,
+              "icon": String,
+              "label": String
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

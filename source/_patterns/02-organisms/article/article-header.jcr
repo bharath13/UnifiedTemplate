@@ -1,0 +1,50 @@
+{
+  "breadcrumbs": {
+    "items": [
+      {
+        "url": String,
+        "text": String,
+        "is_active?": Boolean
+      }
+    ]
+  },
+  "header" : [
+    {
+      "title" : String,
+      "article_media" : {
+        "wrap?": Boolean,
+        "left?" : Boolean,
+        "right?" :Boolean,
+        "stretch?" : Boolean,
+        "social_share": {
+          "items": [
+            {
+              "icon" : String,
+              "url" : String
+            }
+          ]
+        },
+        "caption": {
+          "credit": String
+        },
+        "hero" : {
+          "src": String,
+          "alt": String
+        }
+      },
+      "article_sponsor" : String,
+      "article_meta" : {
+        "byline" : {
+          "url": String,
+          "img": String,
+          "alt": String,
+          "text": String,
+          "date": String
+        }
+      },
+      "article_lead" : String,
+      "article_credit" : String
+
+    }
+  ]
+}

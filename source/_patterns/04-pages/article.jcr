@@ -1,0 +1,325 @@
+{
+  "sponsored?": Boolean,
+  "leaderboard": Boolean,
+  "og:url": String,
+  "home_url": String,
+  "site_menu": {
+    "home_url": String,
+    "icon": String,
+    "brand_social": {
+      "items": [
+        {
+          "icon": String,
+          "url": String
+        }
+      ]
+    },
+    "search_bar": {
+      "form_action": String,
+      "in_side_nav?": Boolean
+    },
+    "primary_menu": {
+      "menu_items": [
+        {
+          "name": String,
+          "url": String,
+          "bold?": Boolean,
+          "sub_menu": {
+            "items": [
+              {
+                "name": String,
+                "url": String
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "secondary_menu": {
+      "menu_items": [
+        {
+          "name": String,
+          "url": String
+        }
+      ]
+    }
+  },
+  "site_header": {
+    "scroll_target": String,
+    "basic_nav?": Boolean,
+    "title": String,
+    "social_share": {
+      "items": [
+        {
+          "icon" : String,
+          "url" : String
+        }
+      ]
+    },
+    "site_nav": {
+    "items": [
+      {
+        "url": String,
+        "text": String,
+        "sub_menu": {
+          "items": [
+            {
+              "text": String,
+              "url": String
+            }
+          ]
+        },
+        "bold?": Boolean,
+        "subscribe?": Boolean
+      }
+    ]
+  },
+    "glance_bar": {
+      "url": String,
+      "text": String,
+      "subscribe_url": String,
+      "subscribe_text": String
+    },
+    "action_bar": {
+      "next_url": String,
+      "social_share": {
+        "items": [
+          {
+            "icon" : String,
+            "url" : String
+          }
+        ]
+      }
+    },
+    "search_bar": {
+      "form_action": String,
+      "in_site_header?": Boolean
+    }
+  },
+  "breadcrumbs" : {
+    "items": [
+      {
+        "url": String,
+        "text": String,
+        "is_active?": Boolean
+      }
+    ]
+  },
+  "header" : [
+    {
+      "title" : String,
+      "article_media" : {
+        "wrap?": Boolean,
+        "left?" : Boolean,
+        "right?" :Boolean,
+        "stretch?" : Boolean,
+        "social_share": {
+          "items": [
+            {
+              "icon" : String,
+              "url" : String
+            }
+          ]
+        },
+        "caption": {
+          "credit": String
+        },
+        "hero" : {
+          "src": String,
+          "alt": String
+        }
+      },
+      "article_sponsor" : String,
+      "article_meta" : {
+        "byline" : {
+          "url": String,
+          "img": String,
+          "alt": String,
+          "text": String,
+          "date": String
+        }
+      },
+      "article_lead" : String,
+      "article_credit" : String
+
+    }
+  ],
+  "body" : [
+    {
+      "article_text": {
+        "title" : String,
+        "text" : String
+      },
+      "blockquote": {
+          "text": String,
+          "citation" : String
+      },
+      "article_text": {
+        "title" : String,
+        "text" : String
+      },
+      "article_media" : {
+        "wrap?": Boolean,
+        "left?" : Boolean,
+        "right?" :Boolean,
+        "stretch?" : Boolean,
+        "social_share": {
+          "items": [
+            {
+              "icon" : String,
+              "url" : String
+            }
+          ]
+        },
+        "media" : {
+          "src": String,
+          "alt": String,
+          "credit": String
+        },
+        "three_up_media" : {
+          "images" : [
+            {
+              "media_src": String,
+              "media_alt": String
+            }
+          ],
+          "credit": String,
+          "caption": String
+        }
+      },
+      "article_text": {
+        "title" : String,
+        "text" : String
+      },
+      "related_content" : {
+        "related_articles" : {
+          "accent_header" : {
+            "title": String,
+            "subtitle": String
+          },
+          "items": [
+            {
+              "img": String,
+              "alt": String,
+              "url": String,
+              "title": String,
+              "cta": String,
+              "category": String
+            }
+          ]
+        },
+        "content_slider": {
+          "items": [
+            {
+              "url": String,
+              "caption": String,
+              "cta": String
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "social_share" : {
+    "items": [
+      {
+        "icon" : String,
+        "url" : String
+      }
+    ],
+    "is_vertical?": Boolean
+  },
+  "content_outbrain": [
+    {
+      "widget_class": String,
+      "data_src": String,
+      "widget_id": String,
+      "ob_template": String
+    }
+  ],
+  "data_src" : String,
+  "sidebar_body" : [
+    {
+      "ad_300x350" : {
+        "single_pattern?": Boolean,
+        "zone": String,
+        "pos": String,
+        "defer": Number
+      },
+      "outbrain" : {
+        "widget_class": String,
+        "data_src": String,
+        "widget_id": String,
+        "ob_template": String
+      },
+      "outbrain_url" : String,
+      "related_list" : {
+        "accent_header" : {
+          "title" : String
+        },
+        "items": [
+          {
+            "img": String,
+            "label": String,
+            "img_alt": String,
+            "url": String,
+            "text": String
+          }
+        ]
+      }
+    }
+  ],
+  "embed_js?": Boolean,
+  "full-width-subscribe": {
+    "subscribe": {
+      "title": String,
+      "tagline": String,
+      "cta": String,
+      "url": String
+    },
+    "newsletter": {
+      "cta": String,
+      "tagline": String,
+      "privacy_policy_link": String,
+      "privacy_policy_text": String,
+      "form": {
+        "action": String,
+        "source": String,
+        "clientid": String,
+        "externalkey": String,
+        "successurl": String,
+        "errorurl": String,
+        "newslettername": String,
+        "input1_placeholder": String,
+        "input2_placeholder": String,
+        "btn": String
+      }
+    }
+  },
+  "site_footer": {
+    "ad_300x50" : {
+      "zone": String,
+      "exclusive": String,
+      "pos": String,
+      "defer": Number
+    },
+    "brand_social" : {
+      "items": [
+        {
+          "icon": String,
+          "url": String
+        }
+      ]
+    },
+    "link_group": [
+      {
+        "links": [
+          {
+            "text": String,
+            "url": String
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "local-dev": "grunt",
-    "build-assets": "grunt prod"
+    "build-assets": "grunt prod",
+    "validate-json": "node_modules/.bin/mocha source/js/test/jcrv.spec.js"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.4",
@@ -28,7 +29,9 @@
     "lodash": "^4.8.1",
     "sass-loader": "^3.1.2",
     "susy": "^2.2.12",
-    "webpack": "^1.12.14"
+    "webpack": "^1.12.14",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
   },
   "dependencies": {
     "event-emitter": "^0.3.4",

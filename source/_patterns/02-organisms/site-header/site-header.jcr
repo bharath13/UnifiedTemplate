@@ -1,0 +1,93 @@
+{
+  "site_header": {
+    "home_url": String,
+    "leaderboard": String,
+    "social_share": {
+      "items": [
+        {
+          "icon" : String,
+          "url" : String
+        }
+      ]
+    },
+    "site_nav": {
+      "items": [
+        {
+          "url": String,
+          "text": String,
+          "sub_menu": {
+            "items": [
+              {
+                "text": String,
+                "url": String
+              }
+            ]
+          },
+          "bold?": Boolean,
+          "subscribe?": Boolean
+        }
+      ]
+    },
+    "glance_bar": {
+      "url": String,
+      "text": String,
+      "subscribe_url": String,
+      "subscribe_text": String
+    },
+    "action_bar": {
+      "next_url": String,
+      "social_share": {
+        "items": [
+          {
+            "icon" : String,
+            "url" : String
+          }
+        ]
+      }
+    }
+  },
+  "site_menu": {
+    "icon": String,
+    "brand_social": {
+      "items": [
+        {
+        "icon": String,
+        "url": String
+        }
+      ]
+    },
+    "search_bar": {
+      "form_action": String,
+      "in_side_nav?": Boolean
+    },
+    "primary_menu": {
+      "menu_items": [
+        {
+          "name": String,
+          "url": String,
+          "bold?": Boolean,
+          "sub_menu": {
+            "items": [
+              {
+                "name": String,
+                "url": String
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "secondary_menu": {
+      "menu_items": [
+        {
+          "name": String,
+          "url": String
+        }
+      ]
+    }
+  },
+  "search_bar": {
+    "form_action": String,
+    "in_site_header?": Boolean
+  }
+}

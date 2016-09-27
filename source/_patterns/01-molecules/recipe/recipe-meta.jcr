@@ -1,0 +1,12 @@
+{
+  "recipe_meta": {
+    "sections": [
+      {
+        "label": String,
+        "schema": String,
+        "text": String,
+        "ISOformat": String
+      }
+    ]
+  }
+}

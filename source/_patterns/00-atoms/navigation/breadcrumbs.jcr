@@ -1,0 +1,11 @@
+{
+  "breadcrumbs": {
+    "items": [
+      {
+        "url": String,
+        "text": String,
+        "is_active?": Boolean
+      }
+    ]
+  }
+}

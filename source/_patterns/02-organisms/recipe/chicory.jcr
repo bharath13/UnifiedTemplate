@@ -1,0 +1,6 @@
+{
+  "chicory": {
+    "url": String,
+    "text": String
+  }
+}

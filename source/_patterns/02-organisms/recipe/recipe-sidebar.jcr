@@ -1,0 +1,49 @@
+{
+	"content_sidebar": [
+    {
+      "article_text": {
+        "title": String
+      },
+      "recipe_list": [
+        {
+          "title": String,
+          "recipe_ingredient_list": {
+            "items": [
+              {
+                "text": String,
+                "url": String
+              }
+            ]
+          }
+        },
+        {
+          "title": String,
+          "recipe_ingredient_list": {
+            "items": [
+              {
+                "text": String,
+                "url": String
+              }
+            ]
+          }
+        }
+      ],
+      "chicory": {
+        "url": String,
+        "text": String
+      },
+      "nutrition_list": {
+        "title": String,
+        "icon": String,
+        "list_with_divider": {
+          "is_small?": Boolean,
+          "items": [
+            {
+              "text": String
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

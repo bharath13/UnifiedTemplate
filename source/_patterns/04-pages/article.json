@@ -42,7 +42,7 @@
         {
           "name": "Food",
           "url": "http://foo.com",
-          "bold": false,
+          "bold?": false,
           "sub_menu": {
             "items": [
               {
@@ -59,7 +59,7 @@
         {
           "name": "Nutrition",
           "url": "http://foo.com",
-          "bold": false,
+          "bold?": false,
           "sub_menu": {
             "items": [
               {
@@ -76,7 +76,7 @@
         {
           "name": "Healthy Living",
           "url": "http://foo.com",
-          "bold": false,
+          "bold?": false,
           "sub_menu": {
             "items": [
               {
@@ -504,13 +504,13 @@
             "text": "Favorite Summer Salads"
           },
           {
-            "img": false,
+            "img": "",
             "label": "Paid Content",
             "url": "http://example.com",
             "text": "Cooking With Plums"
           },
           {
-            "img": false,
+            "img": "",
             "url": "http://example.com",
             "text": "Cooking with Asparagus"
           }
