@@ -1,0 +1,6 @@
+{
+  "search_bar": {
+    "form_action": String,
+    "in_site_header?": Boolean
+  }
+}

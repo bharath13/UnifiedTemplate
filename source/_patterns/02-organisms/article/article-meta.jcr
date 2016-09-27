@@ -1,0 +1,11 @@
+{
+  "article_meta" : {
+    "byline" : {
+      "text": String,
+      "url": String,
+      "img": String,
+      "alt": String,
+      "date": String
+    }
+  }
+}

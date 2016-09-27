@@ -4,6 +4,7 @@
   "og:url": String,
   "home_url": String,
   "site_menu": {
+    "home_url": String,
     "icon": String,
     "brand_social": {
       "items": [
@@ -22,7 +23,7 @@
         {
           "name": String,
           "url": String,
-          "bold": Boolean,
+          "bold?": Boolean,
           "sub_menu": {
             "items": [
               {
@@ -31,36 +32,6 @@
               }
             ]
           }
-        },
-        {
-          "name": String,
-          "url": String,
-          "bold": Boolean,
-          "sub_menu": {
-            "items": [
-              {
-                "name": String,
-                "url": String
-              }
-            ]
-          }
-        },
-        {
-          "name": String,
-          "url": String,
-          "bold": Boolean,
-          "sub_menu": {
-            "items": [
-              {
-                "name": String,
-                "url": String
-              }
-            ]
-          }
-        },
-        {
-          "name": String,
-          "url": String
         }
       ]
     },
@@ -86,25 +57,23 @@
       ]
     },
     "site_nav": {
-      "items": [
-        {
-          "url": String,
-          "text": String,
-          "sub_menu": {
-            "items": [
-              {
-                "text": String,
-                "url": String
-              }
-            ]
-          }
+    "items": [
+      {
+        "url": String,
+        "text": String,
+        "sub_menu": {
+          "items": [
+            {
+              "text": String,
+              "url": String
+            }
+          ]
         },
-        {
-          "url": String,
-          "text": String
-        }
-      ]
-    },
+        "bold?": Boolean,
+        "subscribe?": Boolean
+      }
+    ]
+  },
     "glance_bar": {
       "url": String,
       "text": String,
@@ -131,26 +100,14 @@
     "items": [
       {
         "url": String,
-        "text": String
+        "text": String,
+        "is_active?": Boolean
       }
     ]
   },
   "header" : [
     {
-      "title" : String
-    },
-    {
-      "article_meta" : {
-        "byline" : {
-          "text": String,
-          "url": String,
-          "img": String,
-          "alt": String,
-          "date": String
-        }
-      }
-    },    
-    {
+      "title" : String,
       "article_media" : {
         "wrap?": Boolean,
         "left?" : Boolean,
@@ -171,33 +128,36 @@
           "src": String,
           "alt": String
         }
-      }
-    },
-    {
+      },
+      "article_sponsor" : String,
+      "article_meta" : {
+        "byline" : {
+          "url": String,
+          "img": String,
+          "alt": String,
+          "text": String,
+          "date": String
+        }
+      },
+      "article_lead" : String,
       "article_credit" : String
-    },
-    {
-      "article_lead" : String
+
     }
   ],
   "body" : [
     {
       "article_text": {
+        "title" : String,
         "text" : String
-      }
-    },
-    {
-        "blockquote": {
+      },
+      "blockquote": {
           "text": String,
           "citation" : String
-        }
-    },
-    {
+      },
       "article_text": {
+        "title" : String,
         "text" : String
-      }
-    },
-    {
+      },
       "article_media" : {
         "wrap?": Boolean,
         "left?" : Boolean,
@@ -215,19 +175,27 @@
           "src": String,
           "alt": String,
           "credit": String
+        },
+        "three_up_media" : {
+          "images" : [
+            {
+              "media_src": String,
+              "media_alt": String
+            }
+          ],
+          "credit": String,
+          "caption": String
         }
-      }
-    },
-    {
+      },
       "article_text": {
+        "title" : String,
         "text" : String
-      }
-    },
-    {
+      },
       "related_content" : {
         "related_articles" : {
           "accent_header" : {
-            "title": String
+            "title": String,
+            "subtitle": String
           },
           "items": [
             {
@@ -237,6 +205,15 @@
               "title": String,
               "cta": String,
               "category": String
+            }
+          ]
+        },
+        "content_slider": {
+          "items": [
+            {
+              "url": String,
+              "caption": String,
+              "cta": String
             }
           ]
         }
@@ -264,15 +241,18 @@
   "sidebar_body" : [
     {
       "ad_300x350" : {
+        "single_pattern?": Boolean,
         "zone": String,
         "pos": String,
         "defer": Number
-      }
-    },
-    {
-      "outbrain_url" : String
-    },
-    {
+      },
+      "outbrain" : {
+        "widget_class": String,
+        "data_src": String,
+        "widget_id": String,
+        "ob_template": String
+      },
+      "outbrain_url" : String,
       "related_list" : {
         "accent_header" : {
           "title" : String
@@ -280,6 +260,7 @@
         "items": [
           {
             "img": String,
+            "label": String,
             "img_alt": String,
             "url": String,
             "text": String
@@ -331,30 +312,6 @@
       ]
     },
     "link_group": [
-      {
-        "links": [
-          {
-            "text": String,
-            "url": String
-          }
-        ]
-      },
-      {
-        "links": [
-          {
-            "text": String,
-            "url": String
-          }
-        ]
-      },
-      {
-        "links": [
-          {
-            "text": String,
-            "url": String
-          }
-        ]
-      },
       {
         "links": [
           {

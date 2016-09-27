@@ -1,0 +1,43 @@
+{
+  "site_menu": {
+    "home_url": String,
+    "icon": String,
+    "brand_social": {
+      "items": [
+        {
+          "icon": String,
+          "url": String
+        }
+      ]
+    },
+    "search_bar": {
+      "form_action": String,
+      "in_side_nav?": Boolean
+    },
+    "primary_menu": {
+      "menu_items": [
+        {
+          "name": String,
+          "url": String,
+          "bold?": Boolean,
+          "sub_menu": {
+            "items": [
+              {
+                "name": String,
+                "url": String
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "secondary_menu": {
+      "menu_items": [
+        {
+          "name": String,
+          "url": String
+        }
+      ]
+    }
+  }
+}

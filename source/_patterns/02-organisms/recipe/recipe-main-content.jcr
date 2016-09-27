@@ -1,0 +1,44 @@
+{
+    "content_main" : [
+      {
+        "article_text": {
+          "title" : String
+        },
+        "recipe_instruction_list": {
+          "items": [
+            {
+              "text": String,
+              "media" : {
+                "src": String,
+                "alt": String,
+                "caption": {
+                  "credit" : String,
+                  "caption": String
+                }
+              },
+              "video" : {
+                  "caption": {
+                    "credit": String
+                  }
+                }
+            }
+          ]
+        },
+        "article_text": {
+          "title" : String,
+          "text" : String
+        },
+        "article_copyright": {
+          "text": String
+        }
+      }
+    ],
+    "content_outbrain" : [
+      {
+            "widget_class": String,
+            "data_src": String,
+            "widget_id": String,
+            "ob_template": String
+      }
+    ] 
+ }

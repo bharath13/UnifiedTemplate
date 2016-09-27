@@ -1,0 +1,15 @@
+{
+  "nutrition_list": {
+    "title": String,
+    "icon": String,
+    "list_with_divider": {
+      "is_small?": Boolean,
+      "items": [
+        {
+          "text": String
+        }
+      ]
+    }
+  }
+
+}

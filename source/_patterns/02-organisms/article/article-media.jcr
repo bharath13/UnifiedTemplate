@@ -1,0 +1,21 @@
+{
+  "article_media" : {
+    "wrap?": Boolean,
+    "left?" : Boolean,
+    "right?" :Boolean,
+    "stretch?" : Boolean,
+    "social_share": {
+      "items": [
+        {
+          "icon" : String,
+          "url" : String
+        }
+      ]
+    },
+    "media" : {
+      "src": String,
+      "alt": String,
+      "credit": String
+    }
+  }
+}

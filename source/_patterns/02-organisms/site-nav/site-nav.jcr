@@ -1,0 +1,20 @@
+{
+  "site_nav": {
+    "items": [
+      {
+        "url": String,
+        "text": String,
+        "sub_menu": {
+          "items": [
+            {
+              "text": String,
+              "url": String
+            }
+          ]
+        },
+        "bold?": Boolean,
+        "subscribe": Boolean
+      }
+    ]
+  }
+}

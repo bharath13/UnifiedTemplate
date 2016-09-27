@@ -1,0 +1,8 @@
+{
+  "glance_bar": {
+    "url": String,
+    "text": String,
+    "subscribe_url": String,
+    "subscribe_text": String
+  }
+}

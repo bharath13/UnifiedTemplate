@@ -1,0 +1,11 @@
+{
+  "text": String,
+  "media" : {
+    "src": String,
+    "alt": String,
+    "caption": {
+      "credit" : String,
+      "caption": String
+    }
+  }
+}

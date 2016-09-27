@@ -1,0 +1,31 @@
+{
+  "sidebar_body" : [
+    {
+      "ad_300x350" : {
+        "single_pattern?": Boolean,
+        "zone": String,
+        "pos": String,
+        "defer": Number
+      },
+      "outbrain" : {
+        "widget_class": String,
+        "data_src": String,
+        "widget_id": String,
+        "ob_template": String
+      },
+      "related_list" : {
+        "accent_header" : {
+          "title" : String
+        },
+        "items": [
+          {
+            "img": String,
+            "img_alt": String,
+            "url": String,
+            "text": String
+          }
+        ]
+      }
+    }
+  ]
+}

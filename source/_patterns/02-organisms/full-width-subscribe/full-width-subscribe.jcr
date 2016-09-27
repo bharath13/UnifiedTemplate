@@ -1,0 +1,28 @@
+{
+  "full-width-subscribe": {
+    "subscribe": {
+      "title": String,
+      "tagline": String,
+      "cta": String,
+      "url": String
+    },
+    "newsletter": {
+      "cta": String,
+      "tagline": String,
+      "privacy_policy_link": String,
+      "privacy_policy_text": String,
+      "form": {
+        "action": String,
+        "source": String,
+        "clientid": String,
+        "externalkey": String,
+        "successurl": String,
+        "errorurl": String,
+        "newslettername": String,
+        "input1_placeholder": String,
+        "input2_placeholder": String,
+        "btn": String
+      }
+    }
+  }
+}

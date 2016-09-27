@@ -1,0 +1,21 @@
+{
+  "recipe_meta_footer": {
+    "tag_set": {
+      "tags": [
+        {
+          "text": String,
+          "url": String
+        }
+      ]
+    },
+    "recipe_utility_links": {
+      "items": [
+        {
+          "url": String,
+          "icon": String,
+          "label": String
+        }
+      ]
+    }
+  }
+}
