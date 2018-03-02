@@ -1,0 +1,28 @@
+{{! GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH }}
+
+{{#media}}
+  <div class="article__media {{#hero?}} {{/hero?}} {{#stretch?}}article__media--stretch{{/stretch?}} {{#left?}}article__media--pl{{/left?}} {{#right?}}article__media--pr{{/right?}}">
+    <figure class="media">
+        <div class="media-wrap">
+          {{#src}}
+            <img class="media__img" src="{{src}}" alt="{{alt}}">
+          {{/src}}
+
+          {{#social_share}}
+            {{>molecules-share-tools}}
+          {{/social_share}}
+
+        </div>
+      <figcaption>
+
+        {{#credit}}
+          <span class="media__text media__credit">{{credit}}</span>
+        {{/credit}}
+        {{#caption}}
+          <div class="media__text media__caption">{{caption}}</div>
+        {{/caption}}
+
+      </figcaption>
+    </figure>
+  </div>
+{{/media}}

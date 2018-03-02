@@ -24,7 +24,7 @@ plugins:
     reload:
         enabled: true
     dataInheritance:
-        enabled: false
+        enabled: true
 ishMinimum: '240'
 ishMaximum: '2600'
 ishControlsHide:

@@ -1,0 +1,17 @@
+***************
+*** 24,30 ****
+  
+  		$mustacheOptions                    = array();
+  		$mustacheOptions["helpers"]         = MustacheUtil::loadHelpers();
+- 		$mustacheOptions["pragmas"]         = array(\Mustache_Engine::PRAGMA_FILTERS);
+  
+  		$this->instance = new \Mustache_Engine($mustacheOptions);
+  
+--- 24,30 ----
+  
+  		$mustacheOptions                    = array();
+  		$mustacheOptions["helpers"]         = MustacheUtil::loadHelpers();
++ 		$mustacheOptions["pragmas"]         = array(\Mustache_Engine::PRAGMA_BLOCKS);
+  
+  		$this->instance = new \Mustache_Engine($mustacheOptions);
+  

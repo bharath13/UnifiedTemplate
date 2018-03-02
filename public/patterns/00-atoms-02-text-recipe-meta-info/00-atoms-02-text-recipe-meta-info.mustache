@@ -1,0 +1,7 @@
+{{! GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH }}
+
+<div class="recipe-meta__section">
+  <span class="recipe-meta__label">{{label}}</span>
+  <span class="recipe-meta__text"
+    {{#schema}}itemprop="{{schema}}"{{/schema}} {{#ISOformat}}content="{{ISOformat}}"{{/ISOformat}}>{{{text}}}</span>
+</div>

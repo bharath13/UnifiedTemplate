@@ -1,0 +1,25 @@
+{{! GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH }}
+
+{{!
+*
+* Related List Module
+*
+* @param array items    Array of related=list content
+* @param string img     String of image url
+* @param string img_alt String of text for image alternate text
+* @param string text    String of text for title of related list item
+* @param string label   String of taext to display ad-content label
+*
+}}
+
+{{#related_list}}
+<div class="recirc-list">
+  {{#accent_header}}
+    {{> molecules-section-title }}
+  {{/accent_header}}
+
+  {{#items}}
+    {{> atoms-recirc-list-item }}
+  {{/items}}
+</div>
+{{/related_list}}

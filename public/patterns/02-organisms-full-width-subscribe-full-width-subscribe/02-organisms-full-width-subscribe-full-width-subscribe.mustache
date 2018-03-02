@@ -1,0 +1,61 @@
+{{! GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH }}
+
+{{#full-width-subscribe}}
+  {{text}}
+
+  <div class="footer-subscribe">
+    {{#subscribe}}
+    <div class="footer-subscribe__section">
+      <div class="subscribe">
+        <div class="subscribe__wrapper">
+
+          <div class="subscribe__title-branding-wrapper">
+            <h3 class="subscribe__sans-title show-at-md">{{title}}</h3>
+            <div class="subscribe__branding">
+              {{> atoms-icon-logo }}
+            </div>
+          </div>
+          <div class="subscribe__content">
+            <p class="subscribe__tagline">{{tagline}}</p>
+            <a href="{{url}}" class="btn link-with-arrow">{{cta}}</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    {{/subscribe}}
+
+    {{#newsletter}}
+    <div class="footer-subscribe__section footer-subscribe__section--dark">
+      <div class="newsletter">
+        <div class="newsletter__content">
+          <h3 class="newsletter__cta show-at-md">{{cta}}</h3>
+          <p class="newsletter__tagline">{{tagline}}</p>
+          {{#form}}
+          <form action="{{action}}" class="newsletter__form">
+            <div class="form-group">
+              <input type="hidden" name="Source" value ="{{source}}">
+              <input type="hidden" name="_clientID" value="{{clientid}}" />
+              <input type="hidden" name="_deExternalKey" value="{{externalkey}}" />
+              <input type="hidden" name="Optin_Flag" value ="true">
+              <input type="hidden" name="_action" value="add" />
+              <input type="hidden" name="_successURL" value="{{successurl}}" />
+              <input type="hidden" name="_errorURL" value="{{errorurl}}" />
+              <input type="hidden" name="Newsletter_Name" value ="{{newslettername}}">
+              <input type="text" class="form-control form-control--rounded form-control__email" placeholder="{{input1_placeholder}}" name="email_address">
+              <input type="text" class="form-control form-control--rounded" placeholder="{{input2_placeholder}}" name="zip_code">
+
+              <label for="outside-us" class="footer-subscribe__outside-us"><input id="outside-us" name="checkbox" type="checkbox"> Outside US</label>
+            </div>
+            <button class="btn link-with-arrow" id="btn_newsletter">{{btn}}</button>
+          </form>
+          {{/form}}
+          <a href="{{privacy_policy_link}}" class="text-sm text-lite text-upper newsletter__privacy">{{privacy_policy_text}}</a>
+        </div>
+
+      </div>
+    </div>
+    {{/newsletter}}
+  </div>
+
+{{/full-width-subscribe}}

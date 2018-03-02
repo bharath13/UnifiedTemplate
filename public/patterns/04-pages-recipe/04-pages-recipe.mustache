@@ -1,0 +1,35 @@
+{{! GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH }}
+
+{{< templates-two-col-content-sw-sidebar }}
+
+  {{$ header }}
+   {{> organisms-site-header }}
+  {{/ header }}
+
+  {{$ main_top }}
+    {{> organisms-recipe-header }}
+  {{/ main_top }}
+
+  {{$ main_left }}
+    {{> organisms-recipe-sidebar }}
+  {{/ main_left }}
+
+  {{$ main_right }}
+    {{> organisms-recipe-main-content }}
+  {{/ main_right }}
+
+  {{$ main_bottom }}
+    {{> organisms-related-content }}
+  {{/ main_bottom }}
+
+  {{$ sidebar_content }}
+
+    {{> templates-sidebar }}
+
+  {{/ sidebar_content }}
+
+{{/ templates-two-col-content-sw-sidebar }}
+
+{{#embed_js?}}
+    {{> molecules-ads-js-include}}
+{{/embed_js?}}

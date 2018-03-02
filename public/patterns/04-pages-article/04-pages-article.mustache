@@ -1,0 +1,30 @@
+{{! GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH }}
+
+{{< templates-one-col-content-sw-sidebar }}
+
+  {{$ header }}
+    {{> organisms-site-header }}
+  {{/ header }}
+
+  {{$ main }}
+
+  <article class="article">
+    {{> organisms-article-header }}
+
+    {{> organisms-article-body }}
+    
+    {{#content}}
+        {{{content}}}
+    {{/content}}
+    
+  </article>
+
+  {{/ main }}
+
+  {{$ sidebar_content }}
+
+    {{> templates-sidebar }}
+
+  {{/ sidebar_content }}
+
+{{/ templates-one-col-content-sw-sidebar }}

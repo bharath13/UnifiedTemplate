@@ -1,0 +1,248 @@
+/**
+ * This stylesheet is for styles you want to include only when displaying demo
+ * styles for grids, animations, color swatches, etc.
+ * These styles will not be your production CSS.
+ */
+/* GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH */
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * BASE SETTINGS
+ *
+ * The settings defined in this file should be updated per project. Any
+ * custom global variables needed for the project should be defined in
+ * utils/variables.scss
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+/*-------------------------------------------- */
+/** File Path Settings */
+/*-------------------------------------------- */
+/*-------------------------------------------- */
+/** Layout Settings */
+/*-------------------------------------------- */
+/*-------------------------------------------- */
+/** Typography Settings */
+/*-------------------------------------------- */
+/*-------------------------------------------- */
+/** Color Settings */
+/*-------------------------------------------- */
+/*-------------------------------------------- */
+/** Common Library variables */
+/*-------------------------------------------- */
+/* GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH */
+/*-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- 
+ *
+ * Z-INDEX DEFINITIONS
+ * 
+ * Use the z-index variables below instead of hard coded values.
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+/* GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH */
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * VARIABLES
+ * 
+ * Define any custom site-wide variables below. These should only be 
+ * variables that are global in scope and that need to be referenced 
+ * by multiple SASS files.
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+/* GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH */
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * FUNCTIONS
+ * 
+ * Define any custom site-wide functions below. These should only be 
+ * functions that are global in scope and that need to be referenced 
+ * by multiple SASS files.
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+/**
+ * Strip Units from values. 
+ * Mostly used for other functions
+ */
+/**
+ * Pixels to REMs
+ */
+/**
+ * Colors Map Function to return color subsets from grouping
+ */
+/* GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH */
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * MIXINS
+ *
+ * Define any custom site-wide mixins below. These should only be
+ * mixins that are global in scope and that need to be referenced
+ * by multiple SASS files.
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+/**
+ * Basic Clearfix - pulled from Bourbon.io
+ */
+/**
+ * Vertical Centering
+ * $position: variable to set position value, Defaults to relative.
+ *
+ */
+/**
+ * Block/Block-Modifier
+ * $mod: name of modification to apply at a element or block level modification
+ *
+ */
+/* GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH */
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * BREAKPOINTS
+ *
+ * Define all breakpoint variables below. Breakpoint is included as a vendor
+ * library: http://breakpoint-sass.com/. All media queries should make use of
+ * the @include breakpoint() mixin and reference the variables defined in this
+ * file. When coding a responsive site, mobile first CSS should be used.
+ * See http://www.zell-weekeat.com/how-to-write-mobile-first-css/.
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+/* BRAND FILE DO NOT OVERWRITE ON GENERIC BRANCH */
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * COLORS
+ *
+ * Define any global color variables below. Ideally color variables should be
+ * referenced by the theme variables that follow.
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+/*-------------------------------------------- */
+/** Color Variables */
+/*-------------------------------------------- */
+/*-------------------------------------------- */
+/** Theme Variables */
+/*-------------------------------------------- */
+/*-------------------------------------------- */
+/** Nav Colors */
+/*-------------------------------------------- */
+#sg-patterns {
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  max-width: 100%;
+  padding: 0 0.5em; }
+
+.demo-animate {
+  background: #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer; }
+
+.sg-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.sg-colors h3 {
+  width: 100%; }
+
+.sg-colors li {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  padding: 0.3em;
+  margin: 0 0.5em 0.5em 0;
+  min-width: 5em;
+  max-width: 14em;
+  border: 1px solid #ddd;
+  border-radius: 8px; }
+
+.sg-swatch {
+  display: block;
+  height: 10em;
+  margin-bottom: 0.3em;
+  border-radius: 5px; }
+  .sg-swatch__primary-dark {
+    background: #00BE94; }
+  .sg-swatch__primary-med {
+    background: #26c9a6; }
+  .sg-swatch__primary-lite {
+    background: #49D5B6; }
+  .sg-swatch__primary-extra-lite {
+    background: #71E4CA; }
+  .sg-swatch__primary-dark {
+    background: #00BE94; }
+  .sg-swatch__primary-med {
+    background: #26c9a6; }
+  .sg-swatch__primary-lite {
+    background: #49D5B6; }
+  .sg-swatch__primary-extra-lite {
+    background: #71E4CA; }
+  .sg-swatch__secondary-dark {
+    background: #14BBFB; }
+  .sg-swatch__secondary-med {
+    background: #40cafd; }
+  .sg-swatch__secondary-lite {
+    background: #6AD4FD; }
+  .sg-swatch__tertiary-extra-dark {
+    background: #000000; }
+  .sg-swatch__tertiary-dark {
+    background: #000000; }
+  .sg-swatch__tertiary-med {
+    background: #8c8c8c; }
+  .sg-swatch__tertiary-lite {
+    background: #d0cece; }
+  .sg-swatch__tertiary-extra-lite {
+    background: #d6d6d6; }
+  .sg-swatch__tertiary-ultra-lite {
+    background: #FEFCFC; }
+
+.sg-label {
+  font-size: 90%;
+  line-height: 1; }
+
+.sg-pattern-category-title a {
+  color: #333; }
+
+.sg-pattern-category-title + .sg-pattern-category-body:empty {
+  display: none; }
+
+#molecules-menu-logo .icon-logo path {
+  fill: #26c9a6; }
+
+/* PATTERN HEADINGS TO HIDE ON THE ALL PAGE */
+#viewall-atoms-ads,
+#viewall-atoms-integrations,
+#viewall-atoms-icons,
+#viewall-molecules-ads,
+#viewall-organisms-site-menu,
+#viewall-organisms-site-nav,
+#universal-ad-call_1 {
+  display: none; }
+
+.g-inner {
+  background-color: salmon; }
+
+.g-nested {
+  background-color: blue;
+  color: white; }
+
+.g-wrap-space {
+  margin-bottom: 25px;
+  background-color: gold; }
+
+/*# sourceMappingURL=pattern-scaffolding.css.map */

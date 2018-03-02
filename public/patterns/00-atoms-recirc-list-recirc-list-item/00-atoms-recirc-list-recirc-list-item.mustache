@@ -1,0 +1,15 @@
+{{! GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH }}
+
+<a class="recirc-list__item" href="{{url}}">
+  {{#img}}
+    <div class="recirc-list__img-wrap">
+      <img class="recirc-list__img" src="{{img}}" alt="{{img_alt}}">
+    </div>
+  {{/img}}
+
+  {{ text }}
+
+  {{#label}}
+    <span class="recirc-list__label">{{label}}</span>
+  {{/label}}
+</a>

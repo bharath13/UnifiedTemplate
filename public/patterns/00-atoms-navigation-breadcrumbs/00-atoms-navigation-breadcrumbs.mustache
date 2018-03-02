@@ -1,0 +1,17 @@
+{{! GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH }}
+
+{{#breadcrumbs}}
+<ul class="breadcrumbs">
+  {{#items}}
+    <li class="breadcrumbs__crumb">
+      {{#url}}
+      <a class="breadcrumbs__crumb-link {{#is_active?}}breadcrumbs__crumb-link--is-active{{/is_active?}}" href="{{url}}">{{text}}</a>
+      {{/url}}
+
+      {{^url}}
+      <span class="breadcrumbs__crumb-text ">{{{text}}}</span>
+      {{/url}}
+    </li>
+  {{/items}}
+</ul>
+{{/breadcrumbs}}

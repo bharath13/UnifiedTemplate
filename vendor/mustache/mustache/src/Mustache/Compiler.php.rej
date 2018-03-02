@@ -1,0 +1,51 @@
+***************
+*** 520,526 ****
+          $method  = $this->getFindMethod($id);
+          $id      = ($method !== 'last') ? var_export($id, true) : '';
+          $filters = $this->getFilters($filters, $level);
+-         $value   = $escape ? $this->getEscape() : '$value';
+  
+          return sprintf($this->prepare(self::VARIABLE, $level), $method, $id, $filters, $this->flushIndent(), $value);
+      }
+--- 520,526 ----
+          $method  = $this->getFindMethod($id);
+          $id      = ($method !== 'last') ? var_export($id, true) : '';
+          $filters = $this->getFilters($filters, $level);
++         $value   = $escape ? $this->getEscape() : 'is_array($value) ? \'\' : $value;';
+  
+          return sprintf($this->prepare(self::VARIABLE, $level), $method, $id, $filters, $this->flushIndent(), $value);
+      }
+***************
+*** 599,605 ****
+          return preg_replace("/\n( {8})?/", "\n" . str_repeat(' ', $bonus * 4), $text);
+      }
+  
+-     const DEFAULT_ESCAPE = 'htmlspecialchars(%s, %s, %s)';
+      const CUSTOM_ESCAPE  = 'call_user_func($this->mustache->getEscape(), %s)';
+  
+      /**
+--- 599,605 ----
+          return preg_replace("/\n( {8})?/", "\n" . str_repeat(' ', $bonus * 4), $text);
+      }
+  
++     const DEFAULT_ESCAPE = '!is_array(%s) ? htmlspecialchars(%s, %s, %s) : \'\'';
+      const CUSTOM_ESCAPE  = 'call_user_func($this->mustache->getEscape(), %s)';
+  
+      /**
+***************
+*** 615,621 ****
+              return sprintf(self::CUSTOM_ESCAPE, $value);
+          }
+  
+-         return sprintf(self::DEFAULT_ESCAPE, $value, var_export($this->entityFlags, true), var_export($this->charset, true));
+      }
+  
+      /**
+--- 615,621 ----
+              return sprintf(self::CUSTOM_ESCAPE, $value);
+          }
+  
++         return sprintf(self::DEFAULT_ESCAPE, $value, $value, var_export($this->entityFlags, true), var_export($this->charset, true));
+      }
+  
+      /**

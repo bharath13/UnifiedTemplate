@@ -1,0 +1,35 @@
+{{! GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH }}
+
+{{#site_footer}}
+
+<footer class="site-footer">
+  <div class="site-footer__container">
+
+    <div class="site-footer__group">
+      {{> molecules-brand-social }}
+    </div>
+
+    <div class="site-footer__group site-footer__link-group-container">
+      {{#link_group}}
+        <div class="site-footer__link-group">
+          {{#links}}
+            <a href="{{url}}" class="site-footer__link">{{text}}</a>
+          {{/links}}
+        </div>
+      {{/link_group}}
+    </div>
+  </div>
+  {{> molecules-footer-copyright }}
+</footer>
+
+  {{#ad_300x50}}
+    <div class="hide-at-sm">
+      {{> molecules-ads-300x50 }}
+    </div>
+  {{/ad_300x50}}
+
+{{> molecules-programmatic-gum-gum }}
+
+
+
+{{/site_footer}}

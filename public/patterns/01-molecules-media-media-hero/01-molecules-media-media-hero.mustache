@@ -1,0 +1,25 @@
+{{! GLOBAL FILE DO NOT OVERWRITE ON NON GENERIC BRANCH }}
+
+{{#hero}}
+<div class="article__media article__media--hero">
+  <figure class="media ">
+    <div class="media-wrap">
+      <img class="media__img" src="{{src}}" alt="{{alt}}" itemprop="image">
+
+      {{#social_share}}
+        {{>molecules-share-tools}}
+      {{/social_share}}
+    </div>
+    {{#caption}}
+    <figcaption>
+      {{#credit}}
+        <span class="media__text media__credit">{{credit}}</span>
+      {{/credit}}
+      {{#caption}}
+        <div class="media__text media__caption">{{caption}}</div>
+      {{/caption}}
+    </figcaption>
+    {{/caption}}
+  </figure>
+</div>
+{{/hero}}

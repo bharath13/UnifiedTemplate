@@ -1,0 +1,30 @@
+{{! BRAND FILE DO NOT OVERWRITE ON GENERIC BRANCH }}
+{{! COULD BE ABSTRACTED TO GLOBAL FILE }}
+
+<div class="related-articles__story">
+    <a href="{{url}}" class="related-articles__media">
+        <img src="{{img}}" alt="{{alt}}">
+    </a>
+    <div class="related-articles__body">
+        {{#category}}
+            <span class="related-articles__text-sm">{{category}}</span>
+        {{/category}}
+
+        <a href="{{url}}" class="related-articles__title">{{{title}}}</a>
+
+        {{#cta}}
+            <a href="{{url}}" class="link-with-arrow link-with-arrow--fresh related-articles__text-sm related-articles__cta">{{cta}}</a>
+        {{/cta}}
+        <script type="text/javascript">
+            var CKL = {} || CKL;
+            CKL.related_content = CKL.related_content || [];
+            CKL.related_content.push({
+                url: "{{url}}",
+                alt: "{{alt}}",
+                title: "{{title}}",
+                category: "{{category}}",
+                cta: "{{cta}}"
+            });
+        </script>
+    </div>
+</div>
